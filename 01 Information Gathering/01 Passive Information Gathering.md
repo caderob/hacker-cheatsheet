@@ -1,6 +1,6 @@
 # Passive Information Gathering
 ### Whois Enumeration
-```
+``` shell
 # WHOIS forward lookup for megacorpone.com
 whois megacorpone.com -h <WHOIS_IP_ADDRESS>
 ```
