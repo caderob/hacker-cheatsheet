@@ -8,20 +8,29 @@ whois <DOMAIN.COM> -h <IP>
 # WHOIS reverse lookup for an IP
 whois <TARGET_IP> -h <HOST_IP>
 ```
-Lab 1 & 2
+Lab 1 
 ``` shell
-# Query domain registration information for megacorpone.com using custom WHOIS server  
-whois megacorpone.com -h <WHOIS_SERVER_IP>
+# What is the hostname of the third Megacorp One name server?
+whois megacorpone.com -h 192.168.208.251
+# Name Server: NS3.MEGACORPONE.COM
+```
+Lab 2
+``` shell
+# What is the Registrar's WHOIS server?
+whois megacorpone.com -h 192.168.208.251
+# Registrar WHOIS Server: whois.gandi.net
 ```
 Lab 3
 ``` shell
-# Query domain registration info for offensive-security.com  
-whois -h <WHOIS_SERVER_IP> offensive-security.com
+# Perform a WHOIS query on the offensive-security.com domain against the machine's IP
+whois -h 192.168.208.251 offensive-security.com
+# Name Server: OS{2976c5de7496e2f47f50e70964c64aac}
 ```
 Lab 4
 ``` shell
-# Query domain registration info for kali.org  
-whois kali.org -h <WHOIS_SERVER_IP>
+# Perform a WHOIS query on the kali.org domain against the machine's IP. What's the Tech Email address?
+whois kali.org -h 192.168.208.251
+# Tech Email: OS{96ca8ad91db6aef7b47a1a23a1a81e1d}
 ```
 ### Google Hacking
 ```
