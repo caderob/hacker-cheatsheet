@@ -1,5 +1,5 @@
 # Passive Information Gathering
-## Whois Enumeration
+### Whois Enumeration
 ## Google Hacking
 ## Netcraft (Wappalyzer)
 ## Open-Source Code (GitHub, GitHub Gist, GitLab, SourceForge)
