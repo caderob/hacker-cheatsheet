@@ -10,7 +10,7 @@ The purpose of this cheatsheet is to provide a structured and concise reference 
 ## Contents
 
 >- **Information Gathering**
->   - Passive Information Gathering
+>   - [Passive Information Gathering](https://github.com/caderob/hacker-cheatsheet/blob/main/01%20Information%20Gathering/01%20Passive%20Information%20Gathering.md)
 >   - Active Information Gathering
 >   - LLM-Powered Active Information Gathering
 >- **Vulnerability Scanning**
