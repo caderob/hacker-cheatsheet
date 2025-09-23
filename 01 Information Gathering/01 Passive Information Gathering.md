@@ -53,10 +53,19 @@ Google: site:megacorpone.com -filetype:html
 # Using Google to Find Directory Listings
 Google: site:megacorpone.com intitle:"index of" "parent directory"
 ```
-Lab 1 & 2
+Lab 1
 ```
-# Search megacorpone.com for the words "VP of Legal"
+# What is the name of the VP of Legal for MegaCorp One?
+
 Google: site:megacorpone.com "VP of Legal"
+# Name: Mike Carlow
+```
+Lab 2
+```
+# What is the email address of the VP of Legal for MegaCorp One?
+
+Google: site:megacorpone.com "VP of Legal"
+# Email: mcarlow@megacorpone.com 
 ```
 Lab 3
 ```
