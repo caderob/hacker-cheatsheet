@@ -1,4 +1,3 @@
-
 # Hacker Cheatsheet
 
 This repository serves as a comprehensive compilation of notes and commands assembled during my preparation for the Offensive Security Certified Professional (OSCP) certification, specifically the PEN-200 course undertaken in 2025. 
