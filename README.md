@@ -12,7 +12,7 @@ The purpose of this cheatsheet is to provide a structured and concise reference 
 The cheatsheet is organized into several markdown files, each focusing on a specific aspect of penetration testing:
 
 - **01 General.md** – General tips and methodologies for penetration testing.
--   - test
+ - test
 - **02 Enumeration.md** – Techniques and tools for information gathering and enumeration.
 - **03 Web Application.md** – Strategies for assessing and exploiting web applications.
 - **04 Social Engineering Attacks.md** – Insights into social engineering tactics and defenses.
