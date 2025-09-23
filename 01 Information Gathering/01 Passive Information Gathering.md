@@ -1,5 +1,5 @@
 # Passive Information Gathering
-### Whois Enumeration
+## Whois Enumeration
 WHOIS forward lookup for a domain
 >``` shell
 >whois <DOMAIN.COM> -h <IP>
