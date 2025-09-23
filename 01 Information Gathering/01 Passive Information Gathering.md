@@ -95,13 +95,14 @@ Lab 3 - What is the value of the IPv4 autonomous systems number that hosts www.m
 # Search the 'megacorpone' GitHub account for any files with "users" in the filename
 GitHub Search: users in:filename owner:megacorpone
 ```
-Lab 1
-``` shell
-# Identify user credentials found on Github
-https://github.com/megacorpone/megacorpone.com/blob/master/megacorpone/xampp.users
-```
-Lab 2
-``` shell
-# Identify the title of the secondary placeholder for the Megacorp One repository
-https://github.com/megacorpone
-```
+Lab 1 - Find a useraname using open-source GitHub
+>``` shell
+>https://github.com/megacorpone/megacorpone.com/blob/master/megacorpone/xampp.users
+>```
+>trivera
+
+Lab 2 - What is the title of the secondary, placeholder, Megacorp One repository?
+>``` shell
+>https://github.com/megacorpone
+>```
+>git-test
