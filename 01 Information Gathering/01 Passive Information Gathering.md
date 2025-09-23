@@ -13,24 +13,18 @@ Lab 1 - What is the hostname of the third Megacorp One name server?
 whois megacorpone.com -h 192.168.208.251
 # Name Server: NS3.MEGACORPONE.COM
 ```
-Lab 2
+Lab 2 - What is the Registrar's WHOIS server?
 ``` shell
-# What is the Registrar's WHOIS server?
-
 whois megacorpone.com -h 192.168.208.251
 # Registrar WHOIS Server: whois.gandi.net
 ```
-Lab 3
+Lab 3 - Perform a WHOIS query on the offensive-security.com domain against the machine's IP
 ``` shell
-# Perform a WHOIS query on the offensive-security.com domain against the machine's IP
-
 whois -h 192.168.208.251 offensive-security.com
 # Name Server: OS{2976c5de7496e2f47f50e70964c64aac}
 ```
-Lab 4
+Lab 4 - Perform a WHOIS query on the kali.org domain against the machine's IP. What's the Tech Email address?
 ``` shell
-# Perform a WHOIS query on the kali.org domain against the machine's IP. What's the Tech Email address?
-
 whois kali.org -h 192.168.208.251
 # Tech Email: OS{96ca8ad91db6aef7b47a1a23a1a81e1d}
 ```
@@ -51,24 +45,18 @@ Google Search: site:megacorpone.com -filetype:html
 # Using Google to Find Directory Listings
 Google Search: site:megacorpone.com intitle:"index of" "parent directory"
 ```
-Lab 1
+Lab 1 - What is the name of the VP of Legal for MegaCorp One?
 ``` shell
-# What is the name of the VP of Legal for MegaCorp One?
-
 Google Search: site:megacorpone.com "VP of Legal"
 # Name: Mike Carlow
 ```
-Lab 2
+Lab 2 - What is the email address of the VP of Legal for MegaCorp One?
 ``` shell
-# What is the email address of the VP of Legal for MegaCorp One?
-
 Google Search: site:megacorpone.com "VP of Legal"
 # Email: mcarlow@megacorpone.com 
 ```
-Lab 3
+Lab 3 - What other MegaCorp One employees can you identify that are not listed on www.megacorpone.com?
 ``` shell
-# What other MegaCorp One employees can you identify that are not listed on www.megacorpone.com?
-
 Google Search: site:linkedin.com "MegaCorp One"
 # Employees at MegaCorp One: Franco Zetticci
 ```
