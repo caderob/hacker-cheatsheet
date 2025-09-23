@@ -24,5 +24,32 @@ Lab 4
 whois kali.org -h <WHOIS_SERVER_IP>
 ```
 ### Google Hacking
+```
+# Searching with a Site Operator
+Google: site:megacorpone.com
+```
+```
+# Searching with a Filetype Operator
+Google: site:megacorpone.com filetype:txt
+```
+```
+# Searching with the Exclude Operator
+Google: site:megacorpone.com -filetype:html
+```
+```
+# Using Google to Find Directory Listings
+Google: site:megacorpone.com intitle:"index of" "parent directory"
+```
+Lab 1 & 2
+```
+# Search megacorpone.com for the words "VP of Legal"
+Google: site:megacorpone.com "VP of Legal"
+```
+Lab 3
+```
+# Search linkedin.com for the words "MegaCorp One"
+Google: site:linkedin.com "MegaCorp One"
+```
+
 ### Netcraft (Wappalyzer)
 ### Open-Source Code (GitHub, GitHub Gist, GitLab, SourceForge)
