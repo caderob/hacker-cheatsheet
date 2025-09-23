@@ -68,19 +68,28 @@ Lab 3 - What other MegaCorp One employees can you identify that are not listed o
 >Employees at MegaCorp One: Franco Zetticci
 
 ### Netcraft (Wappalyzer)
-Lab 1 & 2
-``` shell
-# Identify technologies (Application Server and CSS Font Framework) for a specific domain (megacorpone.com)
-https://www.wappalyzer.com/lookup/megacorpone.com/
-```
-Lab 3
-``` shell
-# Identify the IPv4 autonomous systems number that hosts a domain (megacorpone.com)
-# Resolve the IP address of www.megacorpone.com  
+Lab 1 - Determine what application server is running on www.megacorpone.com
+>``` shell
+>[Google Search: site:linkedin.com "MegaCorp One"](https://www.wappalyzer.com/lookup/megacorpone.com/)
+>```
+>Web servers: Apache HTTP Server
+
+Lab 2 - What is the name of the Client-Side Scripting Framework that handles fonts?
+>``` shell
+>[Google Search: site:linkedin.com "MegaCorp One"](https://www.wappalyzer.com/lookup/megacorpone.com/)
+>```
+>Font Awesome
+
+Lab 3 - What is the value of the IPv4 autonomous systems number that hosts www.megacorpone.com?
+>``` shell
+># Resolve the IP address of www.megacorpone.com  
 nslookup www.megacorpone.com
 # Perform a WHOIS lookup using Team Cymru's WHOIS server for ASN info  
 whois -h whois.cymru.com " -v <IP_ADDRESS>"
-```
+>```
+>16276
+
+
 ### Open-Source Code (GitHub, GitHub Gist, GitLab, SourceForge)
 ``` shell
 # Search the 'megacorpone' GitHub account for any files with "users" in the filename
