@@ -5,11 +5,9 @@ This repository serves as a comprehensive compilation of notes and commands asse
 
 The purpose of this cheatsheet is to provide a structured and concise reference to aid in the understanding and execution of various penetration testing techniques covered in the OSCP curriculum.
 
-> **Note:** This cheatsheet was created for use with the [Obsidian](https://obsidian.md) app. Additional folders like `Medtech`, `OSCP A`, `OSCP B`, and `Secura` contain notes and artifacts related to Challenge Lab exercises used for hands-on practice and skill reinforcement.
-
 ## Contents
 
->- **Information Gathering**
+>- [**Information Gathering**](https://github.com/caderob/hacker-cheatsheet/tree/main/01%20Information%20Gathering)
 >   - [Passive Information Gathering](https://github.com/caderob/hacker-cheatsheet/blob/main/01%20Information%20Gathering/01%20Passive%20Information%20Gathering.md)
 >   - Active Information Gathering
 >   - LLM-Powered Active Information Gathering
