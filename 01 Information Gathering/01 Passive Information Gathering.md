@@ -8,10 +8,8 @@ whois <DOMAIN.COM> -h <IP>
 # WHOIS reverse lookup for an IP
 whois <TARGET_IP> -h <HOST_IP>
 ```
-Lab 1 
+Lab 1 - What is the hostname of the third Megacorp One name server?
 ``` shell
-# What is the hostname of the third Megacorp One name server?
-
 whois megacorpone.com -h 192.168.208.251
 # Name Server: NS3.MEGACORPONE.COM
 ```
