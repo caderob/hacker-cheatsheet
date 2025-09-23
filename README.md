@@ -9,23 +9,42 @@ The purpose of this cheatsheet is to provide a structured and concise reference 
 
 ## Contents
 
-The cheatsheet is organized into several markdown files, each focusing on a specific aspect of penetration testing:
+>- **Information Gathering**
+>   - Passive Information Gathering
+>   - Active Information Gathering
+>   - LLM-Powered Active Information Gathering
+>- **Vulnerability Scanning**
+>   - Vulnerability Scanning with Nessus
+>   - Vulnerability Scanning with Nmap
+>- **Introduction to Web Application Attacks**
+>   - Web Application Assessment Tools
+>   - Web Application Enumeration
+>   - Cross-Site Scripting
+>- **Common Web Application Attacks**
+>   - Directory Traversal
+>   - File Inclusion Vulnerabilities
+>   - File Upload Vulnerabilities
+>   - Command Injection
+>- **SQL Injection Attacks**
+>   - SQL Theory and Databases
+>   - Manual SQL Exploitation
+>   - Manual and Automated Code Execution
+>- **Client-side Attacks**
+>   - Target Reconnaissance
+>   - Exploiting Microsoft Office
+>   - Abusing Windows Library Files
+>- **Locating Public Exploits**
+>   - Getting Started
+>   - Online Exploit Resources
+>   - Offline Exploit Resources
+>   - Exploiting a Target
+> - **Fixing Exploits**
+>   - Fixing Memory Corruption Exploits
+>   - Fixing Web Exploits
 
-- **01 General.md** – General tips and methodologies for penetration testing.
-   -test
-- **02 Enumeration.md** – Techniques and tools for information gathering and enumeration.
-- **03 Web Application.md** – Strategies for assessing and exploiting web applications.
-- **04 Social Engineering Attacks.md** – Insights into social engineering tactics and defenses.
-- **05 Password Pwning.md** – Approaches for password attacks and credential harvesting.
-- **06 Initial Entry Point.md** – Methods for gaining initial access to target systems.
-- **07 Windows Privilege Escalation.md** – Techniques for escalating privileges on Windows systems.
-- **08 Linux Privilege Escalation.md** – Techniques for escalating privileges on Linux systems.
-- **09 Tunneling.md** – Guidelines for creating tunnels to bypass network restrictions.
-- **10 Active Directory-Enumeration.md** – Methods for enumerating Active Directory environments.
-- **11 Active Directory-Authentication.md** – Insights into authentication mechanisms within Active Directory.
-- **12 Active Directory-Lateral Movement.md** – Strategies for lateral movement in Active Directory networks.
-- **13 Common Payloads.md** – A collection of commonly used payloads for exploitation.
-- **14 Proving Grounds Methods.md** – Techniques for OffSec's Proving Grounds practice labs.
-- **Initial Report Template.md** – A template for documenting findings and creating penetration test reports.
+
+
+
+
 
 This cheatsheet is intended to be a dynamic and evolving resource. Contributions, suggestions, and corrections are welcome to enhance its accuracy and comprehensiveness.
