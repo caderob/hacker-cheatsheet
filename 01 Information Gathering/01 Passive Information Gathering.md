@@ -1,13 +1,16 @@
 # Passive Information Gathering
 ## Whois Enumeration
+
 WHOIS forward lookup for a domain
 >``` shell
 >whois <DOMAIN.COM> -h <IP>
 >```
+
 WHOIS reverse lookup for an IP
 >``` shell
 >whois <TARGET_IP> -h <HOST_IP>
 >```
+
 Lab 1 - What is the hostname of the third Megacorp One name server?
 >``` shell
 >whois megacorpone.com -h 192.168.208.251
@@ -32,23 +35,28 @@ Lab 4 - Perform a WHOIS query on the kali.org domain against the machine's IP. W
 >```
 >Tech Email: OS{96ca8ad91db6aef7b47a1a23a1a81e1d}
 
-### Google Hacking
-``` shell
-# Searching with a Site Operator
-Google Search: site:megacorpone.com
-```
-``` shell
-# Searching with a Filetype Operator
-Google Search: site:megacorpone.com filetype:txt
-```
-``` shell
-# Searching with the Exclude Operator
-Google Search: site:megacorpone.com -filetype:html
-```
-``` shell
-# Using Google to Find Directory Listings
-Google Search: site:megacorpone.com intitle:"index of" "parent directory"
-```
+## Google Hacking
+
+Searching with a Site Operator
+>``` shell
+>Google Search: site:megacorpone.com
+>```
+
+Searching with a Filetype Operator
+>``` shell
+>Google Search: site:megacorpone.com filetype:txt
+>```
+
+Searching with the Exclude Operator
+>``` shell
+>Google Search: site:megacorpone.com -filetype:html
+>```
+
+Using Google to Find Directory Listings
+>``` shell
+>Google Search: site:megacorpone.com intitle:"index of" "parent directory"
+>```
+
 Lab 1 - What is the name of the VP of Legal for MegaCorp One?
 >``` shell
 >Google Search: site:megacorpone.com "VP of Legal"
