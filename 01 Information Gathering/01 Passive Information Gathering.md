@@ -6,7 +6,7 @@ whois <DOMAIN.COM> -h <IP>
 ```
 ``` shell
 # WHOIS reverse lookup for IP
-whois <TARGET_IP -h <HOST_IP>
+whois <TARGET_IP> -h <HOST_IP>
 ```
 Lab 1 & 2
 ``` shell
