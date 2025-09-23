@@ -50,6 +50,32 @@ Lab 3
 # Search linkedin.com for the words "MegaCorp One"
 Google: site:linkedin.com "MegaCorp One"
 ```
-
 ### Netcraft (Wappalyzer)
+Lab 1 & 2
+```
+# Identify technologies (Application Server and CSS Font Framework) for a specific domain (megacorpone.com)
+https://www.wappalyzer.com/lookup/megacorpone.com/
+```
+Lab 3
+```
+# Identify the IPv4 autonomous systems number that hosts a domain (megacorpone.com)
+# Resolve the IP address of www.megacorpone.com  
+nslookup www.megacorpone.com
+# Perform a WHOIS lookup using Team Cymru's WHOIS server for ASN info  
+whois -h whois.cymru.com " -v <IP_ADDRESS>"
+```
 ### Open-Source Code (GitHub, GitHub Gist, GitLab, SourceForge)
+```
+# Search the 'megacorpone' GitHub account for any files with "users" in the filename
+GitHub Search: users in:filename owner:megacorpone
+```
+Lab 1
+```
+# Identify user credentials found on Github
+https://github.com/megacorpone/megacorpone.com/blob/master/megacorpone/xampp.users
+```
+Lab 2
+```
+# Identify the title of the secondary placeholder for the Megacorp One repository
+https://github.com/megacorpone
+```
