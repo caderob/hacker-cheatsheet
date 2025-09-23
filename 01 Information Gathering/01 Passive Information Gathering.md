@@ -39,38 +39,40 @@ whois kali.org -h 192.168.208.251
 ### Google Hacking
 ```
 # Searching with a Site Operator
-Google: site:megacorpone.com
+Google Search: site:megacorpone.com
 ```
 ```
 # Searching with a Filetype Operator
-Google: site:megacorpone.com filetype:txt
+Google Search: site:megacorpone.com filetype:txt
 ```
 ```
 # Searching with the Exclude Operator
-Google: site:megacorpone.com -filetype:html
+Google Search: site:megacorpone.com -filetype:html
 ```
 ```
 # Using Google to Find Directory Listings
-Google: site:megacorpone.com intitle:"index of" "parent directory"
+Google Search: site:megacorpone.com intitle:"index of" "parent directory"
 ```
 Lab 1
 ```
 # What is the name of the VP of Legal for MegaCorp One?
 
-Google: site:megacorpone.com "VP of Legal"
+Google Search: site:megacorpone.com "VP of Legal"
 # Name: Mike Carlow
 ```
 Lab 2
 ```
 # What is the email address of the VP of Legal for MegaCorp One?
 
-Google: site:megacorpone.com "VP of Legal"
+Google Search: site:megacorpone.com "VP of Legal"
 # Email: mcarlow@megacorpone.com 
 ```
 Lab 3
 ```
-# Search linkedin.com for the words "MegaCorp One"
-Google: site:linkedin.com "MegaCorp One"
+# What other MegaCorp One employees can you identify that are not listed on www.megacorpone.com?
+
+Google Search: site:linkedin.com "MegaCorp One"
+# Employees at MegaCorp One: Franco Zetticci
 ```
 ### Netcraft (Wappalyzer)
 Lab 1 & 2
