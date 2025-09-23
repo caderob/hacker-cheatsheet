@@ -1,13 +1,13 @@
 # Passive Information Gathering
 ### Whois Enumeration
-``` shell
-# WHOIS forward lookup for a domain
-whois <DOMAIN.COM> -h <IP>
-```
-``` shell
-# WHOIS reverse lookup for an IP
-whois <TARGET_IP> -h <HOST_IP>
-```
+WHOIS forward lookup for a domain
+>``` shell
+>whois <DOMAIN.COM> -h <IP>
+>```
+WHOIS reverse lookup for an IP
+>``` shell
+>whois <TARGET_IP> -h <HOST_IP>
+>```
 Lab 1 - What is the hostname of the third Megacorp One name server?
 >``` shell
 >whois megacorpone.com -h 192.168.208.251
