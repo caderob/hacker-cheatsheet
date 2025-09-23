@@ -37,38 +37,38 @@ whois kali.org -h 192.168.208.251
 # Tech Email: OS{96ca8ad91db6aef7b47a1a23a1a81e1d}
 ```
 ### Google Hacking
-```
+``` shell
 # Searching with a Site Operator
 Google Search: site:megacorpone.com
 ```
-```
+``` shell
 # Searching with a Filetype Operator
 Google Search: site:megacorpone.com filetype:txt
 ```
-```
+``` shell
 # Searching with the Exclude Operator
 Google Search: site:megacorpone.com -filetype:html
 ```
-```
+``` shell
 # Using Google to Find Directory Listings
 Google Search: site:megacorpone.com intitle:"index of" "parent directory"
 ```
 Lab 1
-```
+``` shell
 # What is the name of the VP of Legal for MegaCorp One?
 
 Google Search: site:megacorpone.com "VP of Legal"
 # Name: Mike Carlow
 ```
 Lab 2
-```
+``` shell
 # What is the email address of the VP of Legal for MegaCorp One?
 
 Google Search: site:megacorpone.com "VP of Legal"
 # Email: mcarlow@megacorpone.com 
 ```
 Lab 3
-```
+``` shell
 # What other MegaCorp One employees can you identify that are not listed on www.megacorpone.com?
 
 Google Search: site:linkedin.com "MegaCorp One"
@@ -76,12 +76,12 @@ Google Search: site:linkedin.com "MegaCorp One"
 ```
 ### Netcraft (Wappalyzer)
 Lab 1 & 2
-```
+``` shell
 # Identify technologies (Application Server and CSS Font Framework) for a specific domain (megacorpone.com)
 https://www.wappalyzer.com/lookup/megacorpone.com/
 ```
 Lab 3
-```
+``` shell
 # Identify the IPv4 autonomous systems number that hosts a domain (megacorpone.com)
 # Resolve the IP address of www.megacorpone.com  
 nslookup www.megacorpone.com
@@ -89,17 +89,17 @@ nslookup www.megacorpone.com
 whois -h whois.cymru.com " -v <IP_ADDRESS>"
 ```
 ### Open-Source Code (GitHub, GitHub Gist, GitLab, SourceForge)
-```
+``` shell
 # Search the 'megacorpone' GitHub account for any files with "users" in the filename
 GitHub Search: users in:filename owner:megacorpone
 ```
 Lab 1
-```
+``` shell
 # Identify user credentials found on Github
 https://github.com/megacorpone/megacorpone.com/blob/master/megacorpone/xampp.users
 ```
 Lab 2
-```
+``` shell
 # Identify the title of the secondary placeholder for the Megacorp One repository
 https://github.com/megacorpone
 ```
