@@ -83,9 +83,9 @@ Lab 2 - What is the name of the Client-Side Scripting Framework that handles fon
 Lab 3 - What is the value of the IPv4 autonomous systems number that hosts www.megacorpone.com?
 >``` shell
 ># Resolve the IP address of www.megacorpone.com  
-nslookup www.megacorpone.com
-# Perform a WHOIS lookup using Team Cymru's WHOIS server for ASN info  
-whois -h whois.cymru.com " -v <IP_ADDRESS>"
+>nslookup www.megacorpone.com
+># Perform a WHOIS lookup using Team Cymru's WHOIS server for ASN info  
+>whois -h whois.cymru.com " -v <IP_ADDRESS>"
 >```
 >16276
 
