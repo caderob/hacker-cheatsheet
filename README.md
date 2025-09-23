@@ -39,10 +39,3 @@ The purpose of this cheatsheet is to provide a structured and concise reference 
 > - **Fixing Exploits**
 >   - Fixing Memory Corruption Exploits
 >   - Fixing Web Exploits
-
-
-
-
-
-
-This cheatsheet is intended to be a dynamic and evolving resource. Contributions, suggestions, and corrections are welcome to enhance its accuracy and comprehensiveness.
