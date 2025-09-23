@@ -70,13 +70,13 @@ Lab 3 - What other MegaCorp One employees can you identify that are not listed o
 ### Netcraft (Wappalyzer)
 Lab 1 - Determine what application server is running on www.megacorpone.com
 >``` shell
->[Google Search: site:linkedin.com "MegaCorp One"](https://www.wappalyzer.com/lookup/megacorpone.com/)
+>https://www.wappalyzer.com/lookup/megacorpone.com/
 >```
 >Web servers: Apache HTTP Server
 
 Lab 2 - What is the name of the Client-Side Scripting Framework that handles fonts?
 >``` shell
->[Google Search: site:linkedin.com "MegaCorp One"](https://www.wappalyzer.com/lookup/megacorpone.com/)
+>https://www.wappalyzer.com/lookup/megacorpone.com/
 >```
 >Font Awesome
 
