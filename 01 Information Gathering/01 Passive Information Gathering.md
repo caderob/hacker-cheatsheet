@@ -98,11 +98,13 @@ Lab 3 - What is the value of the IPv4 autonomous systems number that hosts www.m
 >16276
 
 
-### Open-Source Code (GitHub, GitHub Gist, GitLab, SourceForge)
-``` shell
-# Search the 'megacorpone' GitHub account for any files with "users" in the filename
-GitHub Search: users in:filename owner:megacorpone
-```
+## Open-Source Code (GitHub, GitHub Gist, GitLab, SourceForge)
+
+Search the 'megacorpone' GitHub account for any files with "users" in the filename
+>``` shell
+>GitHub Search: users in:filename owner:megacorpone
+>```
+
 Lab 1 - Find a useraname using open-source GitHub
 >``` shell
 >https://github.com/megacorpone/megacorpone.com/blob/master/megacorpone/xampp.users
