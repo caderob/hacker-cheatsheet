@@ -1,12 +1,12 @@
 # Passive Information Gathering
 ### Whois Enumeration
 ``` shell
-# WHOIS forward lookup for megacorpone.com
-whois megacorpone.com -h <WHOIS_IP_ADDRESS>
+# WHOIS forward lookup for a domain
+whois <DOMAIN.COM> -h <IP>
 ```
 ``` shell
-# WHOIS reverse lookup for IP 38.100.193.70 
-whois 38.100.193.70 -h <WHOIS_IP_ADDRESS>
+# WHOIS reverse lookup for IP
+whois <TARGET_IP -h <HOST_IP>
 ```
 Lab 1 & 2
 ``` shell
