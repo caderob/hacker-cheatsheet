@@ -39,3 +39,65 @@ The purpose of this cheatsheet is to provide a structured and concise reference 
 >- **08 Fixing Exploits**
 >   - Fixing Memory Corruption Exploits
 >   - Fixing Web Exploits
+>- **09 Phishing Basics**
+>   - Phishing 101
+>   - Payloads, Misdirection, and Speedbumps
+>   - Hands-On Credential Phishing
+>- **10 Antivirus Evasion**
+>   - Antivirus Software Key Components and Operations
+>   - Bypassing Antivirus Detections
+>   - AV Evasion in Practice
+>- **11 Password Attacks**
+>   - Attacking Network Services Logins
+>   - Password Cracking Fundamentals
+>   - Working with Password Hashes
+>- **12 Windows Privilege Escalation**
+>   - Enumerating Windows
+>   - Leveraging Windows Services
+>   - Abusing Other Windows Components
+>- **13 Linux Privilege Escalation**
+>   - Enumerating Linux
+>   - Exposed Confidential Information
+>   - Insecure File Permissions
+>   - Insecure System Components
+>- **14 Port Redirection and SSH Tunneling**
+>   - Why Port Redirection and Tunneling?
+>   - Port Forwarding with Linux Tools
+>   - SSH Tunneling
+>   - Port Forwarding with Windows Tools
+>- **15 Tunneling Through Deep Packet Inspection**
+>   - HTTP Tunneling Theory and Practice
+>   - DNS Tunneling Theory and Practice
+>- **16 The Metasploit Framework**
+>   - Getting Familiar with Metasploit
+>   - Using Metasploit Payloads
+>   - Performing Post-Exploitation with Metasploit
+>   - Automating Metasploit
+>- **17 Active Directory Introduction and Enumeration**
+>   - Active Directory - Introduction
+>   - Active Directory - Manual Enumeration
+>   - Manual Enumeration - Expanding our Repertoire
+>   - Active Directory - Automated Enumeration
+>- **18 Attacking Active Directory Authentication**
+>   - Understanding Active Directory Authentication
+>   - Performing Attacks on Active Directory Authentication
+>- **19 Lateral Movement in Active Directory**
+>   - Active Directory Lateral Movement Techniques
+>   - Active Directory Persistence
+>- **20 Enumerating AWS Cloud Infrastructure**
+>   - About the Public Cloud Labs
+>   - Reconnaissance of Cloud Resources on the Internet
+>   - Reconnaissance via Cloud Service Provider's API
+>   - Initial IAM Reconnaissance
+>   - IAM Resources Enumeration
+>- **21 Attacking AWS Cloud Infrastructure**
+>   - About the Public Cloud Labs
+>   - Leaked Secrets to Poisoned Pipeline - Lab Design
+>   - Enumeration
+>   - Discovering Secrets
+>   - Poisoning the Pipeline
+>   - Compromising the Environment via Backdoor Account
+>   - Dependency Chain Abuse
+>   - Information Gathering
+>   - Dependency Chain Attack
+>   - Compromising the Environment
