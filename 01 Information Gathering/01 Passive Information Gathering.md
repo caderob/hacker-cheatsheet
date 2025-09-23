@@ -1,4 +1,5 @@
 # Passive Information Gathering
+
 ## Whois Enumeration
 
 WHOIS forward lookup for a domain
@@ -75,7 +76,7 @@ Lab 3 - What other MegaCorp One employees can you identify that are not listed o
 >```
 >Employees at MegaCorp One: Franco Zetticci
 
-### Netcraft (Wappalyzer)
+## Netcraft (Wappalyzer)
 Lab 1 - Determine what application server is running on www.megacorpone.com
 >``` shell
 >https://www.wappalyzer.com/lookup/megacorpone.com/
@@ -96,7 +97,6 @@ Lab 3 - What is the value of the IPv4 autonomous systems number that hosts www.m
 >whois -h whois.cymru.com " -v 149.56.244.87" 
 >```
 >16276
-
 
 ## Open-Source Code (GitHub, GitHub Gist, GitLab, SourceForge)
 
