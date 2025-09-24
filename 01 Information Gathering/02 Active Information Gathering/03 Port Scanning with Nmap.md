@@ -347,6 +347,7 @@ Automating the PowerShell portscanning
 
 Lab 1 - Which host has port 25 open?
 >``` shell
+># Using nmap to perform a network sweep
 >kali@kali:~$ sudo nmap -sS 192.168.135.1-254 -oG syn-scan.txt
 >
 ># ========== Expected Result ==========
@@ -360,6 +361,7 @@ Lab 1 - Which host has port 25 open?
 >...
 ># =====================================
 >
+># Grep to find live hosts
 >kali@kali:~$ grep open syn-scan.txt | cut -d" " -f2 | sort -u
 >
 ># ========== Expected Result ==========
@@ -381,6 +383,7 @@ Lab 1 - Which host has port 25 open?
 >192.168.170.9
 ># =====================================
 >
+>Grep to find live hosts with port 25 openUsing nmap to perform a SYN scan
 >kali@kali:~$ grep "25/open" syn-scan.txt
 >
 ># ========== Expected Result ==========
