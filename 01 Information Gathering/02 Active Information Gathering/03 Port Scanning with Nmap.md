@@ -160,3 +160,32 @@ Using nmap to perform a network sweep and then using grep to find live hosts
 >...
 ># =====================================
 >```
+
+Using nmap to scan for web servers using port 80
+>``` shell
+>kali@kali:~$ nmap -p 80 192.168.50.1-253 -oG web-sweep.txt
+>
+># ========== Expected Result ==========
+>Starting Nmap 7.92 ( https://nmap.org ) at 2022-03-10 03:50 EST
+>Nmap scan report for 192.168.50.6
+>Host is up (0.11s latency).
+>
+>PORT   STATE SERVICE
+>80/tcp open  http
+>
+>Nmap scan report for 192.168.50.8
+>Host is up (0.11s latency).
+>
+>PORT   STATE  SERVICE
+>80/tcp closed http
+>...
+># =====================================
+>
+>kali@kali:~$ grep open web-sweep.txt | cut -d" " -f2
+>
+># ========== Expected Result ==========
+>192.168.50.6
+>192.168.50.20
+>192.168.50.21
+># =====================================
+>```
