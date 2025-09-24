@@ -392,7 +392,7 @@ Lab 1 - Which host has port 25 open?
 
 Lab 2 - Which host is running a WHOIS server?
 >``` shell
-># Using nmap to perform a network sweep of port 43 (WHOIS)
+># Using nmap to perform a network sweep running port 43 (WHOIS)
 >kali@kali:~$ sudo nmap -sS -p 43 192.168.170.1-254 -oG whois-scan.txt
 >
 ># ========== Expected Result ==========
@@ -413,3 +413,41 @@ Lab 2 - Which host is running a WHOIS server?
 ># =====================================
 >```
 >192.168.170.251
+
+Lab 3 - Which are the first four open TCP ports?
+>``` shell
+># Connecting to the Windows 11 client
+>kali@kali:~$ xfreerdp3 /u:student /p:lab /v:192.168.170.152
+>
+># Scan first 150 ports, showing first 4 open ones using powershell
+>PS C:\Users\student> 1..150 | ForEach-Object {
+>     Write-Host "Scanning port $_..."
+>     $tcp = New-Object Net.Sockets.TcpClient
+>     $async = $tcp.BeginConnect("192.168.170.151", $_, $null, $null)
+>     if ($async.AsyncWaitHandle.WaitOne(200, $false)) {
+>         if ($tcp.Connected) {
+>             Write-Output $_
+>             $tcp.Close()
+>         }
+>     }
+>     $tcp.Close()
+> } | Select-Object -First 4
+>
+># ========== Expected Result ==========
+>Scanning port 53...
+>...
+>53
+>Scanning port 54...
+>Scanning port 55...
+>...
+>Scanning port 88...
+>88
+>...
+>Scanning port 135...
+>135
+>...
+>Scanning port 139...
+>139
+>...
+># =====================================
+>53, 88, 135, 139
