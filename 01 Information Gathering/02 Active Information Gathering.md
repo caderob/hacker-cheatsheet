@@ -370,6 +370,32 @@ Lab 3 - Other than port 123, what is the first returned open UDP port in the ran
 
 ## Port Scanning with Nmap
 
+Scanning an IP for the 1000 most popular TCP ports
+>``` shell
+>kali@kali:~$ nmap 192.168.50.149
+>
+># ========== Expected Result ==========
+>Starting Nmap 7.92 ( https://nmap.org ) at 2022-03-09 05:12 EST
+>Nmap scan report for 192.168.50.149
+>Host is up (0.10s latency).
+>Not shown: 989 closed tcp ports (conn-refused)
+>PORT     STATE SERVICE
+>53/tcp   open  domain
+>88/tcp   open  kerberos-sec
+>135/tcp  open  msrpc
+>139/tcp  open  netbios-ssn
+>389/tcp  open  ldap
+>445/tcp  open  microsoft-ds
+>464/tcp  open  kpasswd5
+>593/tcp  open  http-rpc-epmap
+>636/tcp  open  ldapssl
+>3268/tcp open  globalcatLDAP
+>3269/tcp open  globalcatLDAPssl
+>
+>Nmap done: 1 IP address (1 host up) scanned in 10.95 seconds
+># =====================================
+>```
+
 ## SMB Enumeration
 
 ## SMTP Enumeration
