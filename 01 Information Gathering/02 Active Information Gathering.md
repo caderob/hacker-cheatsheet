@@ -209,6 +209,19 @@ Using nslookup to perform a simple host enumeration
 ># =====================================
 >```
 
+Lab 1 - Perform a DNS enumeration on the MX records of megacorpone.com: which is the second-to-best priority value listed in the reply?
+>``` shell
+>kali@kali:~$ host -t mx megacorpone.com
+>
+># ========== Expected Result ==========
+>megacorpone.com mail is handled by 60 mail2.megacorpone.com.
+>megacorpone.com mail is handled by 50 mail.megacorpone.com.
+>megacorpone.com mail is handled by 20 spool.mail.gandi.net.
+>megacorpone.com mail is handled by 10 fb.mail.gandi.net.
+># =====================================
+>```
+>spool.mail.gandi.net
+
 ## TCP/UDP Port Scanning Theory
 
 ## Port Scanning with Nmap
