@@ -231,3 +231,48 @@ Using nmap for OS fingerprinting
 >...
 ># =====================================
 >```
+
+Using nmap for banner grabbing and/or service enumeration
+>``` shell
+>kali@kali:~$ nmap -sT -A 192.168.50.14
+>
+># ========== Expected Result ==========
+>Nmap scan report for 192.168.50.14
+>Host is up (0.12s latency).
+>Not shown: 996 closed tcp ports (conn-refused)
+>PORT    STATE SERVICE       VERSION
+>21/tcp  open  ftp?
+>| fingerprint-strings:
+>|   DNSStatusRequestTCP, DNSVersionBindReqTCP, GenericLines, NULL, RPCCheck, SSLSessionReq, TLSSessionReq, TerminalServerCookie:
+>|     220-FileZilla Server 1.2.0
+>|     Please visit https://filezilla-project.org/
+>|   GetRequest:
+>|     220-FileZilla Server 1.2.0
+>|     Please visit https://filezilla-project.org/
+>|     What are you trying to do? Go away.
+>|   HTTPOptions, RTSPRequest:
+>|     220-FileZilla Server 1.2.0
+>|     Please visit https://filezilla-project.org/
+>|     Wrong command.
+>|   Help:
+>|     220-FileZilla Server 1.2.0
+>|     Please visit https://filezilla-project.org/
+>|     214-The following commands are recognized.
+>|     USER TYPE SYST SIZE RNTO RNFR RMD REST QUIT
+>|     HELP XMKD MLST MKD EPSV XCWD NOOP AUTH OPTS DELE
+>|     CDUP APPE STOR ALLO RETR PWD FEAT CLNT MFMT
+>|     MODE XRMD PROT ADAT ABOR XPWD MDTM LIST MLSD PBSZ
+>|     NLST EPRT PASS STRU PASV STAT PORT
+>|_    Help ok.
+>| ftp-syst:
+>|_  SYST: UNIX emulated by FileZilla.
+>| ssl-cert: Subject: commonName=filezilla-server self signed certificate
+>| Not valid before: 2022-01-06T15:37:24
+>|_Not valid after:  2023-01-07T15:42:24
+>|_ssl-date: TLS randomness does not represent time
+>135/tcp open  msrpc         Microsoft Windows RPC
+>139/tcp open  netbios-ssn   Microsoft Windows netbios-ssn
+>445/tcp open  microsoft-ds?
+>Nmap done: 1 IP address (1 host up) scanned in 55.67 seconds
+># =====================================
+>```
