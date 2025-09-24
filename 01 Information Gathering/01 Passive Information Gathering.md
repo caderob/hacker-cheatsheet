@@ -154,10 +154,25 @@ Lab 2 - What is the name of the Client-Side Scripting Framework that handles fon
 
 Lab 3 - What is the value of the IPv4 autonomous systems number that hosts www.megacorpone.com?
 >``` shell
-># Resolve the IP address of www.megacorpone.com  
->nslookup www.megacorpone.com
+># Resolve the IP address of www.megacorpone.com 
+>kali@kali:~$ nslookup www.megacorpone.com
+>
+># === Expected Result ===
+>Server:         192.168.1.1
+>Address:        192.168.1.1#53
+>
+>Non-authoritative answer:
+>Name:   www.megacorpone.com
+>Address: 149.56.244.87
+># =======================
+>
 ># Perform a WHOIS lookup using a public server (Team Cymru)  
->whois -h whois.cymru.com " -v 149.56.244.87" 
+>kali@kali:~$ whois -h whois.cymru.com " -v 149.56.244.87"
+>
+># === Expected Result ===
+>AS      | IP               | BGP Prefix          | CC | Registry | Allocated  | AS Name
+>16276   | 149.56.244.87    | 149.56.0.0/16       | CA | arin     | 2016-02-09 | OVH, FR
+># =======================
 >```
 >16276
 
