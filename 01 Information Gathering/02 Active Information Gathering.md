@@ -175,10 +175,39 @@ Using dnsenum to automate DNS enumeration
 >
 >18.37.79.51.in-addr.arpa.                86400    IN    PTR      ns1.megacorpone.com.
 >...
->
 ># =====================================
 >```
 
+Using nslookup to perform a simple host enumeration
+>``` shell
+># Connecting to the Windows 11 client
+>kali@kali:~$ xfreerdp /u:student /p:lab /v:192.168.50.152
+>
+># Using nslookup to perform a simple host enumeration
+>C:\Users\student>nslookup mail.megacorptwo.com
+>
+># ========== Expected Result ==========
+>DNS request timed out.
+>    timeout was 2 seconds.
+>Server:  UnKnown
+>Address:  192.168.50.151
+>
+>Name:    mail.megacorptwo.com
+>Address:  192.168.50.154
+># =====================================
+>
+># Using nslookup to perform a more specific query
+>C:\Users\student>nslookup -type=TXT info.megacorptwo.com 192.168.50.151
+>
+>># ========== Expected Result ==========
+>Server:  UnKnown
+>Address:  192.168.50.151
+>
+>info.megacorptwo.com    text =
+>
+>        "greetings from the TXT record body"
+># =====================================
+>```
 
 ## TCP/UDP Port Scanning Theory
 
