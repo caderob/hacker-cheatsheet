@@ -122,3 +122,43 @@ Using nmap to perform a combined UDP and SYN scan
 >...
 ># =====================================
 >```
+
+Using nmap to perform a network sweep
+>``` shell
+>kali@kali:~$ nmap -sn 192.168.50.1-253
+>
+># ========== Expected Result ==========
+>Starting Nmap 7.92 ( https://nmap.org ) at 2022-03-10 03:19 EST
+>Nmap scan report for 192.168.50.6
+>Host is up (0.12s latency).
+>Nmap scan report for 192.168.50.8
+>Host is up (0.12s latency).
+>...
+>Nmap done: 254 IP addresses (13 hosts up) scanned in 3.74 seconds
+># =====================================
+>```
+
+Using nmap to perform a network sweep and then using grep to find live hosts
+>``` shell
+>kali@kali:~$ nmap -v -sn 192.168.50.1-253 -oG ping-sweep.txt
+>
+># ========== Expected Result ==========
+>Starting Nmap 7.92 ( https://nmap.org ) at 2022-03-10 03:21 EST
+>Initiating Ping Scan at 03:21
+>...
+>Read data files from: /usr/bin/../share/nmap
+>Nmap done: 254 IP addresses (13 hosts up) scanned in 3.74 seconds
+>...
+># =====================================
+>
+>
+>
+>kali@kali:~$ grep Up ping-sweep.txt | cut -d " " -f 2
+>
+># ========== Expected Result ==========
+>192.168.50.6
+>192.168.50.8
+>192.168.50.9
+>...
+># =====================================
+>```
