@@ -6,13 +6,16 @@ The purpose of this cheatsheet is to provide a structured and concise reference 
 
 ## Contents
 
->- **Information Gathering**
->   - Passive Information Gathering
->     - Whois Enumeration
->     - Google Hacking
->     - Netcraft (Wappalyzer)
->     - Open-Source Code (GitHub, GitHub Gist, GitLab, SourceForge)
->   - Active Information Gathering
+>- [**Information Gathering**](https://github.com/caderob/hacker-cheatsheet/tree/main/01%20Information%20Gathering)
+>   - [Passive Information Gathering](https://github.com/caderob/hacker-cheatsheet/tree/main/01%20Information%20Gathering/01%20Passive%20Information%20Gathering)
+>     - [Whois Enumeration](https://github.com/caderob/hacker-cheatsheet/blob/main/01%20Information%20Gathering/01%20Passive%20Information%20Gathering/01%20Whois%20Enumeration.md)
+>     - [Google Hacking](https://github.com/caderob/hacker-cheatsheet/blob/main/01%20Information%20Gathering/01%20Passive%20Information%20Gathering/02%20Google%20Hacking.md)
+>     - [Netcraft (Wappalyzer)](https://github.com/caderob/hacker-cheatsheet/blob/main/01%20Information%20Gathering/01%20Passive%20Information%20Gathering/03%20Netcraft%20(Wappalyzer).md)
+>     - [Open-Source Code (GitHub, GitHub Gist, GitLab, SourceForge)](https://github.com/caderob/hacker-cheatsheet/blob/main/01%20Information%20Gathering/01%20Passive%20Information%20Gathering/04%20Open-Source%20Code%20(GitHub%2C%20GitHub%20Gist%2C%20GitLab%2C%20SourceForge).md)
+>   - [Active Information Gathering](https://github.com/caderob/hacker-cheatsheet/tree/main/01%20Information%20Gathering/02%20Active%20Information%20Gathering)
+>     - [DNS Enumeration](https://github.com/caderob/hacker-cheatsheet/blob/main/01%20Information%20Gathering/02%20Active%20Information%20Gathering/01%20DNS%20Enumeration.md)
+>     - [TCP UDP Port Scanning Theory](https://github.com/caderob/hacker-cheatsheet/blob/main/01%20Information%20Gathering/02%20Active%20Information%20Gathering/02%20TCP%20UDP%20Port%20Scanning%20Theory.md)
+>     - [Port Scanning with Nmap](https://github.com/caderob/hacker-cheatsheet/blob/main/01%20Information%20Gathering/02%20Active%20Information%20Gathering/03%20Port%20Scanning%20with%20Nmap.md)
 >   - LLM-Powered Active Information Gathering
 >- **Vulnerability Scanning**
 >   - Vulnerability Scanning with Nessus
