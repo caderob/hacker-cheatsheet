@@ -276,3 +276,32 @@ Using nmap for banner grabbing and/or service enumeration
 >Nmap done: 1 IP address (1 host up) scanned in 55.67 seconds
 ># =====================================
 >```
+
+Using nmap's scripting engine (NSE) for OS fingerprinting
+>``` shell
+>kali@kali:~$ nmap --script http-headers 192.168.50.6
+>
+># ========== Expected Result ==========
+>Starting Nmap 7.92 ( https://nmap.org ) at 2022-03-10 13:53 EST
+>Nmap scan report for 192.168.50.6
+>Host is up (0.14s latency).
+>Not shown: 998 closed tcp ports (conn-refused)
+>PORT   STATE SERVICE
+>22/tcp open  ssh
+>80/tcp open  http
+>| http-headers:
+>|   Date: Thu, 10 Mar 2022 18:53:29 GMT
+>|   Server: Apache/2.4.41 (Ubuntu)
+>|   Last-Modified: Thu, 10 Mar 2022 18:51:54 GMT
+>|   ETag: "d1-5d9e1b5371420"
+>|   Accept-Ranges: bytes
+>|   Content-Length: 209
+>|   Vary: Accept-Encoding
+>|   Connection: close
+>|   Content-Type: text/html
+>|
+>|_  (Request type: HEAD)
+>
+>Nmap done: 1 IP address (1 host up) scanned in 5.11 seconds
+># =====================================
+>```
