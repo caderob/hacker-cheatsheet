@@ -387,3 +387,4 @@ Lab 1 - Which host has port 25 open?
 >Host: 192.168.170.8 ()  Ports: 22/open/tcp//ssh///, 25/open/tcp//smtp///        Ignored State: closed (998)
 ># =====================================
 >```
+192.168.170.8
