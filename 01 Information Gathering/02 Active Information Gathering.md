@@ -222,6 +222,17 @@ Lab 1 - Perform a DNS enumeration on the MX records of megacorpone.com: which is
 >```
 >spool.mail.gandi.net
 
+Lab 2 - How many TXT records are associated with the megacorpone.com domain?
+>``` shell
+>kali@kali:~$ host -t txt megacorpone.com
+>
+># ========== Expected Result ==========
+>megacorpone.com descriptive text "google-site-verification=U7B_b0HNeBtY4qYGQZNsEYXfCJ32hMNV3GtC0wWq5pA"
+>megacorpone.com descriptive text "Try Harder"
+># =====================================
+>```
+>2
+
 ## TCP/UDP Port Scanning Theory
 
 ## Port Scanning with Nmap
