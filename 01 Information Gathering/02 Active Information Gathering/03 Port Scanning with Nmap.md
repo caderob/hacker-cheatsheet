@@ -389,5 +389,27 @@ Lab 1 - Which host has port 25 open?
 ># ========== Expected Result ==========
 >Host: 192.168.170.8 ()  Ports: 22/open/tcp//ssh///, 25/open/tcp//smtp///        Ignored State: closed (998)
 ># =====================================
+
+Lab 2 - Which host is running a WHOIS server?
+>``` shell
+># Using nmap to perform a network sweep of port 43 (WHOIS)
+>kali@kali:~$ sudo nmap -sS -p 43 192.168.170.1-254 -oG whois-scan.txt
+>
+># ========== Expected Result ==========
+>Starting Nmap 7.95 ( https://nmap.org ) at 2025-09-24 11:50 CDT
+>Nmap scan report for 192.168.170.6
+>Host is up (0.035s latency).
+>
+>PORT   STATE  SERVICE
+>43/tcp closed whois
+>...
+># =====================================
+>
+># Grep to find live hosts
+>kali@kali:~$ grep open whois-scan.txt | cut -d" " -f2 | sort -u
+>
+># ========== Expected Result ==========
+>192.168.170.251
+># =====================================
 >```
->192.168.170.8
+>192.168.170.251
