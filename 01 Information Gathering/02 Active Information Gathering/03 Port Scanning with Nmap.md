@@ -217,3 +217,17 @@ Using nmap to perform a top twenty port scan, saving the output in greppable for
 >...
 ># =====================================
 >```
+
+Using nmap for OS fingerprinting
+>``` shell
+>kali@kali:~$ sudo nmap -O 192.168.50.14 --osscan-guess
+>
+># ========== Expected Result ==========
+>...
+>Running (JUST GUESSING): Microsoft Windows 2008|2012|2016|7|Vista (88%)
+>OS CPE: cpe:/o:microsoft:windows_server_2008::sp1 cpe:/o:microsoft:windows_server_2008:r2 cpe:/o:microsoft:windows_server_2012:r2 cpe:/o:microsoft:windows_server_2016 cpe:/o:microsoft:windows_7 cpe:/o:microsoft:windows_vista::sp1:home_premium
+>Aggressive OS guesses: Microsoft Windows Server 2008 SP1 or Windows Server 2008 R2 (88%), Microsoft Windows Server 2012 or Windows Server 2012 R2 (88%), Microsoft Windows Server 2012 R2 (88%), Microsoft Windows Server 2012 (87%), Microsoft Windows Server 2016 (87%), Microsoft Windows 7 (86%), Microsoft Windows Vista Home Premium SP1 (85%), Microsoft Windows 7 Professional (85%)
+>No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+>...
+># =====================================
+>```
