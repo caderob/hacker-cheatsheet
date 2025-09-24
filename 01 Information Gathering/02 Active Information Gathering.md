@@ -233,6 +233,30 @@ Lab 2 - How many TXT records are associated with the megacorpone.com domain?
 >```
 >2
 
+Lab 3 - What is the IP of the siem.megacorpone.com host?
+>``` shell
+>kali@kali:~$ dnsenum siem.megacorpone.com
+>
+># ========== Expected Result ==========
+>dnsenum VERSION:1.3.1
+>
+>-----   siem.megacorpone.com   -----
+>
+>
+>Hosts addresses:
+>__________________
+>
+>siem.megacorpone.com.                    300      IN    A        167.114.21.71
+>
+>
+>Name Servers:
+>______________
+>
+> siem.megacorpone.com NS record query failed: NOERROR 
+># =====================================
+>```
+>167.114.21.71
+
 ## TCP/UDP Port Scanning Theory
 
 ## Port Scanning with Nmap
