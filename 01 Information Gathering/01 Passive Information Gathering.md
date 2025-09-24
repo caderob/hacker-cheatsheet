@@ -6,7 +6,7 @@ WHOIS forward lookup for megacorpone.com
 >``` shell
 >kali@kali:~$ whois megacorpone.com -h 192.168.50.251
 >
-># === Expected Result ===
+># ========== Expected Result ==========
 >Domain Name: MEGACORPONE.COM
 >Registry Domain ID: 1775445745_DOMAIN_COM-VRSN
 >Registrar WHOIS Server: whois.gandi.net
@@ -49,14 +49,14 @@ WHOIS forward lookup for megacorpone.com
 >Name Server: NS2.MEGACORPONE.COM
 >Name Server: NS3.MEGACORPONE.COM
 >...
-># =======================
+># =====================================
 >```
 
 WHOIS reverse lookup for IP 38.100.193.70
 >``` shell
 >kali@kali:~$ whois 38.100.193.70 -h 192.168.50.251
 >
-># === Expected Result ===
+># ========== Expected Result ==========
 >...
 >NetRange:       38.0.0.0 - 38.255.255.255
 >CIDR:           38.0.0.0/8
@@ -72,7 +72,7 @@ WHOIS reverse lookup for IP 38.100.193.70
 >RegDate:
 >Updated:        2015-06-04
 >...
-># =======================
+># =====================================
 >```
 
 Lab 1 - What is the hostname of the third Megacorp One name server?
@@ -157,22 +157,21 @@ Lab 3 - What is the value of the IPv4 autonomous systems number that hosts www.m
 ># Resolve the IP address of www.megacorpone.com 
 >kali@kali:~$ nslookup www.megacorpone.com
 >
-># === Expected Result ===
+># ========== Expected Result ==========
 >Server:         192.168.1.1
 >Address:        192.168.1.1#53
 >
 >Non-authoritative answer:
 >Name:   www.megacorpone.com
 >Address: 149.56.244.87
-># =======================
+># =====================================
 >
 ># Perform a WHOIS lookup using a public server (Team Cymru)  
 >kali@kali:~$ whois -h whois.cymru.com " -v 149.56.244.87"
 >
-># === Expected Result ===
+># ========== Expected Result ==========
 >AS      | IP               | BGP Prefix          | CC | Registry | Allocated  | AS Name
->16276   | 149.56.244.87    | 149.56.0.0/16       | CA | arin     | 2016-02-09 | OVH, FR
-># =======================
+># =====================================
 >```
 >16276
 
