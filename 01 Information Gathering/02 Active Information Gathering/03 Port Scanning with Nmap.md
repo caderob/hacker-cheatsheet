@@ -389,6 +389,8 @@ Lab 1 - Which host has port 25 open?
 ># ========== Expected Result ==========
 >Host: 192.168.170.8 ()  Ports: 22/open/tcp//ssh///, 25/open/tcp//smtp///        Ignored State: closed (998)
 ># =====================================
+>```
+>192.168.170.8
 
 Lab 2 - Which host is running a WHOIS server?
 >``` shell
@@ -450,4 +452,5 @@ Lab 3 - Which are the first four open TCP ports?
 >139
 >...
 ># =====================================
-53, 88, 135, 139
+>```
+>53, 88, 135, 139
