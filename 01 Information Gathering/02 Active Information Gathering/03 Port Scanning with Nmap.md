@@ -152,7 +152,6 @@ Using nmap to perform a network sweep and then using grep to find live hosts
 ># =====================================
 >
 >
->
 >kali@kali:~$ grep Up ping-sweep.txt | cut -d " " -f 2
 >
 ># ========== Expected Result ==========
