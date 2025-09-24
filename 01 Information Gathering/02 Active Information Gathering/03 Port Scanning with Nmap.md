@@ -334,3 +334,13 @@ Port scanning SMB via PowerShell
 >TcpTestSucceeded : True
 ># =====================================
 >```
+
+Automating the PowerShell portscanning
+>``` shell
+>PS C:\Users\student> 1..1024 | % {echo ((New-Object Net.Sockets.TcpClient).Connect("192.168.50.151", $_)) "TCP port $_ is open"} 2>$null
+>
+># ========== Expected Result ==========
+>TCP port 88 is open
+>...
+># =====================================
+>```
