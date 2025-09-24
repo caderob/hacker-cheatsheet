@@ -454,3 +454,8 @@ Lab 3 - Which are the first four open TCP ports?
 ># =====================================
 >```
 >53, 88, 135, 139
+
+Lab 4 - Find a service running on a high-range TCP port
+>``` shell
+>
+>```
