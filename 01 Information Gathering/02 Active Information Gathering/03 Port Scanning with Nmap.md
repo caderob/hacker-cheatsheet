@@ -305,3 +305,32 @@ Using nmap's scripting engine (NSE) for OS fingerprinting
 >Nmap done: 1 IP address (1 host up) scanned in 5.11 seconds
 ># =====================================
 >```
+
+Using the --script-help option to view more information about a script
+>``` shell
+>kali@kali:~$ nmap --script-help http-headers
+>
+># ========== Expected Result ==========
+>Starting Nmap 7.92 ( https://nmap.org ) at 2022-03-10 13:54 EST
+>
+>http-headers
+>Categories: discovery safe
+>https://nmap.org/nsedoc/scripts/http-headers.html
+>  Performs a HEAD request for the root folder ("/") of a web server and displays the HTTP headers returned.
+>...
+># =====================================
+>```
+
+Port scanning SMB via PowerShell
+>``` shell
+>PS C:\Users\student> Test-NetConnection -Port 445 192.168.50.151
+>
+># ========== Expected Result ==========
+>ComputerName     : 192.168.50.151
+>RemoteAddress    : 192.168.50.151
+>RemotePort       : 445
+>InterfaceAlias   : Ethernet0
+>SourceAddress    : 192.168.50.152
+>TcpTestSucceeded : True
+># =====================================
+>```
