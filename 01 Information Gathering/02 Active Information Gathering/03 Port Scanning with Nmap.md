@@ -344,3 +344,46 @@ Automating the PowerShell portscanning
 >...
 ># =====================================
 >```
+
+Lab 1 - Which host has port 25 open?
+>``` shell
+>kali@kali:~$ sudo nmap -sS 192.168.135.1-254 -oG syn-scan.txt
+>
+># ========== Expected Result ==========
+>Starting Nmap 7.95 ( https://nmap.org ) at 2025-09-24 11:07 CDT
+>Nmap scan report for 192.168.170.6
+>Host is up (0.035s latency).
+>Not shown: 998 closed tcp ports (reset)
+>PORT   STATE SERVICE
+>22/tcp open  ssh
+>80/tcp open  http
+>...
+># =====================================
+>
+>kali@kali:~$ grep open syn-scan.txt | cut -d" " -f2 | sort -u
+>
+># ========== Expected Result ==========
+>192.168.170.11
+>192.168.170.12
+>192.168.170.13
+>192.168.170.14
+>192.168.170.149
+>192.168.170.15
+>192.168.170.151
+>192.168.170.152
+>192.168.170.20
+>192.168.170.21
+>192.168.170.22
+>192.168.170.251
+>192.168.170.254
+>192.168.170.6
+>192.168.170.8
+>192.168.170.9
+># =====================================
+>
+>kali@kali:~$ grep "25/open" syn-scan.txt
+>
+># ========== Expected Result ==========
+>Host: 192.168.170.8 ()  Ports: 22/open/tcp//ssh///, 25/open/tcp//smtp///        Ignored State: closed (998)
+># =====================================
+>```
