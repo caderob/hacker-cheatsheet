@@ -141,6 +141,7 @@ Using nmap to perform a network sweep
 Using nmap to perform a network sweep and then using grep to find live hosts
 >``` shell
 >kali@kali:~$ nmap -v -sn 192.168.50.1-253 -oG ping-sweep.txt
+>
 ># ========== Expected Result ==========
 >Starting Nmap 7.92 ( https://nmap.org ) at 2022-03-10 03:21 EST
 >Initiating Ping Scan at 03:21
@@ -150,8 +151,8 @@ Using nmap to perform a network sweep and then using grep to find live hosts
 >...
 ># =====================================
 >
->
 >kali@kali:~$ grep Up ping-sweep.txt | cut -d " " -f 2
+>
 ># ========== Expected Result ==========
 >192.168.50.6
 >192.168.50.8
