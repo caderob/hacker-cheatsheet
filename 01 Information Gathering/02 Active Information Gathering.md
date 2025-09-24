@@ -181,7 +181,7 @@ Using dnsenum to automate DNS enumeration
 Using nslookup to perform a simple host enumeration
 >``` shell
 ># Connecting to the Windows 11 client
->kali@kali:~$ xfreerdp /u:student /p:lab /v:192.168.50.152
+>kali@kali:~$ xfreerdp3 /u:student /p:lab /v:192.168.50.152
 >
 ># Using nslookup to perform a simple host enumeration
 >C:\Users\student>nslookup mail.megacorptwo.com
@@ -256,6 +256,40 @@ Lab 3 - What is the IP of the siem.megacorpone.com host?
 ># =====================================
 >```
 >167.114.21.71
+
+Lab 4 - What text is contained within the TXT record of the info.megacorptwo.com domain?
+>``` shell
+># Connecting to the Windows 11 client
+>kali@kali:~$ xfreerdp3 /u:student /p:lab /v:192.168.170.152
+>
+># Using nslookup to perform a simple host enumeration
+>C:\Users\student>nslookup mail.megacorptwo.com
+>
+># ========== Expected Result ==========
+>DNS request timed out.
+>    timeout was 2 seconds.
+>Server:  UnKnown
+>Address:  192.168.170.151
+>
+>Name:    mail.megacorptwo.com
+>Address:  192.168.170.154
+># =====================================
+>
+># Using nslookup to perform a more specific query
+>C:\Users\student>nslookup -type=TXT info.megacorptwo.com 192.168.170.151
+>
+># ========== Expected Result ==========
+>DNS request timed out.
+>    timeout was 2 seconds.
+>Server:  UnKnown
+>Address:  192.168.170.151
+>
+>info.megacorptwo.com    text =
+>
+>        "greetings from the TXT record body"
+># =====================================
+>```
+>greetings from the TXT record body
 
 ## TCP/UDP Port Scanning Theory
 
