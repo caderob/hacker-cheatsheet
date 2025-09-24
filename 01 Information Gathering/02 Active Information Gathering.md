@@ -307,7 +307,7 @@ Using netcat to perform a TCP port scan
 
 Using Netcat to perform a UDP port scan
 >``` shell
->kali@kali:~$ nc -nv -u -z -w 1 192.168.50.149 120-123
+>kali@kali:~$ nc -nvv -u -z -w 1 192.168.50.149 120-123
 >
 ># ========== Expected Result ==========
 >(UNKNOWN) [192.168.50.149] 123 (ntp) open
@@ -350,10 +350,23 @@ Lab 2 - Which is the highest open TCP port?
 >```
 >9389
 
-
-
-
-
+Lab 3 - Other than port 123, what is the first returned open UDP port in the range 150-200?
+>``` shell
+>kali@kali:~$ nc -nvv -u -z -w 1 192.168.170.151 150-200
+>
+># ========== Expected Result ==========
+>...
+>(UNKNOWN) [192.168.170.151] 164 (cmip-agent) : Connection refused
+>(UNKNOWN) [192.168.170.151] 163 (cmip-man) : Connection refused
+>(UNKNOWN) [192.168.170.151] 162 (snmp-trap) : Connection refused
+>(UNKNOWN) [192.168.170.151] 161 (snmp) open
+>(UNKNOWN) [192.168.170.151] 160 (?) : Connection refused
+>(UNKNOWN) [192.168.170.151] 159 (?) : Connection refused
+>(UNKNOWN) [192.168.170.151] 158 (?) : Connection refused
+>...
+># =====================================
+>```
+>161
 
 ## Port Scanning with Nmap
 
