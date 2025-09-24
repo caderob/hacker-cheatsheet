@@ -383,7 +383,7 @@ Lab 1 - Which host has port 25 open?
 >192.168.170.9
 ># =====================================
 >
->#Grep to find live hosts with port 25 open
+># Grep to find live hosts with port 25 open
 >kali@kali:~$ grep "25/open" syn-scan.txt
 >
 ># ========== Expected Result ==========
