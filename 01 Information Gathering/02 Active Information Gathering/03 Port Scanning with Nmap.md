@@ -189,3 +189,31 @@ Using nmap to scan for web servers using port 80
 >192.168.50.21
 ># =====================================
 >```
+
+Using nmap to perform a top twenty port scan, saving the output in greppable format
+>``` shell
+>kali@kali:~$ nmap -sT -A --top-ports=20 192.168.50.1-253 -oG top-port-sweep.txt
+>
+># ========== Expected Result ==========
+>Starting Nmap 7.92 ( https://nmap.org ) at 2022-03-10 04:04 EST
+>Nmap scan report for 192.168.50.6
+>Host is up (0.12s latency).
+>
+>PORT     STATE  SERVICE       VERSION
+>21/tcp   closed ftp
+>22/tcp   open   ssh           OpenSSH 8.2p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+>| ssh-hostkey:
+>|   3072 56:57:11:b5:dc:f1:13:d3:50:88:b8:ab:a9:83:e2:29 (RSA)
+>|   256 4f:1d:f2:55:cb:40:e0:76:b4:36:90:19:a2:ba:f0:44 (ECDSA)
+>|_  256 67:46:b3:97:26:a9:e3:a8:4d:eb:20:b3:9b:8d:7a:32 (ED25519)
+>23/tcp   closed telnet
+>25/tcp   closed smtp
+>53/tcp   closed domain
+>80/tcp   open   http          Apache httpd 2.4.41 ((Ubuntu))
+>|_http-server-header: Apache/2.4.41 (Ubuntu)
+>|_http-title: Under Construction
+>110/tcp  closed pop3
+>111/tcp  closed rpcbind
+>...
+># =====================================
+>```
