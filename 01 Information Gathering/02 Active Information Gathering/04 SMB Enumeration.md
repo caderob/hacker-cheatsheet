@@ -128,7 +128,7 @@ Lab 1 - How many hosts have port 445 open?
 >           Raw packets sent: 1933 (73.388KB) | Rcvd: 45 (1.924KB)
 ># =====================================
 >
-># Grep to find live hosts
+># Count hosts with the port 445 open 
 >kali@kali:~$ grep "445/open" smb-445-scan.txt | cut -d" " -f2 | sort -u | wc -l
 >
 ># ========== Expected Result ==========
