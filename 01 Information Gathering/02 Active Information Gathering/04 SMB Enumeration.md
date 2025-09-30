@@ -37,51 +37,103 @@ Using nbtscan to collect additional NetBIOS information
 ># =====================================
 >```
 
-
-
-Lab 1 - Which host has port 25 open?
+Finding various nmap SMB NSE scripts
 >``` shell
-># Using nmap to perform a network sweep
->kali@kali:~$ sudo nmap -sS 192.168.135.1-254 -oG syn-scan.txt
+>kali@kali:~$ ls -1 /usr/share/nmap/scripts/smb*
 >
 ># ========== Expected Result ==========
->Starting Nmap 7.95 ( https://nmap.org ) at 2025-09-24 11:07 CDT
->Nmap scan report for 192.168.170.6
->Host is up (0.035s latency).
->Not shown: 998 closed tcp ports (reset)
->PORT   STATE SERVICE
->22/tcp open  ssh
->80/tcp open  http
+>/usr/share/nmap/scripts/smb2-capabilities.nse
+>/usr/share/nmap/scripts/smb2-security-mode.nse
+>/usr/share/nmap/scripts/smb2-time.nse
+>/usr/share/nmap/scripts/smb2-vuln-uptime.nse
+>/usr/share/nmap/scripts/smb-brute.nse
+>/usr/share/nmap/scripts/smb-double-pulsar-backdoor.nse
+>/usr/share/nmap/scripts/smb-enum-domains.nse
+>/usr/share/nmap/scripts/smb-enum-groups.nse
+>/usr/share/nmap/scripts/smb-enum-processes.nse
+>/usr/share/nmap/scripts/smb-enum-sessions.nse
+>/usr/share/nmap/scripts/smb-enum-shares.nse
+>/usr/share/nmap/scripts/smb-enum-users.nse
+>/usr/share/nmap/scripts/smb-os-discovery.nse
 >...
+># =====================================
+>```
+
+Using the nmap scripting engine to perform OS discovery
+>``` shell
+>kali@kali:~$ nmap -v -p 139,445 --script smb-os-discovery 192.168.50.152
+>
+># ========== Expected Result ==========
+>...
+>PORT    STATE SERVICE      REASON
+>139/tcp open  netbios-ssn  syn-ack
+>445/tcp open  microsoft-ds syn-ack
+>
+>Host script results:
+>| smb-os-discovery:
+>|   OS: Windows 10 Pro 22000 (Windows 10 Pro 6.3)
+>|   OS CPE: cpe:/o:microsoft:windows_10::-
+>|   Computer name: client01
+>|   NetBIOS computer name: CLIENT01\x00
+>|   Domain name: megacorptwo.com
+>|   Forest name: megacorptwo.com
+>|   FQDN: client01.megacorptwo.com
+>|_  System time: 2022-03-17T11:54:20-07:00
+>...
+># =====================================
+>```
+
+Running 'net view' to list remote shares
+>``` shell
+>C:\Users\student>net view \\dc01 /all
+>
+># ========== Expected Result ==========
+>Shared resources at \\dc01
+>
+>Share name  Type  Used as  Comment
+>
+>-------------------------------------------------------------------------------
+>ADMIN$      Disk           Remote Admin
+>C$          Disk           Default share
+>IPC$        IPC            Remote IPC
+>NETLOGON    Disk           Logon server share
+>SYSVOL      Disk           Logon server share
+>The command completed successfully.
+># =====================================
+>```
+
+Lab 1 - How many hosts have port 445 open?
+>``` shell
+># Perform SMB scan on port 445
+>kali@kali:~$ sudo nmap -v -p 445 -oG smb-445-scan.txt 192.168.149.1-254
+>
+># ========== Expected Result ==========
+>Starting Nmap 7.95 ( https://nmap.org ) at 2025-09-30 09:51 CDT
+>Initiating Ping Scan at 09:51
+>Scanning 254 hosts [4 ports/host]
+>Completed Ping Scan at 09:51, 3.34s elapsed (254 total hosts)
+>Initiating Parallel DNS resolution of 17 hosts. at 09:51
+>Completed Parallel DNS resolution of 17 hosts. at 09:51, 0.00s elapsed
+>Nmap scan report for 192.168.149.1 [host down]
+>Nmap scan report for 192.168.149.2 [host down]
+>...
+>Nmap scan report for 192.168.149.254
+>Host is up (0.038s latency).
+>
+>PORT    STATE  SERVICE
+>445/tcp closed microsoft-ds
+>
+>Read data files from: /usr/share/nmap
+>Nmap done: 254 IP addresses (17 hosts up) scanned in 3.92 seconds
+>           Raw packets sent: 1933 (73.388KB) | Rcvd: 45 (1.924KB)
 ># =====================================
 >
 ># Grep to find live hosts
->kali@kali:~$ grep open syn-scan.txt | cut -d" " -f2 | sort -u
+>kali@kali:~$ grep "445/open" smb-445-scan.txt | cut -d" " -f2 | sort -u | wc -l
 >
 ># ========== Expected Result ==========
->192.168.170.11
->192.168.170.12
->192.168.170.13
->192.168.170.14
->192.168.170.149
->192.168.170.15
->192.168.170.151
->192.168.170.152
->192.168.170.20
->192.168.170.21
->192.168.170.22
->192.168.170.251
->192.168.170.254
->192.168.170.6
->192.168.170.8
->192.168.170.9
+>10
 ># =====================================
->
-># Grep to find live hosts with port 25 open
->kali@kali:~$ grep "25/open" syn-scan.txt
->
-># ========== Expected Result ==========
->Host: 192.168.170.8 ()  Ports: 22/open/tcp//ssh///, 25/open/tcp//smtp///        Ignored State: closed (998)
-># =====================================
->```
->192.168.170.8
+>10
+
+Lab 2
