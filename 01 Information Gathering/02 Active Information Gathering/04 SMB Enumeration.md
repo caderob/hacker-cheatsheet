@@ -162,3 +162,70 @@ Lab 2 - What are the three reported admin shares on the domain controller?
 ># =====================================
 >```
 >ADMIN$,C$,IPC$
+
+Lab 3 - Inspect the comments on one of the SMB shares of the host that has the user 'alfred'
+>``` shell
+># Scan the subnet for hosts with SMB (port 445) open
+>kali@kali:~$ sudo nmap -v -p 445 --open -oG smb-scan.txt 192.168.149.1-254
+>
+># ========== Expected Result ==========
+>Starting Nmap 7.95 ( https://nmap.org ) at 2025-09-30 10:10 CDT
+>Initiating Ping Scan at 10:10
+>Scanning 254 hosts [4 ports/host]
+>Completed Ping Scan at 10:10, 3.35s elapsed (254 total hosts)
+>Initiating Parallel DNS resolution of 17 hosts. at 10:10
+>Completed Parallel DNS resolution of 17 hosts. at 10:10, 0.00s elapsed
+>Initiating SYN Stealth Scan at 10:10
+>Scanning 17 hosts [1 port/host]
+>Discovered open port 445/tcp on 192.168.149.13
+>Discovered open port 445/tcp on 192.168.149.11
+>Discovered open port 445/tcp on 192.168.149.9
+>...
+># =====================================
+>
+># Extract IP addresses from scan results with port 445 open
+>kali@kali:~$ grep "445/open" smb-scan.txt | cut -d" " -f2
+>
+># ========== Expected Result ==========
+>192.168.149.9
+>192.168.149.11
+>192.168.149.12
+>192.168.149.13
+>192.168.149.14
+>192.168.149.15
+>192.168.149.20
+>192.168.149.149
+>192.168.149.151
+>192.168.149.152
+># =====================================
+>
+># Run enum4linux against each identified host and save output to a file
+>kali@kali:~$ for ip in 192.168.149.9 192.168.149.11 192.168.149.12 192.168.149.13 \
+>          192.168.149.14 192.168.149.15 192.168.149.20 192.168.149.149 \
+>          192.168.149.151 192.168.149.152; do
+>  echo "[*] Running enum4linux on $ip"
+>  enum4linux -a "$ip" | tee "enum4linux_${ip//./_}.txt"
+>  echo "[+] Finished $ip"
+>done
+>echo "[✔] All enum4linux scans completed."
+>
+># Search enum4linux outputs for any mention of the user 'alfred'
+>kali@kali:~$ grep -i alfred enum4linux_*.txt
+>
+># ========== Expected Result ==========
+>enum4linux_192_168_149_13.txt:S-1-22-1-1000 Unix User\alfred (Local User)
+># =====================================
+>
+># Display the SMB share section from the 'alfred' file
+>kali@kali:~$ grep -A 5 -i "Sharename" enum4linux_192_168_149_13.txt
+>
+>># ========== Expected Result ==========
+>        Sharename       Type      Comment
+>        ---------       ----      -------
+>        print$          Disk      Printer Drivers
+>        files           Disk      Flag: OS{83fb2135b4d2431be927fc477ddcfe6e}
+>        IPC$            IPC       IPC Service (samba server (Samba, Ubuntu))
+>Reconnecting with SMB1 for workgroup listing.
+># =====================================
+>```
+>OS{83fb2135b4d2431be927fc477ddcfe6e}
