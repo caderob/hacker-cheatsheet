@@ -86,3 +86,18 @@ Installing the Telnet client
 >PS C:\Windows\system32> dism /online /Enable-Feature /FeatureName:TelnetClient
 >```
 >Note: installing Telnet requires administrative privileges, which could present challenges if we are running as a low-privilege user. However, we could grab the Telnet binary located on another development machine of ours at c:\windows\system32\telnet.exe and transfer it to the Windows machine we are testing from.
+
+Interacting with the SMTP service via Telnet on Windows
+>``` shell
+>C:\Windows\system32>telnet 192.168.50.8 25
+>
+># ========== Expected Result ==========
+>220 mail ESMTP Postfix (Ubuntu)
+>VRFY goofy
+>550 5.1.1 <goofy>: Recipient address rejected: User unknown in local recipient table
+>VRFY root
+>252 2.0.0 root
+># =====================================
+>```
+
+
