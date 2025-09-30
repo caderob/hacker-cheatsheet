@@ -80,3 +80,9 @@ Port scanning SMB via PowerShell
 >TcpTestSucceeded : True
 ># =====================================
 >```
+
+Installing the Telnet client
+>``` shell
+>PS C:\Windows\system32> dism /online /Enable-Feature /FeatureName:TelnetClient
+>```
+>Note: installing Telnet requires administrative privileges, which could present challenges if we are running as a low-privilege user. However, we could grab the Telnet binary located on another development machine of ours at c:\windows\system32\telnet.exe and transfer it to the Windows machine we are testing from.
