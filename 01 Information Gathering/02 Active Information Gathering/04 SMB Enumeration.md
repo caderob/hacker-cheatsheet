@@ -137,7 +137,7 @@ Lab 1 - How many hosts have port 445 open?
 >```
 >10
 
-Lab 2 - List remote shares from the domain controller
+Lab 2 - What are the three reported admin shares on the domain controller?
 >``` shell
 ># RDP to Windows client host
 >kali@kali:~$ xfreerdp3 /u:student /p:lab /v:192.168.149.152
