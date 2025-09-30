@@ -134,6 +134,7 @@ Lab 1 - How many hosts have port 445 open?
 ># ========== Expected Result ==========
 >10
 ># =====================================
+>```
 >10
 
 Lab 2
