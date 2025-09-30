@@ -457,5 +457,27 @@ Lab 3 - Which are the first four open TCP ports?
 
 Lab 4 - Find a service running on a high-range TCP port
 >``` shell
+># Perform a scan scan on ports 50000 to 60000
+>kali@kali:~$ nmap -p50000-60000 --open -T4 192.168.149.52
 >
+># ========== Expected Result ==========
+>Starting Nmap 7.95 ( https://nmap.org ) at 2025-09-30 08:54 CDT
+>Nmap scan report for 192.168.149.52
+>Host is up (0.036s latency).
+>Not shown: 10000 closed tcp ports (reset)
+>PORT      STATE SERVICE
+>59811/tcp open  unknown
+>
+>Nmap done: 1 IP address (1 host up) scanned in 3.37 seconds
+># =====================================
+>
+># Manually connect to a discovered open port
+>kali@kali:~$ nc 192.168.149.52 59811
+>
+># ========== Expected Result ==========
+>You found me. Great job!
+>Here is your flag:
+>OS{6c8d0fe0d9326468552f2bb5b948fb57}
+># =====================================
 >```
+>OS{6c8d0fe0d9326468552f2bb5b948fb57}
