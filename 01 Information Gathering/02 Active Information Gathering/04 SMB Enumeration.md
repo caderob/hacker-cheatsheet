@@ -219,7 +219,7 @@ Lab 3 - Inspect the comments on one of the SMB shares of the host that has the u
 ># Display the SMB share section from the 'alfred' file
 >kali@kali:~$ grep -A 5 -i "Sharename" enum4linux_192_168_149_13.txt
 >
->># ========== Expected Result ==========
+># ========== Expected Result ==========
 >        Sharename       Type      Comment
 >        ---------       ----      -------
 >        print$          Disk      Printer Drivers
