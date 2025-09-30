@@ -16,6 +16,8 @@ The purpose of this cheatsheet is to provide a structured and concise reference 
 >     - [DNS Enumeration](https://github.com/caderob/hacker-cheatsheet/blob/main/01%20Information%20Gathering/02%20Active%20Information%20Gathering/01%20DNS%20Enumeration.md)
 >     - [TCP UDP Port Scanning Theory](https://github.com/caderob/hacker-cheatsheet/blob/main/01%20Information%20Gathering/02%20Active%20Information%20Gathering/02%20TCP%20UDP%20Port%20Scanning%20Theory.md)
 >     - [Port Scanning with Nmap](https://github.com/caderob/hacker-cheatsheet/blob/main/01%20Information%20Gathering/02%20Active%20Information%20Gathering/03%20Port%20Scanning%20with%20Nmap.md)
+>     - [SMB Enumeration](https://github.com/caderob/hacker-cheatsheet/blob/main/01%20Information%20Gathering/02%20Active%20Information%20Gathering/04%20SMB%20Enumeration.md)
+>     - [SMTP Enumeration](https://github.com/caderob/hacker-cheatsheet/blob/main/01%20Information%20Gathering/02%20Active%20Information%20Gathering/05%20SMTP%20Enumeration.md)
 >   - LLM-Powered Active Information Gathering
 >- **Vulnerability Scanning**
 >   - Vulnerability Scanning with Nessus
