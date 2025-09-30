@@ -137,4 +137,28 @@ Lab 1 - How many hosts have port 445 open?
 >```
 >10
 
-Lab 2
+Lab 2 - List remote shares from the domain controller
+>``` shell
+># RDP to Windows client host
+>kali@kali:~$ xfreerdp3 /u:student /p:lab /v:192.168.149.152
+>
+># Running 'net view' to list remote shares
+>C:\Users\student>net view \\dc01 /all
+>
+># ========== Expected Result ==========
+>Shared resources at \\dc01
+>
+>
+>
+>Share name  Type  Used as  Comment
+>
+>-------------------------------------------------------------------------------
+>ADMIN$      Disk           Remote Admin
+>C$          Disk           Default share
+>IPC$        IPC            Remote IPC
+>NETLOGON    Disk           Logon server share
+>SYSVOL      Disk           Logon server share
+>The command completed successfully.
+># =====================================
+>```
+>ADMIN$,C$,IPC$
