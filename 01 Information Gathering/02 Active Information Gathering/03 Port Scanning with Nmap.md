@@ -471,7 +471,7 @@ Lab 4 - Find a service running on a high-range TCP port
 >Nmap done: 1 IP address (1 host up) scanned in 3.37 seconds
 ># =====================================
 >
-># Manually connect to a discovered open port
+># Manually connect to the discovered open port
 >kali@kali:~$ nc 192.168.149.52 59811
 >
 ># ========== Expected Result ==========
@@ -481,3 +481,44 @@ Lab 4 - Find a service running on a high-range TCP port
 ># =====================================
 >```
 >OS{6c8d0fe0d9326468552f2bb5b948fb57}
+
+Lab 5 - Find the host with a web server with the title "Under Construction"
+>``` shell
+># Scan the subnet for web servers on ports 80 and 443
+>kali@kali:~$ nmap -p 80,443 --script http-title 192.168.149.0/24
+>
+># ========== Expected Result ==========
+>Starting Nmap 7.95 ( https://nmap.org ) at 2025-09-30 09:06 CDT
+>Nmap scan report for 192.168.149.6
+>Host is up (0.036s latency).
+>
+>PORT    STATE  SERVICE
+>80/tcp  open   http
+>|_http-title: Under Construction
+>443/tcp closed https
+>
+>Nmap scan report for 192.168.149.8
+>Host is up (0.037s latency).
+>
+>PORT    STATE  SERVICE
+>80/tcp  closed http
+>443/tcp closed https
+>...
+># =====================================
+>
+># Inspect the index.html page of the web server with the title "Under Construction"
+>kali@kali:~$ curl http://192.168.149.6/index.html
+>
+># ========== Expected Result ==========
+><html>
+>        <head>
+>                <title>Under Construction</title>
+>        </head>
+>        <body>
+>                Flag: OS{b88ecfddaa7a74f8233e3ac08a6d6b05}
+>                This site is still under construction, please come back later.
+>        </body>
+></html>
+># =====================================
+>```
+>OS{b88ecfddaa7a74f8233e3ac08a6d6b05}
