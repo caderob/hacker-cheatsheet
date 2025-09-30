@@ -53,14 +53,30 @@ Using Python to script the SMTP user enumeration
 Running the Python script to perform SMTP user enumeration
 >``` shell
 >kali@kali:~$ python3 smtp.py root 192.168.50.8
+>
 ># ========== Expected Result ==========
 >b'220 mail ESMTP Postfix (Ubuntu)\r\n'
 >b'252 2.0.0 root\r\n'
 ># =====================================
 >
 >kali@kali:~$ python3 smtp.py johndoe 192.168.50.8
+>
 ># ========== Expected Result ==========
 >b'220 mail ESMTP Postfix (Ubuntu)\r\n'
 >b'550 5.1.1 <johndoe>: Recipient address rejected: User unknown in local recipient table\r\n'
+># =====================================
+>```
+
+Port scanning SMB via PowerShell
+>``` shell
+>PS C:\Users\student> Test-NetConnection -Port 25 192.168.50.8
+>
+># ========== Expected Result ==========
+>ComputerName     : 192.168.50.8
+>RemoteAddress    : 192.168.50.8
+>RemotePort       : 25
+>InterfaceAlias   : Ethernet0
+>SourceAddress    : 192.168.50.152
+>TcpTestSucceeded : True
 ># =====================================
 >```
