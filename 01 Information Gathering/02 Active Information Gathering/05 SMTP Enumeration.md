@@ -137,7 +137,7 @@ Lab 1 - Search your target network range to identify any systems that respond to
 ># run VRFY command against the root user
 >kali@kali:~$ nc 192.168.149.8 25
 >
->># ========== Expected Result ==========
+># ========== Expected Result ==========
 >220 mail ESMTP Postfix (Ubuntu)
 >VRFY root
 >252 2.0.0 root
