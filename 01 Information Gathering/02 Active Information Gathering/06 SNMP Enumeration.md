@@ -1,6 +1,4 @@
-# Active Information Gathering
-
-## SNMP Enumeration
+# SNMP Enumeration
 
 Using nmap to perform a SNMP scan
 >``` shell
