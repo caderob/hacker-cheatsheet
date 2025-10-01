@@ -1,6 +1,4 @@
-# Passive Information Gathering
-
-## Open-Source Code (GitHub, GitHub Gist, GitLab, SourceForge)
+# Open-Source Code (GitHub, GitHub Gist, GitLab, SourceForge)
 
 Search the 'megacorpone' GitHub account for any files with "users" in the filename
 >``` shell
