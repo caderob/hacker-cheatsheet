@@ -1,6 +1,4 @@
-# Active Information Gathering
-
-## SMTP Enumeration
+# SMTP Enumeration
 
 Using nc to validate SMTP users
 >``` shell
