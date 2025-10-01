@@ -20,6 +20,7 @@ The purpose of this cheatsheet is to provide a structured and concise reference 
 >     - [SMB Enumeration](https://github.com/caderob/hacker-cheatsheet/blob/main/01%20Information%20Gathering/02%20Active%20Information%20Gathering/04%20SMB%20Enumeration.md)
 >     - [SMTP Enumeration](https://github.com/caderob/hacker-cheatsheet/blob/main/01%20Information%20Gathering/02%20Active%20Information%20Gathering/05%20SMTP%20Enumeration.md)
 >     - [SNMP Enumeration](https://github.com/caderob/hacker-cheatsheet/blob/main/01%20Information%20Gathering/02%20Active%20Information%20Gathering/06%20SNMP%20Enumeration.md)
+>     - [Active LLM-Aided Enumeration](https://github.com/caderob/hacker-cheatsheet/blob/main/01%20Information%20Gathering/02%20Active%20Information%20Gathering/07%20Active%20LLM-Aided%20Enumeration.md)
 >- **Vulnerability Scanning**
 >   - Vulnerability Scanning with Nessus
 >   - Vulnerability Scanning with Nmap
