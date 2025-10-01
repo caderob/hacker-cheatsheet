@@ -1,6 +1,4 @@
-# Passive Information Gathering
-
-## Netcraft (Wappalyzer)
+# Netcraft (Wappalyzer)
 
 Lab 1 - Determine what application server is running on www.megacorpone.com
 >``` shell
