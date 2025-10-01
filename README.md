@@ -23,6 +23,7 @@ The purpose of this cheatsheet is to provide a structured and concise reference 
 >     - [Active LLM-Aided Enumeration](https://github.com/caderob/hacker-cheatsheet/blob/main/01%20Information%20Gathering/02%20Active%20Information%20Gathering/07%20Active%20LLM-Aided%20Enumeration.md)
 >- **Vulnerability Scanning**
 >   - Vulnerability Scanning with Nessus
+>     - [Installing Nessus](https://github.com/caderob/hacker-cheatsheet/blob/main/02%20Vulnerability%20Scanning/01%20Vulnerability%20Scanning%20with%20Nessus/01%20Installing%20Nessus.md)
 >   - Vulnerability Scanning with Nmap
 >- **Introduction to Web Application Attacks**
 >   - Web Application Assessment Tools
