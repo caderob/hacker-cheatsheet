@@ -17,6 +17,7 @@ Using nmap to perform a SNMP scan
 >Nmap done: 1 IP address (1 host up) scanned in 0.49 seconds
 >...
 ># =====================================
+>```
 
 Using nmap to perform a SNMP scan
 >``` shell
@@ -33,6 +34,7 @@ Using nmap to perform a SNMP scan
 >192.168.50.151 [public] Hardware: Intel64 Family 6 Model 79 Stepping 1 AT/AT COMPATIBLE - Software: Windows Version 6.3 (Build 17763 Multiprocessor Free)
 >...
 ># =====================================
+>```
 
 Using snmpwalk to enumerate the entire MIB tree
 >``` shell
@@ -49,6 +51,7 @@ Using snmpwalk to enumerate the entire MIB tree
 >iso.3.6.1.2.1.2.1.0 = INTEGER: 24
 >...
 ># =====================================
+>```
 
 Using snmpwalk to enumerate Windows users
 >``` shell
@@ -60,6 +63,7 @@ Using snmpwalk to enumerate Windows users
 >iso.3.6.1.4.1.77.1.2.25.1.1.7.115.116.117.100.101.110.116 = STRING: "student"
 >iso.3.6.1.4.1.77.1.2.25.1.1.13.65.100.109.105.110.105.115.116.114.97.116.111.114 = STRING: "Administrator"
 ># =====================================
+>```
 
 Using snmpwalk to enumerate Windows processes
 >``` shell
@@ -81,6 +85,7 @@ Using snmpwalk to enumerate Windows processes
 >iso.3.6.1.2.1.25.4.2.1.2.680 = STRING: "svchost.exe"
 >...
 ># =====================================
+>```
 
 Using snmpwalk to enumerate installed software
 >``` shell
@@ -96,6 +101,7 @@ Using snmpwalk to enumerate installed software
 >iso.3.6.1.2.1.25.6.3.1.2.7 = STRING: "Microsoft Visual C++ 2019 X86 Minimum Runtime - 14.27.29016"
 >...
 ># =====================================
+>```
 
 Using snmpwalk to enumerate open TCP ports
 >``` shell
@@ -115,6 +121,7 @@ Using snmpwalk to enumerate open TCP ports
 >iso.3.6.1.2.1.6.13.1.3.0.0.0.0.5985.0.0.0.0.0 = INTEGER: 5985
 >...
 ># =====================================
+>```
 
 Lab 1 - What is the full name of the SNMP server process?
 >``` shell
