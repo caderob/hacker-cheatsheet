@@ -15,6 +15,7 @@ Using nc to validate SMTP users
 >550 5.1.1 <idontexist>: Recipient address rejected: User unknown in local recipient table
 >^C
 ># =====================================
+>```
 
 Using Python to script the SMTP user enumeration
 >``` python
