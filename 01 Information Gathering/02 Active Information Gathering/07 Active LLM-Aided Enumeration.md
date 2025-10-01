@@ -30,7 +30,7 @@ Installing gobuster on Kali
 >kali@kali:~$ sudo apt install gobuster
 >```
 
-Running gobuster DNS subdomain enumeration with our LLM-generated wordlist
+Running gobuster DNS subdomain enumeration with a wordlist
 >``` shell
 >kali@kali:~$ gobuster dns -d megacorpone.com -w wordlist.txt -t 10
 >
