@@ -1,6 +1,8 @@
-# Passive Information Gathering
+# Information Gathering
 
-## Whois Enumeration
+## Passive Information Gathering
+
+### Whois Enumeration
 
 WHOIS forward lookup for megacorpone.com
 >``` shell
