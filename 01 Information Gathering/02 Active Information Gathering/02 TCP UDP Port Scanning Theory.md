@@ -1,6 +1,4 @@
-# Active Information Gathering
-
-## TCP/UDP Port Scanning Theory
+# TCP/UDP Port Scanning Theory
 
 Using netcat to perform a TCP port scan
 >``` shell
