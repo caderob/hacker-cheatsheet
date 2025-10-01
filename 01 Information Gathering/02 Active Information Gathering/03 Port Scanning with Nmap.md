@@ -1,6 +1,4 @@
-# Active Information Gathering
-
-## Port Scanning with Nmap
+# Port Scanning with Nmap
 
 Scanning an IP for the 1000 most popular TCP ports
 >``` shell
