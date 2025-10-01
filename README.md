@@ -12,6 +12,7 @@ The purpose of this cheatsheet is to provide a structured and concise reference 
 >     - [Google Hacking](https://github.com/caderob/hacker-cheatsheet/blob/main/01%20Information%20Gathering/01%20Passive%20Information%20Gathering/02%20Google%20Hacking.md)
 >     - [Netcraft (Wappalyzer)](https://github.com/caderob/hacker-cheatsheet/blob/main/01%20Information%20Gathering/01%20Passive%20Information%20Gathering/03%20Netcraft%20(Wappalyzer).md)
 >     - [Open-Source Code (GitHub, GitHub Gist, GitLab, SourceForge)](https://github.com/caderob/hacker-cheatsheet/blob/main/01%20Information%20Gathering/01%20Passive%20Information%20Gathering/04%20Open-Source%20Code%20(GitHub%2C%20GitHub%20Gist%2C%20GitLab%2C%20SourceForge).md)
+>     - [Passive LLM-Aided Enumeration](https://github.com/caderob/hacker-cheatsheet/blob/main/01%20Information%20Gathering/01%20Passive%20Information%20Gathering/05%20Passive%20LLM-Aided%20Enumeration.md)
 >   - [Active Information Gathering](https://github.com/caderob/hacker-cheatsheet/tree/main/01%20Information%20Gathering/02%20Active%20Information%20Gathering)
 >     - [DNS Enumeration](https://github.com/caderob/hacker-cheatsheet/blob/main/01%20Information%20Gathering/02%20Active%20Information%20Gathering/01%20DNS%20Enumeration.md)
 >     - [TCP UDP Port Scanning Theory](https://github.com/caderob/hacker-cheatsheet/blob/main/01%20Information%20Gathering/02%20Active%20Information%20Gathering/02%20TCP%20UDP%20Port%20Scanning%20Theory.md)
