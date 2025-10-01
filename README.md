@@ -21,9 +21,11 @@ The purpose of this cheatsheet is to provide a structured and concise reference 
 >     - [SMTP Enumeration](https://github.com/caderob/hacker-cheatsheet/blob/main/01%20Information%20Gathering/02%20Active%20Information%20Gathering/05%20SMTP%20Enumeration.md)
 >     - [SNMP Enumeration](https://github.com/caderob/hacker-cheatsheet/blob/main/01%20Information%20Gathering/02%20Active%20Information%20Gathering/06%20SNMP%20Enumeration.md)
 >     - [Active LLM-Aided Enumeration](https://github.com/caderob/hacker-cheatsheet/blob/main/01%20Information%20Gathering/02%20Active%20Information%20Gathering/07%20Active%20LLM-Aided%20Enumeration.md)
->- **Vulnerability Scanning**
->   - Vulnerability Scanning with Nessus
+>- [**Vulnerability Scanning**](https://github.com/caderob/hacker-cheatsheet/tree/main/02%20Vulnerability%20Scanning)
+>   - [Vulnerability Scanning with Nessus](https://github.com/caderob/hacker-cheatsheet/tree/main/02%20Vulnerability%20Scanning/01%20Vulnerability%20Scanning%20with%20Nessus)
 >     - [Installing Nessus](https://github.com/caderob/hacker-cheatsheet/blob/main/02%20Vulnerability%20Scanning/01%20Vulnerability%20Scanning%20with%20Nessus/01%20Installing%20Nessus.md)
+>     - [Performing a Vulnerability Scan](https://github.com/caderob/hacker-cheatsheet/blob/main/02%20Vulnerability%20Scanning/01%20Vulnerability%20Scanning%20with%20Nessus/02%20Performing%20a%20Vulnerability%20Scan.md)
+>     - Analyzing the Results
 >   - Vulnerability Scanning with Nmap
 >- **Introduction to Web Application Attacks**
 >   - Web Application Assessment Tools
