@@ -1,6 +1,4 @@
-# Passive Information Gathering
-
-## Google Hacking
+# Google Hacking
 
 Searching with a Site Operator
 >``` shell
