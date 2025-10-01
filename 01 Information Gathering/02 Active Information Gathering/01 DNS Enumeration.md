@@ -1,6 +1,4 @@
-# Active Information Gathering
-
-## DNS Enumeration
+# DNS Enumeration
 
 Using host to find the A host record for www.megacorpone.com
 >``` shell
