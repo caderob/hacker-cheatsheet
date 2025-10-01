@@ -118,7 +118,7 @@ Using snmpwalk to enumerate open TCP ports
 
 Lab 1 - What is the full name of the SNMP server process?
 >``` shell
-># 
+># Scan subnet for live hosts
 >kali@kali:~$ sudo nmap -sn 192.168.159.0/24 -oG live.txt
 >
 ># ========== Expected Result ==========
@@ -132,10 +132,10 @@ Lab 1 - What is the full name of the SNMP server process?
 >...
 ># =====================================
 >
-># 
+># Extract IPs
 >kali@kali:~$ grep Up live.txt | cut -d" " -f2 > live-hosts.txt
 >
->#
+># Brute-force SNMP community strings
 >kali@kali:~$ onesixtyone -c /usr/share/doc/onesixtyone/dict.txt -i live-hosts.txt
 >
 ># ========== Expected Result ==========
@@ -143,7 +143,7 @@ Lab 1 - What is the full name of the SNMP server process?
 >192.168.159.151 [public] Hardware: AMD64 Family 23 Model 1 Stepping 2 AT/AT COMPATIBLE - Software: Windows Version 6.3 (Build 17763 Multiprocessor Free)
 ># =====================================
 >
->#
+># Enumerate running processes via SNMP
 >kali@kali:~$ snmpwalk -v1 -c public 192.168.159.151 1.3.6.1.2.1.25.4.2.1.2
 >
 ># ========== Expected Result ==========
@@ -155,3 +155,42 @@ Lab 1 - What is the full name of the SNMP server process?
 ># =====================================
 >```
 >snmp.exe
+
+Lab 2 - Run an SNMP query. What is the first Interface name listed in the output?
+>``` shell
+># Scan subnet for live hosts
+>kali@kali:~$ sudo nmap -sn 192.168.159.0/24 -oG live.txt
+>
+># ========== Expected Result ==========
+>Starting Nmap 7.95 ( https://nmap.org ) at 2025-10-01 08:30 CDT
+>Nmap scan report for 192.168.159.6
+>Host is up (0.035s latency).
+>Nmap scan report for 192.168.159.8
+>Host is up (0.036s latency).
+>Nmap scan report for 192.168.159.9
+>Host is up (0.035s latency).
+>...
+># =====================================
+>
+># Extract IPs
+>kali@kali:~$ grep Up live.txt | cut -d" " -f2 > live-hosts.txt
+>
+># Brute-force SNMP community strings
+>kali@kali:~$ onesixtyone -c /usr/share/doc/onesixtyone/dict.txt -i live-hosts.txt
+>
+># ========== Expected Result ==========
+>Scanning 17 hosts, 50 communities
+>192.168.159.151 [public] Hardware: AMD64 Family 23 Model 1 Stepping 2 AT/AT COMPATIBLE - Software: Windows Version 6.3 (Build 17763 Multiprocessor Free)
+># =====================================
+>
+># Using snmpwalk to enumerate the entire MIB tree and translate any hexadecimal string into ASCII
+>kali@kali:~$ snmpwalk -c public -v1 -t 10 -Oa 192.168.159.151 1.3.6.1.2.1.2.2.1.2
+>
+># ========== Expected Result ==========
+>iso.3.6.1.2.1.2.2.1.2.1 = STRING: "Software Loopback Interface 1."
+>iso.3.6.1.2.1.2.2.1.2.2 = STRING: "Microsoft 6to4 Adapter."
+>iso.3.6.1.2.1.2.2.1.2.3 = STRING: "WAN Miniport (PPTP)."
+>...
+># =====================================
+>```
+>Software Loopback Interface 1.
