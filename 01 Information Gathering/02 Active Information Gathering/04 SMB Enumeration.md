@@ -1,6 +1,4 @@
-# Active Information Gathering
-
-## SMB Enumeration
+# SMB Enumeration
 
 Using nmap to scan for the NetBIOS service
 >``` shell
