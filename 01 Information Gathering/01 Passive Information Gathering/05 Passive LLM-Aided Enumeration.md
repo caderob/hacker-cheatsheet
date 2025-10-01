@@ -1,6 +1,4 @@
-# Passive Information Gathering
-
-## Passive LLM-Aided Enumeration
+# Passive LLM-Aided Enumeration
 
 WHOIS prompt for megacorpone.com
 >``` shell
