@@ -86,7 +86,7 @@ Public Company Information Prompt for megacorpone.com
 
 Top-20 google dorks prompt for megacorpone.com
 >``` shell
->can you provide the best 20 google dorks for megacorpone.com website tailored for a penetration test?
+>Can you provide the best 20 google dorks for megacorpone.com website tailored for a penetration test?
 >
 ># ========== Expected Result ==========
 >...
