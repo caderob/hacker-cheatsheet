@@ -1,6 +1,4 @@
-# Active Information Gathering
-
-## Active LLM-Aided Enumeration
+# Active LLM-Aided Enumeration
 
 LLM's prompt to generate a DNS subdomain wordlist
 >``` shell
