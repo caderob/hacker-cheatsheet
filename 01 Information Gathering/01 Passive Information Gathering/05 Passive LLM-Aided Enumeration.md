@@ -30,6 +30,9 @@ WHOIS prompt for megacorpone.com
 
 Public Company Information Prompt for megacorpone.com
 >``` shell
+>Can you print out all the public information about company structure and employees of megacorpone?
+>
+># ========== Expected Result ==========
 >MegaCorp One is a company specializing in disruptive innovation within the nanotechnology industry.  The company's headquarters are located at 2 Old Mill St, Rachel, Nevada, 89001, United States. 
 >
 >Company Structure and Leadership:
