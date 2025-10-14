@@ -25,7 +25,7 @@ The purpose of this cheatsheet is to provide a structured and concise reference 
 >   - [Vulnerability Scanning with Nessus](https://github.com/caderob/hacker-cheatsheet/tree/main/02%20Vulnerability%20Scanning/01%20Vulnerability%20Scanning%20with%20Nessus)
 >     - [Installing Nessus](https://github.com/caderob/hacker-cheatsheet/blob/main/02%20Vulnerability%20Scanning/01%20Vulnerability%20Scanning%20with%20Nessus/01%20Installing%20Nessus.md)
 >     - [Performing a Vulnerability Scan](https://github.com/caderob/hacker-cheatsheet/blob/main/02%20Vulnerability%20Scanning/01%20Vulnerability%20Scanning%20with%20Nessus/02%20Performing%20a%20Vulnerability%20Scan.md)
->     - Analyzing the Results
+>     - [Analyzing the Results](https://github.com/caderob/hacker-cheatsheet/blob/main/02%20Vulnerability%20Scanning/01%20Vulnerability%20Scanning%20with%20Nessus/03%20Analyzing%20the%20Results.md)
 >   - Vulnerability Scanning with Nmap
 >- **Introduction to Web Application Attacks**
 >   - Web Application Assessment Tools
