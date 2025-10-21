@@ -36,8 +36,11 @@ The purpose of this cheatsheet is to provide a structured and concise reference 
 >     - [Fingerprinting Web Servers with Nmap](https://github.com/caderob/hacker-cheatsheet/blob/main/03%20Introduction%20to%20Web%20Application%20Attacks/01%20Web%20Application%20Assessment%20Tools/01%20Fingerprinting%20Web%20Servers%20with%20Nmap.md)
 >     - [Directory Brute Force with Gobuster](https://github.com/caderob/hacker-cheatsheet/blob/main/03%20Introduction%20to%20Web%20Application%20Attacks/01%20Web%20Application%20Assessment%20Tools/02%20Directory%20Brute%20Force%20with%20Gobuster.md)
 >     - [Security Testing with Burp Suite](https://github.com/caderob/hacker-cheatsheet/blob/main/03%20Introduction%20to%20Web%20Application%20Attacks/01%20Web%20Application%20Assessment%20Tools/03%20Security%20Testing%20with%20Burp%20Suite.md)
->   - Web Application Enumeration
->   - Cross-Site Scripting
+>   - [Web Application Enumeration](https://github.com/caderob/hacker-cheatsheet/tree/main/03%20Introduction%20to%20Web%20Application%20Attacks/02%20Web%20Application%20Enumeration)
+>     - [Enumerating and Abusing APIs](https://github.com/caderob/hacker-cheatsheet/blob/main/03%20Introduction%20to%20Web%20Application%20Attacks/02%20Web%20Application%20Enumeration/01%20Enumerating%20and%20Abusing%20APIs.md) 
+>   - [Cross-Site Scripting](https://github.com/caderob/hacker-cheatsheet/tree/main/03%20Introduction%20to%20Web%20Application%20Attacks/03%20Cross-Site%20Scripting)
+>     - [Basic XSS](https://github.com/caderob/hacker-cheatsheet/blob/main/03%20Introduction%20to%20Web%20Application%20Attacks/03%20Cross-Site%20Scripting/01%20Basic%20XSS.md)
+>     - [Privilege Escalation via XSS](https://github.com/caderob/hacker-cheatsheet/blob/main/03%20Introduction%20to%20Web%20Application%20Attacks/03%20Cross-Site%20Scripting/02%20Privilege%20Escalation%20via%20XSS.md) 
 >- **Common Web Application Attacks**
 >   - Directory Traversal
 >   - File Inclusion Vulnerabilities
