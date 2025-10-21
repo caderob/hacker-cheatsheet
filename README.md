@@ -30,8 +30,12 @@ The purpose of this cheatsheet is to provide a structured and concise reference 
 >     - [Working with Nessus Plugins](https://github.com/caderob/hacker-cheatsheet/blob/main/02%20Vulnerability%20Scanning/01%20Vulnerability%20Scanning%20with%20Nessus/05%20Working%20with%20Nessus%20Plugins.md)
 >   - [Vulnerability Scanning with Nmap](https://github.com/caderob/hacker-cheatsheet/tree/main/02%20Vulnerability%20Scanning/02%20Vulnerability%20Scanning%20with%20Nmap)
 >     - [NSE Vulnerability Scripts](https://github.com/caderob/hacker-cheatsheet/blob/main/02%20Vulnerability%20Scanning/02%20Vulnerability%20Scanning%20with%20Nmap/01%20NSE%20Vulnerability%20Scripts.md)
->- **Introduction to Web Application Attacks**
->   - Web Application Assessment Tools
+>     - [Working with NSE Scripts](https://github.com/caderob/hacker-cheatsheet/blob/main/02%20Vulnerability%20Scanning/02%20Vulnerability%20Scanning%20with%20Nmap/02%20Working%20with%20NSE%20Scripts.md)
+>- [**Introduction to Web Application Attacks**](https://github.com/caderob/hacker-cheatsheet/tree/main/03%20Introduction%20to%20Web%20Application%20Attacks)
+>   - [Web Application Assessment Tools](https://github.com/caderob/hacker-cheatsheet/tree/main/03%20Introduction%20to%20Web%20Application%20Attacks/01%20Web%20Application%20Assessment%20Tools)
+>     - [Fingerprinting Web Servers with Nmap](https://github.com/caderob/hacker-cheatsheet/blob/main/03%20Introduction%20to%20Web%20Application%20Attacks/01%20Web%20Application%20Assessment%20Tools/01%20Fingerprinting%20Web%20Servers%20with%20Nmap.md)
+>     - [Directory Brute Force with Gobuster](https://github.com/caderob/hacker-cheatsheet/blob/main/03%20Introduction%20to%20Web%20Application%20Attacks/01%20Web%20Application%20Assessment%20Tools/02%20Directory%20Brute%20Force%20with%20Gobuster.md)
+>     - [Security Testing with Burp Suite](https://github.com/caderob/hacker-cheatsheet/blob/main/03%20Introduction%20to%20Web%20Application%20Attacks/01%20Web%20Application%20Assessment%20Tools/03%20Security%20Testing%20with%20Burp%20Suite.md)
 >   - Web Application Enumeration
 >   - Cross-Site Scripting
 >- **Common Web Application Attacks**
