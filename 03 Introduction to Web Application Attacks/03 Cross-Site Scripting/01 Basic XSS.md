@@ -6,7 +6,7 @@ Special characters for HTML and JavaScript
 >```
 
 Inspecting Visitor Plugin Record Creation Function
->``` php
+>``` python
 >function VST_save_record() {
 >	global $wpdb;
 >	$table_name = $wpdb->prefix . 'VST_registros';>>
