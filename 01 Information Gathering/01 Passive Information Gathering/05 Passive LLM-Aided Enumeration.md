@@ -159,3 +159,21 @@ Website technology stack prompt
 >These technologies collectively support the functionality and performance of the megacorpone.com website. 
 ># =====================================
 >```
+
+Lab 1 - Ask ChatGPT: "What is the WHOIS information for the domain megacorpone.com?" Based on the response, who is listed as the registrant of megacorpone.com?
+>A) Alan Grofield
+
+Lab 2 - Based on the previous GPT output, what is the domain status of megacorpone.com?
+>C) clientTransferProhibited
+
+Lab 3 - Ask ChatGPT "Can you generate the best Google dorks for the website megacorpone.com?" Based on the response, which Google dork, according to ChatGPT, identifies subdomains of megacorpone.com?
+>D) site:*.megacorpone.com
+
+Lab 4 - Ask ChatGPT: "What public information is available about the leadership of MegacorpOne.com and their social media presence?" Based on the output, what is the Twitter handle of the CEO of MegaCorp One?
+>A) @Joe_Sheer
+
+Lab 5 - Ask ChatGPT: "Can you provide the top Google dorks to search for exposed repositories related to megacorpone.com?" Which Google dork can help identify exposed source code repositories for megacorpone.com?
+>A) site:megacorpone.com intext:"github.com" OR intext:"gitlab.com"
+
+Lab 6 - Ask ChatGPT "Can you provide advanced passive enumeration techniques for identifying potential subdomains on megacorpone.com?" Which tool, on Kali, combined with ChatGPT's suggestions, could enhance subdomain enumeration results?
+>A) Sublist3r/Subfinder
