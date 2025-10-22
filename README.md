@@ -56,6 +56,7 @@ The purpose of this cheatsheet is to provide a structured and concise reference 
 >     - [Client Fingerprinting](https://github.com/caderob/hacker-cheatsheet/blob/main/06%20Client-side%20Attacks/01%20Target%20Reconnaissance/02%20Client%20Fingerprinting.md)
 >   - [Exploiting Microsoft Office](https://github.com/caderob/hacker-cheatsheet/tree/main/06%20Client-side%20Attacks/02%20Exploiting%20Microsoft%20Office)
 >     - [Preparing the Attack](https://github.com/caderob/hacker-cheatsheet/blob/main/06%20Client-side%20Attacks/02%20Exploiting%20Microsoft%20Office/01%20Preparing%20the%20Attack.md)
+>     - [Installing Microsoft Office](https://github.com/caderob/hacker-cheatsheet/blob/main/06%20Client-side%20Attacks/02%20Exploiting%20Microsoft%20Office/02%20Installing%20Microsoft%20Office.md)
 >   - Abusing Windows Library Files
 >- **Locating Public Exploits**
 >   - Getting Started
