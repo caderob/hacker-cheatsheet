@@ -1,6 +1,6 @@
 # Client Fingerprinting
 
->Create a link in Canarytokens to obtain operating system and browser information from a target
+Create a link in Canarytokens to obtain operating system and browser information from a target
 >``` shell
 >https://canarytokens.org/generate
 >```
