@@ -121,7 +121,7 @@ Using snmpwalk to enumerate open TCP ports
 ># =====================================
 >```
 
-Lab 1 - What is the full name of the SNMP server process?
+Lab 1 - Scan your target network on VM Group 1 with onesixtyone to identify any SNMP servers. Once done, list all the running process on the only Windows host that is running an SNMP server. What is the full name of the SNMP server process?
 >``` shell
 ># Scan subnet for live hosts
 >kali@kali:~$ sudo nmap -sn 192.168.159.0/24 -oG live.txt
@@ -161,7 +161,7 @@ Lab 1 - What is the full name of the SNMP server process?
 >```
 >snmp.exe
 
-Lab 2 - Run an SNMP query. What is the first Interface name listed in the output?
+Lab 2 - On the same Windows host, run one of the SNMP query we have already explored in this section. This time appending the -Oa parameter to the command. This parameter will automatically translate any hexadecimal string into ASCII that was otherwise not decoded. What is the first Interface name listed in the output?
 >``` shell
 ># Scan subnet for live hosts
 >kali@kali:~$ sudo nmap -sn 192.168.159.0/24 -oG live.txt
