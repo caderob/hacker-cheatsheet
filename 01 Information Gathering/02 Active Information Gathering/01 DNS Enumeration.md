@@ -207,7 +207,7 @@ Using nslookup to perform a simple host enumeration
 ># =====================================
 >```
 
-Lab 1 - Perform a DNS enumeration on the MX records of megacorpone.com: which is the second-to-best priority value listed in the reply?
+Lab 1 - Perform a DNS enumeration on the MX records of megacorpone.com: which is the second-to-best priority value listed in the reply? The DNS priority it's a 2-digit number and lower priority values indicate higher preference.
 >``` shell
 >kali@kali:~$ host -t mx megacorpone.com
 >
@@ -231,7 +231,7 @@ Lab 2 - How many TXT records are associated with the megacorpone.com domain?
 >```
 >2
 
-Lab 3 - What is the IP of the siem.megacorpone.com host?
+Lab 3 - Automate the DNS enumeration of the megacorpone.com domain with DNSEnum. What is the IP of the siem.megacorpone.com host?
 >``` shell
 >kali@kali:~$ dnsenum siem.megacorpone.com
 >
@@ -255,7 +255,7 @@ Lab 3 - What is the IP of the siem.megacorpone.com host?
 >```
 >167.114.21.71
 
-Lab 4 - What text is contained within the TXT record of the info.megacorptwo.com domain?
+Lab 4 - Power up 'Walk Through VM Group 1', connect to the Windows 11 Client (using xfreerdp), and enumerate the DNS megacorptwo.com and its subdomains through nslookup as illustrated in this section. What text is contained within the TXT record of the info.megacorptwo.com domain?
 >``` shell
 ># Connecting to the Windows 11 client
 >kali@kali:~$ xfreerdp3 /u:student /p:lab /v:192.168.170.152
