@@ -1,6 +1,6 @@
 # Netcraft (Wappalyzer)
 
-Lab 1 - Determine what application server is running on www.megacorpone.com
+Lab 1 - From your own Kali VM, use Netcraft to determine what application server is running on www.megacorpone.com.
 >``` shell
 >https://www.wappalyzer.com/lookup/megacorpone.com/
 >```
