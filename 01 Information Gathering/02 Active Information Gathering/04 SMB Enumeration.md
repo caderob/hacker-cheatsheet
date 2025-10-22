@@ -100,7 +100,7 @@ Running 'net view' to list remote shares
 ># =====================================
 >```
 
-Lab 1 - How many hosts have port 445 open?
+Lab 1 - Power on the Walk Through VM Group 1 and use Nmap to create a list of the SMB servers in the VM Group 1. How many hosts have port 445 open?
 >``` shell
 ># Perform SMB scan on port 445
 >kali@kali:~$ sudo nmap -v -p 445 -oG smb-445-scan.txt 192.168.149.1-254
@@ -135,7 +135,7 @@ Lab 1 - How many hosts have port 445 open?
 >```
 >10
 
-Lab 2 - What are the three reported admin shares on the domain controller?
+Lab 2 - On the same group, connect to the Windows 11 client and repeat the shares enumeration against dc01 via the net view command. What are the three reported admin shares? List them separated by commas, without spaces in between.
 >``` shell
 ># RDP to Windows client host
 >kali@kali:~$ xfreerdp3 /u:student /p:lab /v:192.168.149.152
@@ -161,7 +161,7 @@ Lab 2 - What are the three reported admin shares on the domain controller?
 >```
 >ADMIN$,C$,IPC$
 
-Lab 3 - Inspect the comments on one of the SMB shares of the host that has the user 'alfred'
+Lab 3 - Server message block (SMB) is an extremely important service that can be used to determine a wealth of information about a server, including its users. Start up Topic Exercise VM Group 1 and use Nmap to identify the lab machines listening on the SMB port and then use enum4linux to enumerate those machines. In doing so, you will find a machine with the local user alfred. The flag is located in the comments on one of the SMB shares of the host that has the alfred user.
 >``` shell
 ># Scan the subnet for hosts with SMB (port 445) open
 >kali@kali:~$ sudo nmap -v -p 445 --open -oG smb-scan.txt 192.168.149.1-254
