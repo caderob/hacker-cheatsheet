@@ -5,7 +5,7 @@ Search the 'megacorpone' GitHub account for any files with "users" in the filena
 >GitHub Search: users in:filename owner:megacorpone
 >```
 
-Lab 1 - Find a useraname using open-source GitHub
+Lab 1 - Perform open-source recon on the MegaCorp One's GitHub repository and try to find user credentials. What is the username associated with the discovered hash?
 >``` shell
 >https://github.com/megacorpone/megacorpone.com/blob/master/megacorpone/xampp.users
 >```
