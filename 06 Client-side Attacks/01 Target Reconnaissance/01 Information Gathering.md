@@ -42,12 +42,13 @@ Displaying the metadata for brochure.pdf
 ># =====================================
 >```
 
-Lab 1 - What is the Author metadata of a pdf?
+Lab 1 - Download old.pdf from the Mountain Vegetables website on VM #1 by clicking on the OLD button. Use exiftool to review the file's metadata. Enter the value of the Author tag.
 >``` shell
->Download old.pdf (http://192.168.103.197/old.pdf)
+># Download old.pdf (Navigate to http://192.168.103.197/old.pdf)
 >
 >kali@kali:~$ cd Downloads 
 >
+># Display the metadata for old.pdf
 >kali@kali:~/Downloads$ exiftool -a -u old.pdf 
 >
 ># ========== Expected Result ==========
@@ -62,8 +63,9 @@ Lab 1 - What is the Author metadata of a pdf?
 >```
 >OS{b657f9d1e4b94460c7684ecaf1708353}
 
-Lab 2 - Find a hidden PDF file and extract the flag in the metadata
+Lab 2 - Start VM #2 and use gobuster to bruteforce the contents of the web server. Specify "pdf" as the filetype and find a document other than old.pdf and brochure.pdf. After you identify the file, download it and extract the flag in the metadata.
 >``` shell
+># Using gobuster to bruteforce the contents of the web server (Specifing "pdf" as the filetype)
 >kali@kali:~$ gobuster dir -u http://192.168.103.197 -w /usr/share/wordlists/dirb/common.txt -x pdf -t 5
 >
 >># ========== Expected Result ==========
@@ -74,10 +76,11 @@ Lab 2 - Find a hidden PDF file and extract the flag in the metadata
 >...
 ># =====================================
 >
->Download info.pdf (http://192.168.103.197/info.pdf)
+># Download info.pdf (Navigate to http://192.168.103.197/info.pdf)
 >
 >kali@kali:~$ cd Downloads 
 >
+># Display the metadata for info.pdf
 >kali@kali:~/Downloads$ exiftool -a -u info.pdf 
 >
 ># ========== Expected Result ==========
