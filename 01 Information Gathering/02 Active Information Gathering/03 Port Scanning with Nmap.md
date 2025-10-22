@@ -343,7 +343,7 @@ Automating the PowerShell portscanning
 ># =====================================
 >```
 
-Lab 1 - Which host has port 25 open?
+Lab 1 - Start Walk Through Exercises in VM Group 1, use Nmap to conduct a SYN stealth scan of your target IP range, and save the output to a file. Use grep to show machines that are online. Which host has port 25 open? Use 50 as the third IP octet instead of your dynamically assigned IP when submitting the answer.
 >``` shell
 ># Using nmap to perform a network sweep
 >kali@kali:~$ sudo nmap -sS 192.168.135.1-254 -oG syn-scan.txt
@@ -390,7 +390,7 @@ Lab 1 - Which host has port 25 open?
 >```
 >192.168.170.8
 
-Lab 2 - Which host is running a WHOIS server?
+Lab 2 - Perform an Nmap TCP scan against the addresses on the Walk Through Exercises on VM Group 1. Which host is running a WHOIS server? Use 50 as the third IP octet instead of your dynamically assigned IP when submitting the answer.
 >``` shell
 ># Using nmap to perform a network sweep running port 43 (WHOIS)
 >kali@kali:~$ sudo nmap -sS -p 43 192.168.170.1-254 -oG whois-scan.txt
@@ -414,7 +414,7 @@ Lab 2 - Which host is running a WHOIS server?
 >```
 >192.168.170.251
 
-Lab 3 - Which are the first four open TCP ports?
+Lab 3 - Connect via RDP to the Windows 11 client from Walk Through Exercises VM Group 1 and perform TCP port discovery against the Windows DC machine ending with the octet '151' (ex: 192.168.51.151). Which are the first four open TCP ports? List the ports separated by commas.
 >``` shell
 ># Connecting to the Windows 11 client
 >kali@kali:~$ xfreerdp3 /u:student /p:lab /v:192.168.170.152
@@ -453,7 +453,7 @@ Lab 3 - Which are the first four open TCP ports?
 >```
 >53, 88, 135, 139
 
-Lab 4 - Find a service running on a high-range TCP port
+Lab 4 - There is a service running on a high-range TCP port on Information Gathering - Port Scanning - Module Exercises - VM #1. Find it, and you will find the flag together with it.
 >``` shell
 ># Perform a scan scan on ports 50000 to 60000
 >kali@kali:~$ nmap -p50000-60000 --open -T4 192.168.149.52
@@ -480,7 +480,7 @@ Lab 4 - Find a service running on a high-range TCP port
 >```
 >OS{6c8d0fe0d9326468552f2bb5b948fb57}
 
-Lab 5 - Find the host with a web server with the title "Under Construction"
+Lab 5 - The NMAP Scripting Engine includes a many extremely useful scripts to assist in the active recon process for a wide variety of things, not just the handful of services discussed in this Module. In the NMAP library, for example, there are over 100 NSE discovery scripts. For this challenge, you will need to use a new discovery script to help you enumerate the HTTP title of the default page of all the hosts with web servers on the public lab network. Performing something as simple as scanning the web server titles can help you collect all sorts of information about the target, including the purpose of the website, software version information, and even login pages. In this challenge, you need to find the host with a web server with the title "Under Construction" in the Module Exercises VM Group 1. The flag is located on the index.html page of the web server matching this title.
 >``` shell
 ># Scan the subnet for web servers on ports 80 and 443
 >kali@kali:~$ nmap -p 80,443 --script http-title 192.168.149.0/24
