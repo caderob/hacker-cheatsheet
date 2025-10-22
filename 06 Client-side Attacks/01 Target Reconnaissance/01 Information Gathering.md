@@ -68,7 +68,7 @@ Lab 2 - Start VM #2 and use gobuster to bruteforce the contents of the web serve
 ># Using gobuster to bruteforce the contents of the web server (Specifing "pdf" as the filetype)
 >kali@kali:~$ gobuster dir -u http://192.168.103.197 -w /usr/share/wordlists/dirb/common.txt -x pdf -t 5
 >
->># ========== Expected Result ==========
+># ========== Expected Result ==========
 >...
 >/index.html           (Status: 200) [Size: 5443]
 >/info.pdf             (Status: 200) [Size: 309737]
