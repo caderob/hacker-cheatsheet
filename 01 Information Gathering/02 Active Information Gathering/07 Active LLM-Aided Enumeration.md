@@ -57,3 +57,6 @@ Running gobuster DNS subdomain enumeration with a wordlist
 >...
 ># =====================================
 >```
+
+Lab 1 - How does the use of LLMs improve the DNS enumeration process?
+>B) By generating highly customized wordlists based on target-specific patterns.
