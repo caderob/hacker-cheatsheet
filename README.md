@@ -6,6 +6,34 @@ The purpose of this cheatsheet is to provide a structured and concise reference 
 
 ## Contents
 
+>- [**Penetration Testing with Kali Linux: General Course Information**](https://github.com/caderob/hacker-cheatsheet/tree/main/Penetration%20Testing%20with%20Kali%20Linux%3A%20General%20Course%20Information)
+>  - [Getting Started with PWK](https://github.com/caderob/hacker-cheatsheet/tree/main/Penetration%20Testing%20with%20Kali%20Linux%3A%20General%20Course%20Information/Getting%20Started%20with%20PWK)
+>    - [PWK Course Materials](https://github.com/caderob/hacker-cheatsheet/blob/main/Penetration%20Testing%20with%20Kali%20Linux%3A%20General%20Course%20Information/Getting%20Started%20with%20PWK/PWK%20Course%20Materials.md)
+>    - [Connecting to the PWK Lab](https://github.com/caderob/hacker-cheatsheet/blob/main/Penetration%20Testing%20with%20Kali%20Linux%3A%20General%20Course%20Information/Getting%20Started%20with%20PWK/Connecting%20to%20the%20PWK%20Lab.md)
+>- [**Introduction To Cybersecurity**](https://github.com/caderob/hacker-cheatsheet/tree/main/Introduction%20To%20Cybersecurity)
+>  - [The Practice of Cybersecurity](https://github.com/caderob/hacker-cheatsheet/tree/main/Introduction%20To%20Cybersecurity/The%20Practice%20of%20Cybersecurity)
+>    - [On Emulating the Minds of our Opponents](https://github.com/caderob/hacker-cheatsheet/blob/main/Introduction%20To%20Cybersecurity/The%20Practice%20of%20Cybersecurity/On%20Emulating%20the%20Minds%20of%20our%20Opponents.md)
+>  - [Threats and Threat Actors](https://github.com/caderob/hacker-cheatsheet/tree/main/Introduction%20To%20Cybersecurity/Threats%20and%20Threat%20Actors)
+>    - [Recent Cybersecurity Breaches](https://github.com/caderob/hacker-cheatsheet/blob/main/Introduction%20To%20Cybersecurity/Threats%20and%20Threat%20Actors/Recent%20Cybersecurity%20Breaches.md) 
+>  - [The CIA Triad](https://github.com/caderob/hacker-cheatsheet/tree/main/Introduction%20To%20Cybersecurity/The%20CIA%20Triad)
+>    - [Balancing the Triad with Organizational Objectives](https://github.com/caderob/hacker-cheatsheet/blob/main/Introduction%20To%20Cybersecurity/The%20CIA%20Triad/Balancing%20the%20Triad%20with%20Organizational%20Objectives.md)
+>  - [Security Principles, Controls, and Strategies](https://github.com/caderob/hacker-cheatsheet/tree/main/Introduction%20To%20Cybersecurity/Security%20Principles%2C%20Controls%2C%20and%20Strategies)
+>    - [Logging and Chaos Testing](https://github.com/caderob/hacker-cheatsheet/blob/main/Introduction%20To%20Cybersecurity/Security%20Principles%2C%20Controls%2C%20and%20Strategies/Logging%20and%20Chaos%20Testing.md) 
+>  - [Cybersecurity Laws, Regulations, Standards, and Frameworks](https://github.com/caderob/hacker-cheatsheet/tree/main/Introduction%20To%20Cybersecurity/Cybersecurity%20Laws%2C%20Regulations%2C%20Standards%2C%20and%20Frameworks)
+>    - [Anatomy of Cyber](https://github.com/caderob/hacker-cheatsheet/blob/main/Introduction%20To%20Cybersecurity/Cybersecurity%20Laws%2C%20Regulations%2C%20Standards%2C%20and%20Frameworks/Anatomy%20of%20Cyber.md)
+>  - [Career Opportunities in Cybersecurity](https://github.com/caderob/hacker-cheatsheet/tree/main/Introduction%20To%20Cybersecurity/Career%20Opportunities%20in%20Cybersecurity)
+>    - [Additional Roles](https://github.com/caderob/hacker-cheatsheet/blob/main/Introduction%20To%20Cybersecurity/Career%20Opportunities%20in%20Cybersecurity/Additional%20Roles.md)
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
 >- [**Information Gathering**](https://github.com/caderob/hacker-cheatsheet/tree/main/01%20Information%20Gathering)
 >   - [Passive Information Gathering](https://github.com/caderob/hacker-cheatsheet/tree/main/01%20Information%20Gathering/01%20Passive%20Information%20Gathering)
 >     - [Whois Enumeration](https://github.com/caderob/hacker-cheatsheet/blob/main/01%20Information%20Gathering/01%20Passive%20Information%20Gathering/01%20Whois%20Enumeration.md)
