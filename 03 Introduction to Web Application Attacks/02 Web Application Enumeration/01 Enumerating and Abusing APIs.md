@@ -203,38 +203,38 @@ Successfully logging in as the admin account
 ># =====================================
 >```
 
-Lab 1 -
+Lab 1 -     Start up the Walkthrough VM 1 and modify the Kali /etc/hosts file to reflect the provided dynamically-allocated IP address that has been assigned to the offsecwp instance. Use Firefox to get familiar with the Developer Debugging Tools by navigating to the offsecwp site and replicate the steps shown in this Learning Unit. Explore the entire WordPress website and inspect its HTML source code in order to find the flag.
 >``` shell
 >
 >```
->
+>OS{72278a0e8d753c16fb3a15f528ee7846}
 
-Lab 2 -
+Lab 2 - Start Walkthrough VM 2 and replicate the curl command we learned in this section in order to map and exploit the vulnerable APIs. Next, perform a brute force attack to discover another API that has a same pattern as /users/v1. Then, perform a query against the base path of the new API: what's the name of the item belonging to the admin user? NOTE: A dirbuster wordlist should help on this task.
 >``` shell
 >
 >```
->
+>bookTitle22
 
-Lab 3 -
+Lab 3 - This website running on the Exercise VM 1 is dedicated to all things maps! Follow the maps to get the flag.
 >``` shell
 >
 >```
->
+>OS{e0be56e8d2ec7eabb8130d629442ccfb}
 
-Lab 4 -
+Lab 4 - Inspect the Exercise VM 2 web application URL and notice if anything is interesting at the URL level.
 >``` shell
 >
 >```
->
+>OS{fc4f7b434823162d236efc32f1eb10b8}
 
-Lab 5 -
+Lab 5 - We made another website, but something is wrong. The site is available at Exercise VM 3, but it keeps giving some weird, non-standard responses. Check out the HTTP headers that accompany this site.
 >``` shell
 >
 >```
->
+>OS{dd62de0edd392ffeeefb19b044f88545}
 
-Lab 6 -
+Lab 6 - We made this cool website dedicated to the three web amigos: HTML, CSS, and JavaScript. It is available at the web root on the Exercise VM 4. Closely review each of the three friends to find the flag for this challenge.
 >``` shell
 >
 >```
->
+>OS{a7134ebecc2df47621acf3902edfea39}
