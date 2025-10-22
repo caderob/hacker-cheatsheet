@@ -73,19 +73,19 @@ WHOIS reverse lookup for IP 38.100.193.70
 ># =====================================
 >```
 
-Lab 1 - What is the hostname of the third Megacorp One name server?
+Lab 1 - Start up the VM and perform a whois query against the megacorpone.com domain using VM's IP address as WHOIS server. What is the hostname of the third Megacorp One name server?
 >``` shell
 >kali@kali:~$ whois megacorpone.com -h 192.168.208.251
 >```
 >Name Server: NS3.MEGACORPONE.COM
 
-Lab 2 - What is the Registrar's WHOIS server?
+Lab 2 - Based on the previous question answer, what is the Registrar's WHOIS server?
 >``` shell
 >kali@kali:~$ whois megacorpone.com -h 192.168.208.251
 >```
 >Registrar WHOIS Server: whois.gandi.net
 
-Lab 3 - Perform a WHOIS query on the offensive-security.com domain against the machine's IP
+Lab 3 - Perform a WHOIS query on the offensive-security.com domain against the machine's IP. The flag can be found within the DNS section of the WHOIS record.
 >``` shell
 >kali@kali:~$ whois -h 192.168.208.251 offensive-security.com
 >```
