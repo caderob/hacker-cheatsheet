@@ -99,7 +99,7 @@ Interacting with the SMTP service via Telnet on Windows
 ># =====================================
 >```
 
-Lab 1 - What response code does the SMTP server send as a response?
+Lab 1 - Power on the Walk Through Exercises VM Group 1 and search your target network range to identify any systems that respond to SMTP. Once found, open a connection to port 25 via Netcat and run VRFY command against the root user. What response code does the SMTP server send as a response?
 >``` shell
 ># Scan for hosts with SMTP (port 25) open
 >kali@kali:~$ sudo nmap -v -p 25 --open -oG smtp-scan.txt 192.168.149.1-254
