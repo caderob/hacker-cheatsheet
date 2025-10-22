@@ -50,9 +50,12 @@ The purpose of this cheatsheet is to provide a structured and concise reference 
 >   - SQL Theory and Databases
 >   - Manual SQL Exploitation
 >   - Manual and Automated Code Execution
->- **Client-side Attacks**
->   - Target Reconnaissance
->   - Exploiting Microsoft Office
+>- [**Client-side Attacks**](https://github.com/caderob/hacker-cheatsheet/tree/main/06%20Client-side%20Attacks)
+>   - [Target Reconnaissance](https://github.com/caderob/hacker-cheatsheet/tree/main/06%20Client-side%20Attacks/01%20Target%20Reconnaissance)
+>     - [Information Gathering](https://github.com/caderob/hacker-cheatsheet/blob/main/06%20Client-side%20Attacks/01%20Target%20Reconnaissance/01%20Information%20Gathering.md)
+>     - [Client Fingerprinting](https://github.com/caderob/hacker-cheatsheet/blob/main/06%20Client-side%20Attacks/01%20Target%20Reconnaissance/02%20Client%20Fingerprinting.md)
+>   - [Exploiting Microsoft Office](https://github.com/caderob/hacker-cheatsheet/tree/main/06%20Client-side%20Attacks/02%20Exploiting%20Microsoft%20Office)
+>     - [Preparing the Attack](https://github.com/caderob/hacker-cheatsheet/blob/main/06%20Client-side%20Attacks/02%20Exploiting%20Microsoft%20Office/01%20Preparing%20the%20Attack.md)
 >   - Abusing Windows Library Files
 >- **Locating Public Exploits**
 >   - Getting Started
