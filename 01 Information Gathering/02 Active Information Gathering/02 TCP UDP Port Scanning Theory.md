@@ -21,7 +21,7 @@ Using Netcat to perform a UDP port scan
 ># =====================================
 >```
 
-Lab 1 - Which is the lowest TCP open port?
+Lab 1 - Once VM Group 1 is started, perform a Netcat scan against the machine ending with the octet '151' (ex: 192.168.51.151) Which is the lowest TCP open port?
 >``` shell
 >kali@kali:~$ nc -nvv -w 1 -z 192.168.170.151 1-100
 >
@@ -39,7 +39,7 @@ Lab 1 - Which is the lowest TCP open port?
 >```
 >53
 
-Lab 2 - Which is the highest open TCP port?
+Lab 2 - On the same host, perform a netcat TCP scan for the port range 1-10000. Which is the highest open TCP port?
 >``` shell
 >kali@kali:~$ nc -nvv -w 1 -z 192.168.170.151 9000-10000
 >
@@ -57,7 +57,7 @@ Lab 2 - Which is the highest open TCP port?
 >```
 >9389
 
-Lab 3 - Other than port 123, what is the first returned open UDP port in the range 150-200?
+Lab 3 - Other than port 123, what is the first returned open UDP port in the range 150-200 when scanning the machine ending with the octet '151' (ex: 192.168.51.151)?
 >``` shell
 >kali@kali:~$ nc -nvv -u -z -w 1 192.168.170.151 150-200
 >
