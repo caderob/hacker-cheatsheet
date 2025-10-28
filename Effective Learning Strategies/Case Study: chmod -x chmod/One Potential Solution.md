@@ -28,7 +28,7 @@ Sending the contents of chmod to chmodfix.
 >-rwxr-xr-x 1 kali kali 147176 Jun  8 08:20 chmodfix
 ># =====================================
 >
->>kali@kali:~$ cat /usr/bin/chmod > chmodfix
+>kali@kali:~$ cat /usr/bin/chmod > chmodfix
 >
 >kali@kali:~$ ls -l chmodfix
 >
