@@ -2,7 +2,7 @@
 
 Example of a Testing Note.
 >``` shell
->Testing for Cross-Site Scripting 
+>"Testing for Cross-Site Scripting 
 >
 >Testing Target: 192.168.1.52 
 >Application:    XSSBlog
@@ -29,5 +29,5 @@ Example of a Testing Note.
 >
 >5. Test indicated the site is vulnerable to XSS.
 >
->PoC payload: <script>alert(‘Your computer is infected!')</script>
+>PoC payload: <script>alert(‘Your computer is infected!')</script>"
 >```
