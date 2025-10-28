@@ -36,7 +36,15 @@ The purpose of this cheatsheet is to provide a structured and concise reference 
 >     - [Going Deeper: Encountering a Strange Problem](https://github.com/caderob/hacker-cheatsheet/blob/main/Effective%20Learning%20Strategies/Case%20Study%3A%20chmod%20-x%20chmod/Going%20Deeper%3A%20Encountering%20a%20Strange%20Problem.md)
 >     - [One Potential Solution](https://github.com/caderob/hacker-cheatsheet/blob/main/Effective%20Learning%20Strategies/Case%20Study%3A%20chmod%20-x%20chmod/One%20Potential%20Solution.md)
 >     - [Analyzing this Approach](https://github.com/caderob/hacker-cheatsheet/blob/main/Effective%20Learning%20Strategies/Case%20Study%3A%20chmod%20-x%20chmod/Analyzing%20this%20Approach.md)
-
+>- [**Report Writing for Penetration Testers**]()
+>   - [Understanding Note-Taking]()
+>     - [The General Structure of Penetration Testing Notes.md]()
+>     - [Choosing the Right Note-Taking Tool]()
+>     - [Tools to Take Screenshots]()
+>   - [Writing Effective Technical Penetration Testing Reports]()
+>     - [Executive Summary]()
+>     - [Technical Summary]()
+>     - [Appendices, Further Information, and References]()
 
 
 
