@@ -14,7 +14,7 @@ Pertinent Details
 
 Describing the Engagement
 >``` shell
->- "The Client hired OffSec to conduct a penetration test of
+>"The Client hired OffSec to conduct a penetration test of
 >their kali.org web application in October of 2025. The test was conducted
 >from a remote IP between the hours of 9 AM and 5 PM, with no users
 >provided by the Client."
@@ -22,7 +22,7 @@ Describing the Engagement
 
 Identifying the positives
 >``` shell
->- "The application had many forms of hardening in place. First, OffSec was unable to upload malicious files due to the strong filtering
+>"The application had many forms of hardening in place. First, OffSec was unable to upload malicious files due to the strong filtering
 >in place. OffSec was also unable to brute force user accounts
 >because of the robust lockout policy in place. Finally, the strong
 >password policy made trivial password attacks unlikely to succeed.
@@ -31,7 +31,7 @@ Identifying the positives
 
 Explaining a vulnerability
 >``` shell
->- "However, there were still areas of concern within the application.
+>"However, there were still areas of concern within the application.
 >OffSec was able to inject arbitrary JavaScript into the browser of
 >an unwitting victim that would then be run in the context of that
 >victim. In conjunction with the username enumeration on the login
