@@ -61,7 +61,10 @@ The purpose of this cheatsheet is to provide a structured and concise reference 
 >     - [SNMP Enumeration](https://github.com/caderob/hacker-cheatsheet/blob/main/Information%20Gathering/Active%20Information%20Gathering/SNMP%20Enumeration.md)
 >     - [Active LLM-Aided Enumeration](https://github.com/caderob/hacker-cheatsheet/blob/main/Information%20Gathering/Active%20Information%20Gathering/Active%20LLM-Aided%20Enumeration.md)
 >- [**Vulnerability Scanning**](https://github.com/caderob/hacker-cheatsheet/tree/main/Vulnerability%20Scanning)
->   - [Vulnerability Scanning Theory]
+>   - [Vulnerability Scanning Theory](https://github.com/caderob/hacker-cheatsheet/tree/main/Vulnerability%20Scanning/Vulnerability%20Scanning%20Theory)
+>     - [How Vulnerability Scanners Work](https://github.com/caderob/hacker-cheatsheet/blob/main/Vulnerability%20Scanning/Vulnerability%20Scanning%20Theory/How%20Vulnerability%20Scanners%20Work.md)
+>     - [Types of Vulnerability Scans](https://github.com/caderob/hacker-cheatsheet/blob/main/Vulnerability%20Scanning/Vulnerability%20Scanning%20Theory/Types%20of%20Vulnerability%20Scans.md)
+>     - [Things to consider in a Vulnerability Scan](https://github.com/caderob/hacker-cheatsheet/blob/main/Vulnerability%20Scanning/Vulnerability%20Scanning%20Theory/Things%20to%20consider%20in%20a%20Vulnerability%20Scan.md)
 >   - [Vulnerability Scanning with Nessus](https://github.com/caderob/hacker-cheatsheet/tree/main/Vulnerability%20Scanning/Vulnerability%20Scanning%20with%20Nessus)
 >     - [Installing Nessus](https://github.com/caderob/hacker-cheatsheet/blob/main/Vulnerability%20Scanning/Vulnerability%20Scanning%20with%20Nessus/Installing%20Nessus.md)
 >     - [Nessus Components](https://github.com/caderob/hacker-cheatsheet/blob/main/Vulnerability%20Scanning/Vulnerability%20Scanning%20with%20Nessus/Nessus%20Components.md)
