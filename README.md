@@ -45,129 +45,21 @@ The purpose of this cheatsheet is to provide a structured and concise reference 
 >     - [Executive Summary](https://github.com/caderob/hacker-cheatsheet/blob/main/Report%20Writing%20for%20Penetration%20Testers/Writing%20Effective%20Technical%20Penetration%20Testing%20Reports/Executive%20Summary.md)
 >     - [Technical Summary](https://github.com/caderob/hacker-cheatsheet/blob/main/Report%20Writing%20for%20Penetration%20Testers/Writing%20Effective%20Technical%20Penetration%20Testing%20Reports/Technical%20Summary.md)
 >     - [Appendices, Further Information, and References](https://github.com/caderob/hacker-cheatsheet/blob/main/Report%20Writing%20for%20Penetration%20Testers/Writing%20Effective%20Technical%20Penetration%20Testing%20Reports/Appendices%2C%20Further%20Information%2C%20and%20References.md)
-
-
-
-
->- [**Information Gathering**](https://github.com/caderob/hacker-cheatsheet/tree/main/01%20Information%20Gathering)
->   - [Passive Information Gathering](https://github.com/caderob/hacker-cheatsheet/tree/main/01%20Information%20Gathering/01%20Passive%20Information%20Gathering)
->     - [Whois Enumeration](https://github.com/caderob/hacker-cheatsheet/blob/main/01%20Information%20Gathering/01%20Passive%20Information%20Gathering/01%20Whois%20Enumeration.md)
->     - [Google Hacking](https://github.com/caderob/hacker-cheatsheet/blob/main/01%20Information%20Gathering/01%20Passive%20Information%20Gathering/02%20Google%20Hacking.md)
->     - [Netcraft (Wappalyzer)](https://github.com/caderob/hacker-cheatsheet/blob/main/01%20Information%20Gathering/01%20Passive%20Information%20Gathering/03%20Netcraft%20(Wappalyzer).md)
->     - [Open-Source Code (GitHub, GitHub Gist, GitLab, SourceForge)](https://github.com/caderob/hacker-cheatsheet/blob/main/01%20Information%20Gathering/01%20Passive%20Information%20Gathering/04%20Open-Source%20Code%20(GitHub%2C%20GitHub%20Gist%2C%20GitLab%2C%20SourceForge).md)
->     - [Passive LLM-Aided Enumeration](https://github.com/caderob/hacker-cheatsheet/blob/main/01%20Information%20Gathering/01%20Passive%20Information%20Gathering/05%20Passive%20LLM-Aided%20Enumeration.md)
->   - [Active Information Gathering](https://github.com/caderob/hacker-cheatsheet/tree/main/01%20Information%20Gathering/02%20Active%20Information%20Gathering)
->     - [DNS Enumeration](https://github.com/caderob/hacker-cheatsheet/blob/main/01%20Information%20Gathering/02%20Active%20Information%20Gathering/01%20DNS%20Enumeration.md)
->     - [TCP UDP Port Scanning Theory](https://github.com/caderob/hacker-cheatsheet/blob/main/01%20Information%20Gathering/02%20Active%20Information%20Gathering/02%20TCP%20UDP%20Port%20Scanning%20Theory.md)
->     - [Port Scanning with Nmap](https://github.com/caderob/hacker-cheatsheet/blob/main/01%20Information%20Gathering/02%20Active%20Information%20Gathering/03%20Port%20Scanning%20with%20Nmap.md)
->     - [SMB Enumeration](https://github.com/caderob/hacker-cheatsheet/blob/main/01%20Information%20Gathering/02%20Active%20Information%20Gathering/04%20SMB%20Enumeration.md)
->     - [SMTP Enumeration](https://github.com/caderob/hacker-cheatsheet/blob/main/01%20Information%20Gathering/02%20Active%20Information%20Gathering/05%20SMTP%20Enumeration.md)
->     - [SNMP Enumeration](https://github.com/caderob/hacker-cheatsheet/blob/main/01%20Information%20Gathering/02%20Active%20Information%20Gathering/06%20SNMP%20Enumeration.md)
->     - [Active LLM-Aided Enumeration](https://github.com/caderob/hacker-cheatsheet/blob/main/01%20Information%20Gathering/02%20Active%20Information%20Gathering/07%20Active%20LLM-Aided%20Enumeration.md)
->- [**Vulnerability Scanning**](https://github.com/caderob/hacker-cheatsheet/tree/main/02%20Vulnerability%20Scanning)
->   - [Vulnerability Scanning with Nessus](https://github.com/caderob/hacker-cheatsheet/tree/main/02%20Vulnerability%20Scanning/01%20Vulnerability%20Scanning%20with%20Nessus)
->     - [Installing Nessus](https://github.com/caderob/hacker-cheatsheet/blob/main/02%20Vulnerability%20Scanning/01%20Vulnerability%20Scanning%20with%20Nessus/01%20Installing%20Nessus.md)
->     - [Nessus Components](https://github.com/caderob/hacker-cheatsheet/blob/main/02%20Vulnerability%20Scanning/01%20Vulnerability%20Scanning%20with%20Nessus/02%20Nessus%20Components.md)
->     - [Performing a Vulnerability Scan](https://github.com/caderob/hacker-cheatsheet/blob/main/02%20Vulnerability%20Scanning/01%20Vulnerability%20Scanning%20with%20Nessus/03%20Performing%20a%20Vulnerability%20Scan.md)
->     - [Analyzing the Results](https://github.com/caderob/hacker-cheatsheet/blob/main/02%20Vulnerability%20Scanning/01%20Vulnerability%20Scanning%20with%20Nessus/04%20Analyzing%20the%20Results.md)
->     - [Performing an Authenticated Vulnerability Scan](https://github.com/caderob/hacker-cheatsheet/blob/main/02%20Vulnerability%20Scanning/01%20Vulnerability%20Scanning%20with%20Nessus/05%20Performing%20an%20Authenticated%20Vulnerability%20Scan.md)
->     - [Working with Nessus Plugins](https://github.com/caderob/hacker-cheatsheet/blob/main/02%20Vulnerability%20Scanning/01%20Vulnerability%20Scanning%20with%20Nessus/06%20Working%20with%20Nessus%20Plugins.md)
->   - [Vulnerability Scanning with Nmap](https://github.com/caderob/hacker-cheatsheet/tree/main/02%20Vulnerability%20Scanning/02%20Vulnerability%20Scanning%20with%20Nmap)
->     - [NSE Vulnerability Scripts](https://github.com/caderob/hacker-cheatsheet/blob/main/02%20Vulnerability%20Scanning/02%20Vulnerability%20Scanning%20with%20Nmap/01%20NSE%20Vulnerability%20Scripts.md)
->     - [Working with NSE Scripts](https://github.com/caderob/hacker-cheatsheet/blob/main/02%20Vulnerability%20Scanning/02%20Vulnerability%20Scanning%20with%20Nmap/02%20Working%20with%20NSE%20Scripts.md)
->- [**Introduction to Web Application Attacks**](https://github.com/caderob/hacker-cheatsheet/tree/main/03%20Introduction%20to%20Web%20Application%20Attacks)
->   - [Web Application Assessment Tools](https://github.com/caderob/hacker-cheatsheet/tree/main/03%20Introduction%20to%20Web%20Application%20Attacks/01%20Web%20Application%20Assessment%20Tools)
->     - [Fingerprinting Web Servers with Nmap](https://github.com/caderob/hacker-cheatsheet/blob/main/03%20Introduction%20to%20Web%20Application%20Attacks/01%20Web%20Application%20Assessment%20Tools/01%20Fingerprinting%20Web%20Servers%20with%20Nmap.md)
->     - [Directory Brute Force with Gobuster](https://github.com/caderob/hacker-cheatsheet/blob/main/03%20Introduction%20to%20Web%20Application%20Attacks/01%20Web%20Application%20Assessment%20Tools/02%20Directory%20Brute%20Force%20with%20Gobuster.md)
->     - [Security Testing with Burp Suite](https://github.com/caderob/hacker-cheatsheet/blob/main/03%20Introduction%20to%20Web%20Application%20Attacks/01%20Web%20Application%20Assessment%20Tools/03%20Security%20Testing%20with%20Burp%20Suite.md)
->   - [Web Application Enumeration](https://github.com/caderob/hacker-cheatsheet/tree/main/03%20Introduction%20to%20Web%20Application%20Attacks/02%20Web%20Application%20Enumeration)
->     - [Enumerating and Abusing APIs](https://github.com/caderob/hacker-cheatsheet/blob/main/03%20Introduction%20to%20Web%20Application%20Attacks/02%20Web%20Application%20Enumeration/01%20Enumerating%20and%20Abusing%20APIs.md) 
->   - [Cross-Site Scripting](https://github.com/caderob/hacker-cheatsheet/tree/main/03%20Introduction%20to%20Web%20Application%20Attacks/03%20Cross-Site%20Scripting)
->     - [Basic XSS](https://github.com/caderob/hacker-cheatsheet/blob/main/03%20Introduction%20to%20Web%20Application%20Attacks/03%20Cross-Site%20Scripting/01%20Basic%20XSS.md)
->     - [Privilege Escalation via XSS](https://github.com/caderob/hacker-cheatsheet/blob/main/03%20Introduction%20to%20Web%20Application%20Attacks/03%20Cross-Site%20Scripting/02%20Privilege%20Escalation%20via%20XSS.md) 
->- **Common Web Application Attacks**
->   - Directory Traversal
->   - File Inclusion Vulnerabilities
->   - File Upload Vulnerabilities
->   - Command Injection
->- **SQL Injection Attacks**
->   - SQL Theory and Databases
->   - Manual SQL Exploitation
->   - Manual and Automated Code Execution
->- [**Client-side Attacks**](https://github.com/caderob/hacker-cheatsheet/tree/main/06%20Client-side%20Attacks)
->   - [Target Reconnaissance](https://github.com/caderob/hacker-cheatsheet/tree/main/06%20Client-side%20Attacks/01%20Target%20Reconnaissance)
->     - [Information Gathering](https://github.com/caderob/hacker-cheatsheet/blob/main/06%20Client-side%20Attacks/01%20Target%20Reconnaissance/01%20Information%20Gathering.md)
->     - [Client Fingerprinting](https://github.com/caderob/hacker-cheatsheet/blob/main/06%20Client-side%20Attacks/01%20Target%20Reconnaissance/02%20Client%20Fingerprinting.md)
->   - [Exploiting Microsoft Office](https://github.com/caderob/hacker-cheatsheet/tree/main/06%20Client-side%20Attacks/02%20Exploiting%20Microsoft%20Office)
->     - [Preparing the Attack](https://github.com/caderob/hacker-cheatsheet/blob/main/06%20Client-side%20Attacks/02%20Exploiting%20Microsoft%20Office/01%20Preparing%20the%20Attack.md)
->     - [Installing Microsoft Office](https://github.com/caderob/hacker-cheatsheet/blob/main/06%20Client-side%20Attacks/02%20Exploiting%20Microsoft%20Office/02%20Installing%20Microsoft%20Office.md)
->   - Abusing Windows Library Files
->- **Locating Public Exploits**
->   - Getting Started
->   - Online Exploit Resources
->   - Offline Exploit Resources
->   - Exploiting a Target
->- **Fixing Exploits**
->   - Fixing Memory Corruption Exploits
->   - Fixing Web Exploits
->- **Phishing Basics**
->   - Phishing 101
->   - Payloads, Misdirection, and Speedbumps
->   - Hands-On Credential Phishing
->- **Antivirus Evasion**
->   - Antivirus Software Key Components and Operations
->   - Bypassing Antivirus Detections
->   - AV Evasion in Practice
->- **Password Attacks**
->   - Attacking Network Services Logins
->   - Password Cracking Fundamentals
->   - Working with Password Hashes
->- **Windows Privilege Escalation**
->   - Enumerating Windows
->   - Leveraging Windows Services
->   - Abusing Other Windows Components
->- **Linux Privilege Escalation**
->   - Enumerating Linux
->   - Exposed Confidential Information
->   - Insecure File Permissions
->   - Insecure System Components
->- **Port Redirection and SSH Tunneling**
->   - Why Port Redirection and Tunneling?
->   - Port Forwarding with Linux Tools
->   - SSH Tunneling
->   - Port Forwarding with Windows Tools
->- **Tunneling Through Deep Packet Inspection**
->   - HTTP Tunneling Theory and Practice
->   - DNS Tunneling Theory and Practice
->- **The Metasploit Framework**
->   - Getting Familiar with Metasploit
->   - Using Metasploit Payloads
->   - Performing Post-Exploitation with Metasploit
->   - Automating Metasploit
->- **Active Directory Introduction and Enumeration**
->   - Active Directory - Introduction
->   - Active Directory - Manual Enumeration
->   - Manual Enumeration - Expanding our Repertoire
->   - Active Directory - Automated Enumeration
->- **Attacking Active Directory Authentication**
->   - Understanding Active Directory Authentication
->   - Performing Attacks on Active Directory Authentication
->- **Lateral Movement in Active Directory**
->   - Active Directory Lateral Movement Techniques
->   - Active Directory Persistence
->- **Enumerating AWS Cloud Infrastructure**
->   - About the Public Cloud Labs
->   - Reconnaissance of Cloud Resources on the Internet
->   - Reconnaissance via Cloud Service Provider's API
->   - Initial IAM Reconnaissance
->   - IAM Resources Enumeration
->- **Attacking AWS Cloud Infrastructure**
->   - About the Public Cloud Labs
->   - Leaked Secrets to Poisoned Pipeline - Lab Design
->   - Enumeration
->   - Discovering Secrets
->   - Poisoning the Pipeline
->   - Compromising the Environment via Backdoor Account
+>- [**Information Gathering**](https://github.com/caderob/hacker-cheatsheet/tree/main/Information%20Gathering)
+>   - [Passive Information Gathering](https://github.com/caderob/hacker-cheatsheet/tree/main/Information%20Gathering/Passive%20Information%20Gathering)
+>     - [Whois Enumeration](https://github.com/caderob/hacker-cheatsheet/blob/main/Information%20Gathering/Passive%20Information%20Gathering/Whois%20Enumeration.md)
+>     - [Google Hacking](https://github.com/caderob/hacker-cheatsheet/blob/main/Information%20Gathering/Passive%20Information%20Gathering/Google%20Hacking.md)
+>     - [Netcraft (Wappalyzer)](https://github.com/caderob/hacker-cheatsheet/blob/main/Information%20Gathering/Passive%20Information%20Gathering/Netcraft%20(Wappalyzer).md)
+>     - [Open-Source Code (GitHub, GitHub Gist, GitLab, SourceForge)](https://github.com/caderob/hacker-cheatsheet/blob/main/Information%20Gathering/Passive%20Information%20Gathering/Open-Source%20Code%20(GitHub%2C%20GitHub%20Gist%2C%20GitLab%2C%20SourceForge).md)
+>     - [Passive LLM-Aided Enumeration](https://github.com/caderob/hacker-cheatsheet/blob/main/Information%20Gathering/Passive%20Information%20Gathering/Passive%20LLM-Aided%20Enumeration.md)
+>   - [Active Information Gathering](https://github.com/caderob/hacker-cheatsheet/tree/main/Information%20Gathering/Active%20Information%20Gathering)
+>     - [DNS Enumeration](https://github.com/caderob/hacker-cheatsheet/blob/main/Information%20Gathering/Active%20Information%20Gathering/DNS%20Enumeration.md)
+>     - [TCP-UDP Port Scanning Theory](https://github.com/caderob/hacker-cheatsheet/blob/main/Information%20Gathering/Active%20Information%20Gathering/TCP%20UDP%20Port%20Scanning%20Theory.md)
+>     - [Port Scanning with Nmap](https://github.com/caderob/hacker-cheatsheet/blob/main/Information%20Gathering/Active%20Information%20Gathering/Port%20Scanning%20with%20Nmap.md)
+>     - [SMB Enumeration](https://github.com/caderob/hacker-cheatsheet/blob/main/Information%20Gathering/Active%20Information%20Gathering/SMB%20Enumeration.md)
+>     - [SMTP Enumeration](https://github.com/caderob/hacker-cheatsheet/blob/main/Information%20Gathering/Active%20Information%20Gathering/SMTP%20Enumeration.md)
+>     - [SNMP Enumeration](https://github.com/caderob/hacker-cheatsheet/blob/main/Information%20Gathering/Active%20Information%20Gathering/SNMP%20Enumeration.md)
+>     - [Active LLM-Aided Enumeration](https://github.com/caderob/hacker-cheatsheet/blob/main/Information%20Gathering/Active%20Information%20Gathering/Active%20LLM-Aided%20Enumeration.md)
 >   - Dependency Chain Abuse
 >   - Information Gathering
 >   - Dependency Chain Attack
