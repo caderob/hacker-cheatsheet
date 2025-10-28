@@ -1,4 +1,4 @@
-# Working with NSE Scripts
+# Contextual Learning and Interleaving
 
 Lab 1 - What is meant by the term "Demonstration Method"? Enter your answer in the form of a single character.
 >B. The instructor models the skill the learner is hoping to learn.
