@@ -11,6 +11,7 @@ Renaming a file and checking our results.
 >kali@kali:~$ mv oldfilename.txt newfilename.txt
 >
 >kali@kali:~$ ls *.txt
+>
 ># ========== Expected Result ==========
 >newfilename.txt
 ># =====================================
