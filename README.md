@@ -72,6 +72,6 @@ The purpose of this cheatsheet is to provide a structured and concise reference 
 >     - [Analyzing the Results.md](https://github.com/caderob/hacker-cheatsheet/blob/main/Vulnerability%20Scanning/Vulnerability%20Scanning%20with%20Nessus/Analyzing%20the%20Results.md)
 >     - [Performing an Authenticated Vulnerability Scan](https://github.com/caderob/hacker-cheatsheet/blob/main/Vulnerability%20Scanning/Vulnerability%20Scanning%20with%20Nessus/Performing%20an%20Authenticated%20Vulnerability%20Scan.md)
 >     - [Working with Nessus Plugins](https://github.com/caderob/hacker-cheatsheet/blob/main/Vulnerability%20Scanning/Vulnerability%20Scanning%20with%20Nessus/Working%20with%20Nessus%20Plugins.md)
->   - [Vulnerability Scanning with Nmap]
->     - [NSE Vulnerability Scripts.md]
->     - [Working with NSE Scripts.md]
+>   - [Vulnerability Scanning with Nmap](https://github.com/caderob/hacker-cheatsheet/tree/main/Vulnerability%20Scanning/Vulnerability%20Scanning%20with%20Nmap)
+>     - [NSE Vulnerability Scripts.md](https://github.com/caderob/hacker-cheatsheet/blob/main/Vulnerability%20Scanning/Vulnerability%20Scanning%20with%20Nmap/NSE%20Vulnerability%20Scripts.md)
+>     - [Working with NSE Scripts.md](https://github.com/caderob/hacker-cheatsheet/blob/main/Vulnerability%20Scanning/Vulnerability%20Scanning%20with%20Nmap/Working%20with%20NSE%20Scripts.md)
