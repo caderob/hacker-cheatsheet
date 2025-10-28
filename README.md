@@ -82,3 +82,8 @@ The purpose of this cheatsheet is to provide a structured and concise reference 
 >     - [Security Testing with Burp Suite]
 >   - [Web Application Enumeration]
 >   - [Cross-Site Scripting]
+>- [**Common Web Application Attacks**]
+>- [**SQL Injection Attacks**]
+>- [**Phishing Basics**]
+>- [**Client-side Attacks**]
+>- [**Locating Public Exploits**]
