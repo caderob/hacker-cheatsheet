@@ -60,3 +60,14 @@ The purpose of this cheatsheet is to provide a structured and concise reference 
 >     - [SMTP Enumeration](https://github.com/caderob/hacker-cheatsheet/blob/main/Information%20Gathering/Active%20Information%20Gathering/SMTP%20Enumeration.md)
 >     - [SNMP Enumeration](https://github.com/caderob/hacker-cheatsheet/blob/main/Information%20Gathering/Active%20Information%20Gathering/SNMP%20Enumeration.md)
 >     - [Active LLM-Aided Enumeration](https://github.com/caderob/hacker-cheatsheet/blob/main/Information%20Gathering/Active%20Information%20Gathering/Active%20LLM-Aided%20Enumeration.md)
+>- [**Vulnerability Scanning**]
+>   - [Vulnerability Scanning with Nessus]
+>     - [Installing Nessus]
+>     - [Nessus Components]
+>     - [Performing a Vulnerability Scan]
+>     - [Analyzing the Results.md]
+>     - [Performing an Authenticated Vulnerability Scan]
+>     - [Working with Nessus Plugins]
+>   - [Vulnerability Scanning with Nmap]
+>     - [NSE Vulnerability Scripts.md]
+>     - [Working with NSE Scripts.md]
