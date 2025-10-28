@@ -2,14 +2,14 @@
 
 Pertinent Details
 >``` shell
->Executive Summary:
+>"Executive Summary:
 >
 >- Scope: https://kali.org/login.php
 >- Timeframe: Jan 3 - 5, 2022
 >- OWASP/PCI Testing methodology was used
 >- Social engineering and DoS testing were not in scope
 >- No testing accounts were given; testing was black box from an external IP address
->- All tests were run from 192.168.1.2
+>- All tests were run from 192.168.1.2"
 >```
 
 Describing the Engagement
