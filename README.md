@@ -60,14 +60,15 @@ The purpose of this cheatsheet is to provide a structured and concise reference 
 >     - [SMTP Enumeration](https://github.com/caderob/hacker-cheatsheet/blob/main/Information%20Gathering/Active%20Information%20Gathering/SMTP%20Enumeration.md)
 >     - [SNMP Enumeration](https://github.com/caderob/hacker-cheatsheet/blob/main/Information%20Gathering/Active%20Information%20Gathering/SNMP%20Enumeration.md)
 >     - [Active LLM-Aided Enumeration](https://github.com/caderob/hacker-cheatsheet/blob/main/Information%20Gathering/Active%20Information%20Gathering/Active%20LLM-Aided%20Enumeration.md)
->- [**Vulnerability Scanning**]
->   - [Vulnerability Scanning with Nessus]
->     - [Installing Nessus]
->     - [Nessus Components]
->     - [Performing a Vulnerability Scan]
->     - [Analyzing the Results.md]
->     - [Performing an Authenticated Vulnerability Scan]
->     - [Working with Nessus Plugins]
+>- [**Vulnerability Scanning**](https://github.com/caderob/hacker-cheatsheet/tree/main/Vulnerability%20Scanning)
+>   - [Vulnerability Scanning Theory]
+>   - [Vulnerability Scanning with Nessus](https://github.com/caderob/hacker-cheatsheet/tree/main/Vulnerability%20Scanning/Vulnerability%20Scanning%20with%20Nessus)
+>     - [Installing Nessus](https://github.com/caderob/hacker-cheatsheet/blob/main/Vulnerability%20Scanning/Vulnerability%20Scanning%20with%20Nessus/Installing%20Nessus.md)
+>     - [Nessus Components](https://github.com/caderob/hacker-cheatsheet/blob/main/Vulnerability%20Scanning/Vulnerability%20Scanning%20with%20Nessus/Nessus%20Components.md)
+>     - [Performing a Vulnerability Scan](https://github.com/caderob/hacker-cheatsheet/blob/main/Vulnerability%20Scanning/Vulnerability%20Scanning%20with%20Nessus/Performing%20a%20Vulnerability%20Scan.md)
+>     - [Analyzing the Results.md](https://github.com/caderob/hacker-cheatsheet/blob/main/Vulnerability%20Scanning/Vulnerability%20Scanning%20with%20Nessus/Analyzing%20the%20Results.md)
+>     - [Performing an Authenticated Vulnerability Scan](https://github.com/caderob/hacker-cheatsheet/blob/main/Vulnerability%20Scanning/Vulnerability%20Scanning%20with%20Nessus/Performing%20an%20Authenticated%20Vulnerability%20Scan.md)
+>     - [Working with Nessus Plugins](https://github.com/caderob/hacker-cheatsheet/blob/main/Vulnerability%20Scanning/Vulnerability%20Scanning%20with%20Nessus/Working%20with%20Nessus%20Plugins.md)
 >   - [Vulnerability Scanning with Nmap]
 >     - [NSE Vulnerability Scripts.md]
 >     - [Working with NSE Scripts.md]
