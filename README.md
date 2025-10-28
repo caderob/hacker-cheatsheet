@@ -60,7 +60,3 @@ The purpose of this cheatsheet is to provide a structured and concise reference 
 >     - [SMTP Enumeration](https://github.com/caderob/hacker-cheatsheet/blob/main/Information%20Gathering/Active%20Information%20Gathering/SMTP%20Enumeration.md)
 >     - [SNMP Enumeration](https://github.com/caderob/hacker-cheatsheet/blob/main/Information%20Gathering/Active%20Information%20Gathering/SNMP%20Enumeration.md)
 >     - [Active LLM-Aided Enumeration](https://github.com/caderob/hacker-cheatsheet/blob/main/Information%20Gathering/Active%20Information%20Gathering/Active%20LLM-Aided%20Enumeration.md)
->   - Dependency Chain Abuse
->   - Information Gathering
->   - Dependency Chain Attack
->   - Compromising the Environment
