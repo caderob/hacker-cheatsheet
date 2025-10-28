@@ -23,7 +23,19 @@ The purpose of this cheatsheet is to provide a structured and concise reference 
 >     - [Anatomy of Cyber](https://github.com/caderob/hacker-cheatsheet/blob/main/Introduction%20To%20Cybersecurity/Cybersecurity%20Laws%2C%20Regulations%2C%20Standards%2C%20and%20Frameworks/Anatomy%20of%20Cyber.md)
 >   - [Career Opportunities in Cybersecurity](https://github.com/caderob/hacker-cheatsheet/tree/main/Introduction%20To%20Cybersecurity/Career%20Opportunities%20in%20Cybersecurity)
 >     - [Additional Roles](https://github.com/caderob/hacker-cheatsheet/blob/main/Introduction%20To%20Cybersecurity/Career%20Opportunities%20in%20Cybersecurity/Additional%20Roles.md)
-
+>- [**Effective Learning Strategies**](https://github.com/caderob/hacker-cheatsheet/tree/main/Effective%20Learning%20Strategies)
+>   - [Learning Theory](https://github.com/caderob/hacker-cheatsheet/tree/main/Effective%20Learning%20Strategies/Learning%20Theory)
+>     - [The Forgetting Curve and Cognitive Load](https://github.com/caderob/hacker-cheatsheet/blob/main/Effective%20Learning%20Strategies/Learning%20Theory/The%20Forgetting%20Curve%20and%20Cognitive%20Load.md)
+>   - [Unique Challenges to Learning Technical Skills](https://github.com/caderob/hacker-cheatsheet/tree/main/Effective%20Learning%20Strategies/Unique%20Challenges%20to%20Learning%20Technical%20Skills)
+>     - [The Challenges of Remote and Asynchronous Learning](https://github.com/caderob/hacker-cheatsheet/blob/main/Effective%20Learning%20Strategies/Unique%20Challenges%20to%20Learning%20Technical%20Skills/The%20Challenges%20of%20Remote%20and%20Asynchronous%20Learning.md)
+>   - [OffSec Training Methodology](https://github.com/caderob/hacker-cheatsheet/tree/main/Effective%20Learning%20Strategies/OffSec%20Training%20Methodology)
+>     - [The Demonstration Method](https://github.com/caderob/hacker-cheatsheet/blob/main/Effective%20Learning%20Strategies/OffSec%20Training%20Methodology/The%20Demonstration%20Method.md)
+>     - [Contextual Learning and Interleaving](https://github.com/caderob/hacker-cheatsheet/blob/main/Effective%20Learning%20Strategies/OffSec%20Training%20Methodology/Contextual%20Learning%20and%20Interleaving.md)
+>   - [Case Study: chmod -x chmod](https://github.com/caderob/hacker-cheatsheet/tree/main/Effective%20Learning%20Strategies/Case%20Study%3A%20chmod%20-x%20chmod)
+>     - [What is Executable Permission?](https://github.com/caderob/hacker-cheatsheet/blob/main/Effective%20Learning%20Strategies/Case%20Study%3A%20chmod%20-x%20chmod/What%20is%20Executable%20Permission.md)
+>     - [Going Deeper: Encountering a Strange Problem](https://github.com/caderob/hacker-cheatsheet/blob/main/Effective%20Learning%20Strategies/Case%20Study%3A%20chmod%20-x%20chmod/Going%20Deeper%3A%20Encountering%20a%20Strange%20Problem.md)
+>     - [One Potential Solution](https://github.com/caderob/hacker-cheatsheet/blob/main/Effective%20Learning%20Strategies/Case%20Study%3A%20chmod%20-x%20chmod/One%20Potential%20Solution.md)
+>     - [Analyzing this Approach](https://github.com/caderob/hacker-cheatsheet/blob/main/Effective%20Learning%20Strategies/Case%20Study%3A%20chmod%20-x%20chmod/Analyzing%20this%20Approach.md)
 
 
 
