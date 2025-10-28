@@ -8,7 +8,7 @@ Something isn't quite right here.
 >zsh: permission denied: ./find_employee_names.py
 ># =====================================
 >
->chmod +x find_employee_names.py
+>kali@kali:~$ chmod +x find_employee_names.py
 >
 ># ========== Expected Result ==========
 >zsh: permission denied: chmod
