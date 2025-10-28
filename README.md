@@ -74,7 +74,7 @@ The purpose of this cheatsheet is to provide a structured and concise reference 
 >     - [Working with Nessus Plugins](https://github.com/caderob/hacker-cheatsheet/blob/main/Vulnerability%20Scanning/Vulnerability%20Scanning%20with%20Nessus/Working%20with%20Nessus%20Plugins.md)
 >   - [Vulnerability Scanning with Nmap](https://github.com/caderob/hacker-cheatsheet/tree/main/Vulnerability%20Scanning/Vulnerability%20Scanning%20with%20Nmap)
 >     - [NSE Vulnerability Scripts.md](https://github.com/caderob/hacker-cheatsheet/blob/main/Vulnerability%20Scanning/Vulnerability%20Scanning%20with%20Nmap/NSE%20Vulnerability%20Scripts.md)
->     - [Working with NSE Scripts.md](https://github.com/caderob/hacker-cheatsheet/blob/main/Vulnerability%20Scanning/Vulnerability%20Scanning%20with%20Nmap/Working%20with%20NSE%20Scripts.md)
+>     - [Working with NSE Scripts.md]
 >- [**Introduction to Web Application Attacks**]
 >   - [Web Application Assessment Tools]
 >     - [Fingerprinting Web Servers with Nmap]
