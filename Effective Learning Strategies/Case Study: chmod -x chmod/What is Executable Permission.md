@@ -56,7 +56,7 @@ Putting things back the way they were
 >``` shell
 >kali@kali:~$ chmod -x find_employee_names.py
 >
->./find_employee_names.py
+>kali@kali:~$ ./find_employee_names.py
 >
 ># ========== Expected Result ==========
 >zsh: permission denied: ./find_employee_names.py
