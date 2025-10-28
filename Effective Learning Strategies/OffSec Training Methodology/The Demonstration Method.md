@@ -3,6 +3,7 @@
 Renaming a file and checking our results.
 >``` shell
 >kali@kali:~$ ls *.txt
+>
 ># ========== Expected Result ==========
 >oldfilename.txt
 ># =====================================
