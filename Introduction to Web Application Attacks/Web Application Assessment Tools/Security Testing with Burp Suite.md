@@ -4,8 +4,29 @@ Setting up our /etc/hosts file for offsecwp
 >``` shell
 >kali@kali:~$ cat /etc/hosts
 >
+>># ========== Expected Result ==========
 >...
 >192.168.50.16 offsecwp
+># =====================================
+>```
+
+
+Setting up our /etc/hosts file for offsecwp
+>``` shell
+>kali@kali:~$ cat /usr/share/wordlists/rockyou.txt | head
+>
+># ========== Expected Result ==========
+>123456
+>12345
+>123456789
+>password
+>iloveyou
+>princess
+>1234567
+>rockyou
+>12345678
+>abc123
+># =====================================
 >```
 
 Lab 1 - We have been tasked to test the SMS Two-Factor authentication of a newly-developed web application. The SMS verification code is made by four digits. Which Burp tool is most suited to perform a brute force attack against the keyspace?
