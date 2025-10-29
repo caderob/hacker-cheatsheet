@@ -4,7 +4,7 @@ Setting up our /etc/hosts file for offsecwp
 >``` shell
 >kali@kali:~$ cat /etc/hosts
 >
->># ========== Expected Result ==========
+># ========== Expected Result ==========
 >...
 >192.168.50.16 offsecwp
 ># =====================================
