@@ -203,7 +203,7 @@ Successfully logging in as the admin account
 ># =====================================
 >```
 
-Lab 1 - 
+Lab 1 - Start up the Walkthrough VM 1 and modify the Kali /etc/hosts file to reflect the provided dynamically-allocated IP address that has been assigned to the offsecwp instance. Use Firefox to get familiar with the Developer Debugging Tools by navigating to the offsecwp site and replicate the steps shown in this Learning Unit. Explore the entire WordPress website and inspect its HTML source code in order to find the flag.
 >``` shell
 ># Map Hostname to IP
 >kali@kali:~$ sudo nano /etc/hosts
@@ -220,7 +220,7 @@ Lab 1 -
 >```
 >OS{c220cc334635a533cae9c236c2e31aa0}
 
-Lab 2 - 
+Lab 2 - Start Walkthrough VM 2 and replicate the curl command we learned in this section in order to map and exploit the vulnerable APIs. Next, perform a brute force attack to discover another API that has a same pattern as /users/v1. Then, perform a query against the base path of the new API: what's the name of the item belonging to the admin user? NOTE: A dirbuster wordlist should help on this task.
 >``` shell
 >
 >```
