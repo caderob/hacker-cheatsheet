@@ -345,8 +345,69 @@ Lab 5 - We made another website, but something is wrong. The site is available a
 >```
 >OS{dd62de0edd392ffeeefb19b044f88545}
 
-Lab 6 - 
+Lab 6 - We made this cool website dedicated to the three web amigos: HTML, CSS, and JavaScript. It is available at the web root on the Exercise VM 4. Closely review each of the three friends to find the flag for this challenge.
 >``` shell
+># Navigate to http://192.168.179.52/
 >
+># Right-click anywhere on the page, click Inspect
+>
+># Navigate to the "Network" tab and refresh the page
+>
+># ========== Expected Result ==========
+>/
+>...
+>jumbotron.css
+>color_flash.js
+>...
+># =====================================
+>
+># Navigate to http://192.168.179.52/
+>
+># Right-click anywhere on the page, click Inspect, and enter "flag" in the search bar
+>
+># ========== Expected Result ==========
+><!--
+>Here is part 1 of 3 of your flag: OS{cc37faacf Looking at the source code is a good way to get started on a web challenge. Look at the source of the other parts of this website to find the remaining two parts. Based on initial West Point (USMA) Cyber Team problem by Roy Ragsdale (phlint)
+>-->  
+># =====================================
+>
+># Navigate to http://192.168.179.52/jumbotron.css
+>
+># Search for "flag"
+>
+># ========== Expected Result ==========
+>/*  Here is part 2 of 3 of your flag:
+> *
+> *  16b90ff2458d
+> *
+> *  Continue to look around at the other parts of this website to find the remaining flags.
+> *  Based on initial West Point (USMA) Cyber Team problem by Roy Ragsdale (phlint)
+> */
+># =====================================
+>
+># Navigate to http://192.168.179.52/color_flash.js
+>
+># ========== Expected Result ==========
+>...
+>// Congratulations. JavaScript can do much more than just flash colors.
+>// The third part of this flag is not actually in a comment source.
+>// Instead, you need to visit the console and run the below function.
+>// Based on initial West Point (USMA) Cyber Team problem by Roy Ragsdale (phlint)
+>function displayflag_6864()
+>...
+># =====================================
+>
+># Navigate to http://192.168.179.52/
+>
+># Right-click anywhere on the page, click Inspect
+>
+># Navigate to the "Console" tab and enter the following:
+>
+>displayflag_6864();
+>
+># ========== Expected Result ==========
+>Here is part 3 of 3 of your flag:
+>52b3c28fb63}
+># =====================================
 >```
->
+>OS{cc37faacf16b90ff2458d52b3c28fb63}
