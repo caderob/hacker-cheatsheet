@@ -323,11 +323,27 @@ Lab 4 - Inspect the Exercise VM 2 web application URL and notice if anything is 
 >```
 >OS{535865a417fb7a96190a1f769319cf4a}
 
-Lab 5 - 
+Lab 5 - We made another website, but something is wrong. The site is available at Exercise VM 3, but it keeps giving some weird, non-standard responses. Check out the HTTP headers that accompany this site.
 >``` shell
+># Navigate to http://192.168.179.52/
 >
+># Right-click anywhere on the page, click Inspect
+>
+># Navigate to the "Network" tab and refresh the page
+>
+># Navigate to the initial GET request and inspect the "Response Headers"
+>
+># ========== Expected Result ==========
+>X-Something-Non-Standard: VGhlIGZsYWcgaXM6IE9TezVkM2Q2NmZiYWMwY2I2MzI3YjVmN2RmZmZhN2JhODBhfQ==
+># =====================================
+>
+>kali@kali:~$ echo 'VGhlIGZsYWcgaXM6IE9Te2RkNjJkZTBlZGQzOTJmZmVlZWZiMTliMDQ0Zjg4NTQ1fQ==' | base64 -d
+>
+># ========== Expected Result ==========
+>The flag is: OS{dd62de0edd392ffeeefb19b044f88545}
+># =====================================
 >```
->
+>OS{dd62de0edd392ffeeefb19b044f88545}
 
 Lab 6 - 
 >``` shell
