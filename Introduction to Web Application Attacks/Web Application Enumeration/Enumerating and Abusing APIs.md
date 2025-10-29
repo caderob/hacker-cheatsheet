@@ -234,7 +234,7 @@ Lab 2 - Start Walkthrough VM 2 and replicate the curl command we learned in this
 >
 ># Navigate to http://192.168.179.16:5002/ui/
 >
-># GET request to retreive all books
+># Obtaining Users' Information
 >curl -X 'GET' \
 >  'http://192.168.179.16:5002/books/v1' \
 >  -H 'accept: application/json'
