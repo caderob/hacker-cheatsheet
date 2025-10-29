@@ -5,7 +5,7 @@ Setting up our /etc/hosts file for offsecwp
 >kali@kali:~$ cat /etc/hosts
 >
 >...
-192.168.50.16 offsecwp
+>192.168.50.16 offsecwp
 >```
 
 Lab 1 - We have been tasked to test the SMS Two-Factor authentication of a newly-developed web application. The SMS verification code is made by four digits. Which Burp tool is most suited to perform a brute force attack against the keyspace?
