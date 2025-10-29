@@ -65,12 +65,32 @@ Lab 4 - We have a lot of mess on our hands, and the new DIRTBUSTER cleaning serv
 >...
 ># =====================================
 >
-># Visit http://192.168.179.52/portal/ and login with "admin" / "admin"
+># Navigate to http://192.168.179.52/portal/ and login with "admin" / "admin"
 >```
 >OS{4f854129a623d8fe5b9b2fa6fbf1f606}
 
 Lab 5 - The DIRTBUSTER team finally changed their default credentials, but they are not very original. We complied at http://target_vm/passwords.txt of potential passwords from the DIRTBUSTER employee contact info - I am confident the password is in there somewhere. The username is still admin, and the new login portal is available at the web server root folder on the Module Exercise VM #2.
 >``` shell
+># Open Burp Suite, navigate to the "Target" tab, then "Open browser" under "Site map"
 >
+># In burp browser, navigate to http://192.168.179.52 and login with "admin" / "admin"
+>
+># In Burp Suite, right click on the Post request, and select "Send to Intruder"
+>
+># Navigate to the "Intruder" tab and highlight the password value (admin) from the request
+>
+># Select "Add §" beside "Positions"
+>
+># Navigate to http://192.168.179.52/passwords.txt and copy the list of passwords
+>
+># In Burp Suite, press the "Paste" button beside the "Payloads configuration" box, then "Start attack"
+>
+># Sort the results by "Length" to find the correct password
+>
+># ========== Expected Result ==========
+>zeddemore
+># =====================================
+>
+># Navigate to http://192.168.179.52 and login with "admin" / "zeddemore"
 >```
 >OS{b86def30b59642a1d7d8a4453f078f0a}
