@@ -80,9 +80,9 @@ The purpose of this cheatsheet is to provide a structured and concise reference 
 >     - [Fingerprinting Web Servers with Nmap](https://github.com/caderob/hacker-cheatsheet/blob/main/Introduction%20to%20Web%20Application%20Attacks/Web%20Application%20Assessment%20Tools/Fingerprinting%20Web%20Servers%20with%20Nmap.md)
 >     - [Directory Brute Force with Gobuster](https://github.com/caderob/hacker-cheatsheet/blob/main/Introduction%20to%20Web%20Application%20Attacks/Web%20Application%20Assessment%20Tools/Directory%20Brute%20Force%20with%20Gobuster.md)
 >     - [Security Testing with Burp Suite](https://github.com/caderob/hacker-cheatsheet/blob/main/Introduction%20to%20Web%20Application%20Attacks/Web%20Application%20Assessment%20Tools/Security%20Testing%20with%20Burp%20Suite.md)
->   - [Web Application Enumeration]
+>   - [Web Application Enumeration](https://github.com/caderob/hacker-cheatsheet/tree/main/Introduction%20to%20Web%20Application%20Attacks/Web%20Application%20Enumeration)
 >     - [Inspecting HTTP Response Headers and Sitemaps](https://github.com/caderob/hacker-cheatsheet/blob/main/Introduction%20to%20Web%20Application%20Attacks/Web%20Application%20Enumeration/Inspecting%20HTTP%20Response%20Headers%20and%20Sitemaps.md)
->     - [Enumerating and Abusing APIs]
+>     - [Enumerating and Abusing APIs](https://github.com/caderob/hacker-cheatsheet/blob/main/Introduction%20to%20Web%20Application%20Attacks/Web%20Application%20Enumeration/Enumerating%20and%20Abusing%20APIs.md)
 >   - [Cross-Site Scripting]
 >- [**Common Web Application Attacks**]
 >- [**SQL Injection Attacks**]
