@@ -83,9 +83,9 @@ The purpose of this cheatsheet is to provide a structured and concise reference 
 >   - [Web Application Enumeration](https://github.com/caderob/hacker-cheatsheet/tree/main/Introduction%20to%20Web%20Application%20Attacks/Web%20Application%20Enumeration)
 >     - [Inspecting HTTP Response Headers and Sitemaps](https://github.com/caderob/hacker-cheatsheet/blob/main/Introduction%20to%20Web%20Application%20Attacks/Web%20Application%20Enumeration/Inspecting%20HTTP%20Response%20Headers%20and%20Sitemaps.md)
 >     - [Enumerating and Abusing APIs](https://github.com/caderob/hacker-cheatsheet/blob/main/Introduction%20to%20Web%20Application%20Attacks/Web%20Application%20Enumeration/Enumerating%20and%20Abusing%20APIs.md)
->   - [Cross-Site Scripting]
+>   - [Cross-Site Scripting](https://github.com/caderob/hacker-cheatsheet/tree/main/Introduction%20to%20Web%20Application%20Attacks/Cross-Site%20Scripting)
 >     - [Basic XSS](https://github.com/caderob/hacker-cheatsheet/blob/main/Introduction%20to%20Web%20Application%20Attacks/Cross-Site%20Scripting/Basic%20XSS.md)
->     - [Privilege Escalation via XSS]
+>     - [Privilege Escalation via XSS](https://github.com/caderob/hacker-cheatsheet/blob/main/Introduction%20to%20Web%20Application%20Attacks/Cross-Site%20Scripting/Privilege%20Escalation%20via%20XSS.md)
 >- [**Common Web Application Attacks**]
 >- [**SQL Injection Attacks**]
 >- [**Phishing Basics**]
