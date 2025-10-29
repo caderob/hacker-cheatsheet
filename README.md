@@ -81,6 +81,8 @@ The purpose of this cheatsheet is to provide a structured and concise reference 
 >     - [Directory Brute Force with Gobuster](https://github.com/caderob/hacker-cheatsheet/blob/main/Introduction%20to%20Web%20Application%20Attacks/Web%20Application%20Assessment%20Tools/Directory%20Brute%20Force%20with%20Gobuster.md)
 >     - [Security Testing with Burp Suite](https://github.com/caderob/hacker-cheatsheet/blob/main/Introduction%20to%20Web%20Application%20Attacks/Web%20Application%20Assessment%20Tools/Security%20Testing%20with%20Burp%20Suite.md)
 >   - [Web Application Enumeration]
+>     - [Inspecting HTTP Response Headers and Sitemaps](https://github.com/caderob/hacker-cheatsheet/blob/main/Introduction%20to%20Web%20Application%20Attacks/Web%20Application%20Enumeration/Inspecting%20HTTP%20Response%20Headers%20and%20Sitemaps.md)
+>     - [Enumerating and Abusing APIs]
 >   - [Cross-Site Scripting]
 >- [**Common Web Application Attacks**]
 >- [**SQL Injection Attacks**]
