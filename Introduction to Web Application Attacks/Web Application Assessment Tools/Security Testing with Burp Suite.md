@@ -36,7 +36,7 @@ Lab 2 - Repeat the steps we covered in this Learning Unit and enumerate the targ
 >``` shell
 >gobuster dir -u 192.168.179.16 -w /usr/share/wordlists/dirb/common.txt -t 5
 >
->># ========== Expected Result ==========
+># ========== Expected Result ==========
 >...
 >Error: the server returns a status code that matches the provided options for non existing urls. http://192.168.179.16/b39314b4-6278-4428-99a5-9ab047d4ad89 => 301 (Length: 0). To continue please exclude the status code or the length
 ># =====================================
