@@ -402,7 +402,6 @@ Lab 6 - We made this cool website dedicated to the three web amigos: HTML, CSS, 
 ># Right-click anywhere on the page, click Inspect
 >
 ># Navigate to the "Console" tab and enter the following:
->
 >displayflag_6864();
 >
 ># ========== Expected Result ==========
