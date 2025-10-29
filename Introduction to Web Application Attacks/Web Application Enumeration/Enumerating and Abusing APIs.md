@@ -264,11 +264,54 @@ Lab 2 - Start Walkthrough VM 2 and replicate the curl command we learned in this
 >```
 >bookTitle22
 
-Lab 3 - 
+Lab 3 - This website running on the Exercise VM 1 is dedicated to all things maps! Follow the maps to get the flag.
 >``` shell
+># Running Gobuster
+>kali@kali:~$ gobuster dir -u 192.168.179.52 -w /usr/share/wordlists/dirb/common.txt -t 5
 >
+># ========== Expected Result ==========
+>...
+>/index.html           (Status: 200) [Size: 6041]
+>/robots.txt           (Status: 200) [Size: 123]
+>/sitemap.xml          (Status: 200) [Size: 579]
+>...
+># =====================================
+>
+># Navigate to http://192.168.179.52/robots.txt
+>
+># ========== Expected Result ==========
+># Group 1
+>User-agent: Googlebot
+>Disallow: /
+>
+># Group 2
+>User-agent: PWKStudents
+>Disallow: /flag2845817477.html
+># =====================================
+>
+># Navigate to http://192.168.179.52/flag2845817477.html
+>
+># ========== Expected Result ==========
+>The flag part 1 is:
+>OS{7e03893c271b899
+>
+>Look for an important map to find the second part. 
+># =====================================
+>
+># Navigate to http://192.168.179.52/sitemap.xml
+>
+># ========== Expected Result ==========
+>/index.html 2020-02-29 monthly 0.4 /robots.txt 2020-02-29 monthly 0.3 /flagF0FD3925BAE6.html 2020-02-29 weekly 0.8 
+># =====================================
+>
+># Navigate to http://192.168.179.52/flagF0FD3925BAE6.html
+>
+># ========== Expected Result ==========
+>The flag part 2 is:
+>0fabfb08a9c0066cb}
+># =====================================
 >```
->
+>OS{7e03893c271b8990fabfb08a9c0066cb}
 
 Lab 4 - 
 >``` shell
