@@ -34,13 +34,18 @@ Lab 1 - We have been tasked to test the SMS Two-Factor authentication of a newly
 
 Lab 2 - Repeat the steps we covered in this Learning Unit and enumerate the targets via Nmap, Wappalyzer and Gobuster by starting Walkthrough VM 1. When performing a file/directory brute force attack with Gobuster, what is the HTTP response code related to redirection?
 >``` shell
+>gobuster dir -u 192.168.179.16 -w /usr/share/wordlists/dirb/common.txt -t 5
 >
+>># ========== Expected Result ==========
+>...
+>Error: the server returns a status code that matches the provided options for non existing urls. http://192.168.179.16/b39314b4-6278-4428-99a5-9ab047d4ad89 => 301 (Length: 0). To continue please exclude the status code or the length
+># =====================================
 >```
 >301
 
 Lab 3 - Start up the Walkthrough VM 1 and replicate the steps we covered in this Learning Unit for using Burp Suite. What is the default port Burp proxy is listening to?
 >``` shell
->
+># Open Burp Suite, navigate to the "Proxy" tab, then "Proxy settings"
 >```
 >8080
 
