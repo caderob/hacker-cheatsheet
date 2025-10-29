@@ -75,7 +75,7 @@ The purpose of this cheatsheet is to provide a structured and concise reference 
 >   - [Vulnerability Scanning with Nmap]
 >     - [NSE Vulnerability Scripts.md](https://github.com/caderob/hacker-cheatsheet/blob/main/Vulnerability%20Scanning/Vulnerability%20Scanning%20with%20Nmap/NSE%20Vulnerability%20Scripts.md)
 >     - [Working with NSE Scripts.md]
->- [**Introduction to Web Application Attacks**]
+>- [**Introduction to Web Application Attacks**](https://github.com/caderob/hacker-cheatsheet/tree/main/Introduction%20to%20Web%20Application%20Attacks)
 >   - [Web Application Assessment Tools](https://github.com/caderob/hacker-cheatsheet/tree/main/Introduction%20to%20Web%20Application%20Attacks/Web%20Application%20Assessment%20Tools)
 >     - [Fingerprinting Web Servers with Nmap](https://github.com/caderob/hacker-cheatsheet/blob/main/Introduction%20to%20Web%20Application%20Attacks/Web%20Application%20Assessment%20Tools/Fingerprinting%20Web%20Servers%20with%20Nmap.md)
 >     - [Directory Brute Force with Gobuster](https://github.com/caderob/hacker-cheatsheet/blob/main/Introduction%20to%20Web%20Application%20Attacks/Web%20Application%20Assessment%20Tools/Directory%20Brute%20Force%20with%20Gobuster.md)
