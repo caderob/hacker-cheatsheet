@@ -205,9 +205,20 @@ Successfully logging in as the admin account
 
 Lab 1 - 
 >``` shell
+># Map Hostname to IP
+>kali@kali:~$ sudo nano /etc/hosts
 >
+># Add this line at the bottom:
+>192.168.179.16 offsecwp
+>
+># Save and exit:
+>Ctrl + X
+>
+># Navigate to http://offsecwp/?p=1
+>
+># Right-click anywhere on the page, click Inspect, and enter "OS{" in the search bar
 >```
->
+>OS{c220cc334635a533cae9c236c2e31aa0}
 
 Lab 2 - 
 >``` shell
