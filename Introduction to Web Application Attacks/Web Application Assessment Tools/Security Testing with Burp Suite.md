@@ -54,7 +54,7 @@ Lab 4 - We have a lot of mess on our hands, and the new DIRTBUSTER cleaning serv
 ># Running Gobuster
 >gobuster dir -u http://192.168.179.52 -w /usr/share/wordlists/dirb/common.txt -t 10
 >
->># ========== Expected Result ==========
+># ========== Expected Result ==========
 >...
 >/.htpasswd            (Status: 403) [Size: 279]
 >/.htaccess            (Status: 403) [Size: 279]
