@@ -60,7 +60,7 @@ The purpose of this cheatsheet is to provide a structured and concise reference 
 >     - [SMTP Enumeration](https://github.com/caderob/hacker-cheatsheet/blob/main/Information%20Gathering/Active%20Information%20Gathering/SMTP%20Enumeration.md)
 >     - [SNMP Enumeration](https://github.com/caderob/hacker-cheatsheet/blob/main/Information%20Gathering/Active%20Information%20Gathering/SNMP%20Enumeration.md)
 >     - [Active LLM-Aided Enumeration](https://github.com/caderob/hacker-cheatsheet/blob/main/Information%20Gathering/Active%20Information%20Gathering/Active%20LLM-Aided%20Enumeration.md)
->- [**Vulnerability Scanning**](https://github.com/caderob/hacker-cheatsheet/tree/main/Vulnerability%20Scanning)
+>- [**Vulnerability Scanning**]
 >   - [Vulnerability Scanning Theory](https://github.com/caderob/hacker-cheatsheet/tree/main/Vulnerability%20Scanning/Vulnerability%20Scanning%20Theory)
 >     - [How Vulnerability Scanners Work](https://github.com/caderob/hacker-cheatsheet/blob/main/Vulnerability%20Scanning/Vulnerability%20Scanning%20Theory/How%20Vulnerability%20Scanners%20Work.md)
 >     - [Types of Vulnerability Scans](https://github.com/caderob/hacker-cheatsheet/blob/main/Vulnerability%20Scanning/Vulnerability%20Scanning%20Theory/Types%20of%20Vulnerability%20Scans.md)
@@ -72,14 +72,14 @@ The purpose of this cheatsheet is to provide a structured and concise reference 
 >     - [Analyzing the Results.md](https://github.com/caderob/hacker-cheatsheet/blob/main/Vulnerability%20Scanning/Vulnerability%20Scanning%20with%20Nessus/Analyzing%20the%20Results.md)
 >     - [Performing an Authenticated Vulnerability Scan](https://github.com/caderob/hacker-cheatsheet/blob/main/Vulnerability%20Scanning/Vulnerability%20Scanning%20with%20Nessus/Performing%20an%20Authenticated%20Vulnerability%20Scan.md)
 >     - [Working with Nessus Plugins](https://github.com/caderob/hacker-cheatsheet/blob/main/Vulnerability%20Scanning/Vulnerability%20Scanning%20with%20Nessus/Working%20with%20Nessus%20Plugins.md)
->   - [Vulnerability Scanning with Nmap](https://github.com/caderob/hacker-cheatsheet/tree/main/Vulnerability%20Scanning/Vulnerability%20Scanning%20with%20Nmap)
+>   - [Vulnerability Scanning with Nmap]
 >     - [NSE Vulnerability Scripts.md](https://github.com/caderob/hacker-cheatsheet/blob/main/Vulnerability%20Scanning/Vulnerability%20Scanning%20with%20Nmap/NSE%20Vulnerability%20Scripts.md)
 >     - [Working with NSE Scripts.md]
 >- [**Introduction to Web Application Attacks**]
->   - [Web Application Assessment Tools]
->     - [Fingerprinting Web Servers with Nmap]
->     - [Directory Brute Force with Gobuster]
->     - [Security Testing with Burp Suite]
+>   - [Web Application Assessment Tools](https://github.com/caderob/hacker-cheatsheet/tree/main/Introduction%20to%20Web%20Application%20Attacks/Web%20Application%20Assessment%20Tools)
+>     - [Fingerprinting Web Servers with Nmap](https://github.com/caderob/hacker-cheatsheet/blob/main/Introduction%20to%20Web%20Application%20Attacks/Web%20Application%20Assessment%20Tools/Fingerprinting%20Web%20Servers%20with%20Nmap.md)
+>     - [Directory Brute Force with Gobuster](https://github.com/caderob/hacker-cheatsheet/blob/main/Introduction%20to%20Web%20Application%20Attacks/Web%20Application%20Assessment%20Tools/Directory%20Brute%20Force%20with%20Gobuster.md)
+>     - [Security Testing with Burp Suite](https://github.com/caderob/hacker-cheatsheet/blob/main/Introduction%20to%20Web%20Application%20Attacks/Web%20Application%20Assessment%20Tools/Security%20Testing%20with%20Burp%20Suite.md)
 >   - [Web Application Enumeration]
 >   - [Cross-Site Scripting]
 >- [**Common Web Application Attacks**]
