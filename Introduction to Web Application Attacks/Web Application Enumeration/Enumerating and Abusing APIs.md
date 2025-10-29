@@ -222,7 +222,7 @@ Lab 1 - Start up the Walkthrough VM 1 and modify the Kali /etc/hosts file to ref
 
 Lab 2 - Start Walkthrough VM 2 and replicate the curl command we learned in this section in order to map and exploit the vulnerable APIs. Next, perform a brute force attack to discover another API that has a same pattern as /users/v1. Then, perform a query against the base path of the new API: what's the name of the item belonging to the admin user? NOTE: A dirbuster wordlist should help on this task.
 >``` shell
-># Enumerate Hidden API Paths with Gobuster
+># Bruteforcing API Paths
 >kali@kali:~$ gobuster dir -u http://192.168.179.16:5002/ -w /usr/share/wordlists/dirb/big.txt -t 20
 >
 ># ========== Expected Result ==========
