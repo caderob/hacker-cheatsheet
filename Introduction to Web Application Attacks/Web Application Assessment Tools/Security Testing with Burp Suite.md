@@ -51,7 +51,21 @@ Lab 3 - Start up the Walkthrough VM 1 and replicate the steps we covered in this
 
 Lab 4 - We have a lot of mess on our hands, and the new DIRTBUSTER cleaning service is just what we need to help with the cleanup! You can visit their new site on the Module Exercise VM #1, but it is still under development. We wonder where they hid their admin portal. Once found the admin portal, log-in with the provided credentials to obtain the flag.
 >``` shell
+># Running Gobuster
+>gobuster dir -u http://192.168.179.52 -w /usr/share/wordlists/dirb/common.txt -t 10
 >
+>># ========== Expected Result ==========
+>...
+>/.htpasswd            (Status: 403) [Size: 279]
+>/.htaccess            (Status: 403) [Size: 279]
+>/.hta                 (Status: 403) [Size: 279]
+>/index.html           (Status: 200) [Size: 439]
+>/portal               (Status: 301) [Size: 317] [--> http://192.168.179.52/portal/]
+>/server-status        (Status: 403) [Size: 279]
+>...
+># =====================================
+>
+># Visit http://192.168.179.52/portal/ and login with "admin" / "admin"
 >```
 >OS{4f854129a623d8fe5b9b2fa6fbf1f606}
 
