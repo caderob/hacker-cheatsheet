@@ -313,11 +313,15 @@ Lab 3 - This website running on the Exercise VM 1 is dedicated to all things map
 >```
 >OS{7e03893c271b8990fabfb08a9c0066cb}
 
-Lab 4 - 
+Lab 4 - Inspect the Exercise VM 2 web application URL and notice if anything is interesting at the URL level.
 >``` shell
+># Navigate to http://192.168.179.52/
 >
+># ========== Expected Result ==========
+>http://192.168.179.52/?flag=OS{535865a417fb7a96190a1f769319cf4a}
+># =====================================
 >```
->
+>OS{535865a417fb7a96190a1f769319cf4a}
 
 Lab 5 - 
 >``` shell
