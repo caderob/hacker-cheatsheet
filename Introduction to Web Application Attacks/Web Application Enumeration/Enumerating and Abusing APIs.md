@@ -235,11 +235,15 @@ Lab 2 - Start Walkthrough VM 2 and replicate the curl command we learned in this
 ># Navigate to http://192.168.179.16:5002/ui/
 >
 ># Obtaining Users' Information
->curl -X 'GET' \
->  'http://192.168.179.16:5002/books/v1' \
->  -H 'accept: application/json'
+>curl -i http://192.168.179.16:5002/books/v1
 >
 ># ========== Expected Result ==========
+>HTTP/1.0 200 OK
+>Content-Type: application/json
+>Content-Length: 235
+>Server: Werkzeug/1.0.1 Python/3.7.13
+>Date: Wed, 29 Oct 2025 14:22:21 GMT
+>
 >{
 >  "Books": [
 >    {
