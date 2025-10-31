@@ -87,6 +87,9 @@ The purpose of this cheatsheet is to provide a structured and concise reference 
 >     - [Basic XSS](https://github.com/caderob/hacker-cheatsheet/blob/main/Introduction%20to%20Web%20Application%20Attacks/Cross-Site%20Scripting/Basic%20XSS.md)
 >     - [Privilege Escalation via XSS](https://github.com/caderob/hacker-cheatsheet/blob/main/Introduction%20to%20Web%20Application%20Attacks/Cross-Site%20Scripting/Privilege%20Escalation%20via%20XSS.md)
 >- [**Common Web Application Attacks**]
+>   - [Directory Traversal]
+>     - [Absolute vs Relative Paths](https://github.com/caderob/hacker-cheatsheet/blob/main/Common%20Web%20Application%20Attacks/Directory%20Traversal/Absolute%20vs%20Relative%20Paths.md)
+>     - [Identifying and Exploiting Directory Traversals]
 >- [**SQL Injection Attacks**]
 >- [**Phishing Basics**]
 >- [**Client-side Attacks**]
