@@ -89,7 +89,7 @@ The purpose of this cheatsheet is to provide a structured and concise reference 
 >- [**Common Web Application Attacks**]
 >   - [Directory Traversal]
 >     - [Absolute vs Relative Paths](https://github.com/caderob/hacker-cheatsheet/blob/main/Common%20Web%20Application%20Attacks/Directory%20Traversal/Absolute%20vs%20Relative%20Paths.md)
->     - [Identifying and Exploiting Directory Traversals]
+>     - [Identifying and Exploiting Directory Traversals](https://github.com/caderob/hacker-cheatsheet/blob/main/Common%20Web%20Application%20Attacks/Directory%20Traversal/Identifying%20and%20Exploiting%20Directory%20Traversals.md)
 >- [**SQL Injection Attacks**]
 >- [**Phishing Basics**]
 >- [**Client-side Attacks**]
