@@ -92,14 +92,8 @@ Adding more "../" to the relative path
 ># =====================================
 >```
 
-Lab 1 - 
->``` shell
->
->```
->
+Lab 1 - How many ../ do you need to go from the /var/log/ directory to the root file system (/)? Enter the number below.
+>2
 
-Lab 2 - 
->``` shell
->
->```
->
+Lab 2 - Enter the command in combination with the relative path containing the minimum number of ../ sequences to display the contents of the /etc/passwd file when the current working directory of the terminal is /usr/share/webshells/.
+>cat ../../../etc/passwd
