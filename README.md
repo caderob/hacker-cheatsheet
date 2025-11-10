@@ -40,6 +40,7 @@ The purpose of this cheatsheet is to provide a structured and concise reference 
 >   - [Understanding Note-Taking](https://github.com/caderob/hacker-cheatsheet/tree/main/Report%20Writing%20for%20Penetration%20Testers/Understanding%20Note-Taking)
 >     - [The General Structure of Penetration Testing Notes.md](https://github.com/caderob/hacker-cheatsheet/blob/main/Report%20Writing%20for%20Penetration%20Testers/Understanding%20Note-Taking/The%20General%20Structure%20of%20Penetration%20Testing%20Notes.md)
 >     - [Choosing the Right Note-Taking Tool](https://github.com/caderob/hacker-cheatsheet/blob/main/Report%20Writing%20for%20Penetration%20Testers/Understanding%20Note-Taking/Choosing%20the%20Right%20Note-Taking%20Tool.md)
+>     - [Taking Screenshots](https://github.com/caderob/hacker-cheatsheet/blob/main/Report%20Writing%20for%20Penetration%20Testers/Understanding%20Note-Taking/Taking%20Screenshots.md)
 >     - [Tools to Take Screenshots](https://github.com/caderob/hacker-cheatsheet/blob/main/Report%20Writing%20for%20Penetration%20Testers/Understanding%20Note-Taking/Tools%20to%20Take%20Screenshots.md)
 >   - [Writing Effective Technical Penetration Testing Reports](https://github.com/caderob/hacker-cheatsheet/tree/main/Report%20Writing%20for%20Penetration%20Testers/Writing%20Effective%20Technical%20Penetration%20Testing%20Reports)
 >     - [Executive Summary](https://github.com/caderob/hacker-cheatsheet/blob/main/Report%20Writing%20for%20Penetration%20Testers/Writing%20Effective%20Technical%20Penetration%20Testing%20Reports/Executive%20Summary.md)
