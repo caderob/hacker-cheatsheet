@@ -1,16 +1,16 @@
 # Open-Source Code
 
 GitHub Search
->![](https://raw.githubusercontent.com/caderob/hacker-cheatsheet/main/Images/Tools-to-Take-Screenshots-9.png)
+>![](https://raw.githubusercontent.com/caderob/hacker-cheatsheet/main/Images/Open-Source-Code-9.png)
 
 File Operator in GitHub Search
->![](https://raw.githubusercontent.com/caderob/hacker-cheatsheet/main/Images/Tools-to-Take-Screenshots-10.png)
+>![](https://raw.githubusercontent.com/caderob/hacker-cheatsheet/main/Images/Open-Source-Code-10.png)
 
 xampp.users File Content
->![](https://raw.githubusercontent.com/caderob/hacker-cheatsheet/main/Images/Tools-to-Take-Screenshots-11.png)
+>![](https://raw.githubusercontent.com/caderob/hacker-cheatsheet/main/Images/Open-Source-Code-11.png)
 
 Example Gitleaks Output
->![](https://raw.githubusercontent.com/caderob/hacker-cheatsheet/main/Images/Tools-to-Take-Screenshots-12.png)
+>![](https://raw.githubusercontent.com/caderob/hacker-cheatsheet/main/Images/Open-Source-Code-12.png)
 
 Lab 1 - Perform open-source recon on the MegaCorp One's GitHub repository and try to find user credentials. What is the username associated with the discovered hash?
 >``` shell
