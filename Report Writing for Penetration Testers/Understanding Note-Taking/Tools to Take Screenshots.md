@@ -1,5 +1,8 @@
 # Tools to Take Screenshots
 
+Snipping Tool
+>![](https://raw.githubusercontent.com/caderob/hacker-cheatsheet/main/Images/Tools-to-Take-Screenshots-9.png)
+
 Lab 1 - A penetration tester and their client should absolutely agree on what before the engagement starts?
 >scope
 
