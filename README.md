@@ -52,6 +52,7 @@ The purpose of this cheatsheet is to provide a structured and concise reference 
 >     - [Google Hacking](https://github.com/caderob/hacker-cheatsheet/blob/main/Information%20Gathering/Passive%20Information%20Gathering/Google%20Hacking.md)
 >     - [Netcraft (Wappalyzer)](https://github.com/caderob/hacker-cheatsheet/blob/main/Information%20Gathering/Passive%20Information%20Gathering/Netcraft%20(Wappalyzer).md)
 >     - [Open-Source Code](https://github.com/caderob/hacker-cheatsheet/blob/main/Information%20Gathering/Passive%20Information%20Gathering/Open-Source%20Code.md)
+>     - [Shodan](https://github.com/caderob/hacker-cheatsheet/blob/main/Information%20Gathering/Passive%20Information%20Gathering/Shodan.md)
 >     - [Passive LLM-Aided Enumeration](https://github.com/caderob/hacker-cheatsheet/blob/main/Information%20Gathering/Passive%20Information%20Gathering/Passive%20LLM-Aided%20Enumeration.md)
 >   - [Active Information Gathering](https://github.com/caderob/hacker-cheatsheet/tree/main/Information%20Gathering/Active%20Information%20Gathering)
 >     - [DNS Enumeration](https://github.com/caderob/hacker-cheatsheet/blob/main/Information%20Gathering/Active%20Information%20Gathering/DNS%20Enumeration.md)
