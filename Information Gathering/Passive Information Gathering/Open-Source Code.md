@@ -1,9 +1,16 @@
 # Open-Source Code
 
-Search the 'megacorpone' GitHub account for any files with "users" in the filename
->``` shell
->GitHub Search: users in:filename owner:megacorpone
->```
+GitHub Search
+>![](https://raw.githubusercontent.com/caderob/hacker-cheatsheet/main/Images/Tools-to-Take-Screenshots-9.png)
+
+File Operator in GitHub Search
+>![](https://raw.githubusercontent.com/caderob/hacker-cheatsheet/main/Images/Tools-to-Take-Screenshots-10.png)
+
+xampp.users File Content
+>![](https://raw.githubusercontent.com/caderob/hacker-cheatsheet/main/Images/Tools-to-Take-Screenshots-11.png)
+
+Example Gitleaks Output
+>![](https://raw.githubusercontent.com/caderob/hacker-cheatsheet/main/Images/Tools-to-Take-Screenshots-12.png)
 
 Lab 1 - Perform open-source recon on the MegaCorp One's GitHub repository and try to find user credentials. What is the username associated with the discovered hash?
 >``` shell
