@@ -57,7 +57,7 @@ The purpose of this cheatsheet is to provide a structured and concise reference 
 >     - [Passive LLM-Aided Enumeration](https://github.com/caderob/hacker-cheatsheet/blob/main/Information%20Gathering/Passive%20Information%20Gathering/Passive%20LLM-Aided%20Enumeration.md)
 >   - [Active Information Gathering](https://github.com/caderob/hacker-cheatsheet/tree/main/Information%20Gathering/Active%20Information%20Gathering)
 >     - [DNS Enumeration](https://github.com/caderob/hacker-cheatsheet/blob/main/Information%20Gathering/Active%20Information%20Gathering/DNS%20Enumeration.md)
->     - [TCP-UDP Port Scanning Theory](https://github.com/caderob/hacker-cheatsheet/blob/main/Information%20Gathering/Active%20Information%20Gathering/TCP%20UDP%20Port%20Scanning%20Theory.md)
+>     - [TCP/UDP Port Scanning Theory](https://github.com/caderob/hacker-cheatsheet/blob/main/Information%20Gathering/Active%20Information%20Gathering/TCP-UDP%20Port%20Scanning%20Theory.md)
 >     - [Port Scanning with Nmap](https://github.com/caderob/hacker-cheatsheet/blob/main/Information%20Gathering/Active%20Information%20Gathering/Port%20Scanning%20with%20Nmap.md)
 >     - [SMB Enumeration](https://github.com/caderob/hacker-cheatsheet/blob/main/Information%20Gathering/Active%20Information%20Gathering/SMB%20Enumeration.md)
 >     - [SMTP Enumeration](https://github.com/caderob/hacker-cheatsheet/blob/main/Information%20Gathering/Active%20Information%20Gathering/SMTP%20Enumeration.md)
