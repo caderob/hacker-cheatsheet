@@ -203,6 +203,15 @@ Successfully logging in as the admin account
 ># =====================================
 >```
 
+Crafting a POST request in Burp for API testing
+>![](https://raw.githubusercontent.com/caderob/hacker-cheatsheet/main/Images/Enumerating-and-Abusing-APIs-23.png)
+
+Inspecting the API response value
+>![](https://raw.githubusercontent.com/caderob/hacker-cheatsheet/main/Images/Enumerating-and-Abusing-APIs-24.png)
+
+Using the Site Map to organize API testing
+>![](https://raw.githubusercontent.com/caderob/hacker-cheatsheet/main/Images/Enumerating-and-Abusing-APIs-25.png)
+
 Lab 1 - Start up the Walkthrough VM 1 and modify the Kali /etc/hosts file to reflect the provided dynamically-allocated IP address that has been assigned to the offsecwp instance. Use Firefox to get familiar with the Developer Debugging Tools by navigating to the offsecwp site and replicate the steps shown in this Learning Unit. Explore the entire WordPress website and inspect its HTML source code in order to find the flag.
 >``` shell
 ># Map Hostname to IP
