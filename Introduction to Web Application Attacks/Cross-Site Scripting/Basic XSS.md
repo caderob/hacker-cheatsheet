@@ -58,7 +58,7 @@ Forwarding the request to the Repeater
 >![](https://raw.githubusercontent.com/caderob/hacker-cheatsheet/main/Images/Basic-XSS-26.png)
 
 Replacing the default User-Agent value
->![](https://raw.githubusercontent.com/caderob/hacker-cheatsheet/main/Images/Basic-XSS-26.png)
+>![](https://raw.githubusercontent.com/caderob/hacker-cheatsheet/main/Images/Basic-XSS-27.png)
 
 Demonstrating the XSS vulnerability
->![](https://raw.githubusercontent.com/caderob/hacker-cheatsheet/main/Images/Basic-XSS-27.png)
+>![](https://raw.githubusercontent.com/caderob/hacker-cheatsheet/main/Images/Basic-XSS-28.png)
