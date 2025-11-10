@@ -96,6 +96,8 @@ The purpose of this cheatsheet is to provide a structured and concise reference 
 >     - [Identifying and Exploiting Directory Traversals](https://github.com/caderob/hacker-cheatsheet/blob/main/Common%20Web%20Application%20Attacks/Directory%20Traversal/Identifying%20and%20Exploiting%20Directory%20Traversals.md)
 >     - [Encoding Special Characters]
 >   - [File Inclusion Vulnerabilities]
+>     - [Local File Inclusion (LFI)]
+>     - [PHP Wrappers]
 >   - [File Upload Vulnerabilities]
 >   - [Command Injection]
 >- [**SQL Injection Attacks**]
