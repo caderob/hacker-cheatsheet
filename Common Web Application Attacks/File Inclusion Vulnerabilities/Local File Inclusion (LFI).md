@@ -12,7 +12,7 @@ Log entry of Apache's access.log
 >```
 
 Unmodified Request in Burp Repeater
-([Images/Local File Inclusion (LFI)-8.png](https://github.com/caderob/hacker-cheatsheet/blob/main/Images/Local%20File%20Inclusion%20(LFI)-8.png))
+![Unmodified Request in Burp Repeater](<Images/Local File Inclusion (LFI)-8.png>)
 
 PHP Snippet to embed in the User Agent
 >``` shell
