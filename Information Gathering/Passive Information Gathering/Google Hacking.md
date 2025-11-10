@@ -1,24 +1,26 @@
 # Google Hacking
 
 Searching with a Site Operator
->``` shell
->Google Search: site:megacorpone.com
->```
+>![](https://raw.githubusercontent.com/caderob/hacker-cheatsheet/main/Images/Google-Hacking-1.png)
 
 Searching with a Filetype Operator
+>![](https://raw.githubusercontent.com/caderob/hacker-cheatsheet/main/Images/Google-Hacking-2.png)
+
+robots.txt file
 >``` shell
->Google Search: site:megacorpone.com filetype:txt
+>User-agent: *
+>Allow: /
+>Allow: /nanites.php
 >```
 
 Searching with the Exclude Operator
->``` shell
->Google Search: site:megacorpone.com -filetype:html
->```
+>![](https://raw.githubusercontent.com/caderob/hacker-cheatsheet/main/Images/Google-Hacking-3.png)
 
 Using Google to Find Directory Listings
->``` shell
->Google Search: site:megacorpone.com intitle:"index of" "parent directory"
->```
+>![](https://raw.githubusercontent.com/caderob/hacker-cheatsheet/main/Images/Google-Hacking-4.png)
+
+The Google Hacking Database (GHDB)
+>![](https://raw.githubusercontent.com/caderob/hacker-cheatsheet/main/Images/Google-Hacking-5.png)
 
 Lab 1 - What is the name of the VP of Legal for MegaCorp One?
 >``` shell
