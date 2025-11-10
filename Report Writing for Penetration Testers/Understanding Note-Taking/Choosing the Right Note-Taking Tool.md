@@ -13,3 +13,12 @@ Getting and Running Obsidian
 >
 >kali@kali:~$ ./Obsidian-0.14.2.AppImage
 >```
+
+Obsidian Welcome Screen
+>![](https://raw.githubusercontent.com/caderob/hacker-cheatsheet/main/Images/Choosing-the-Right-Note-Taking-Tool-4.png)
+
+Taking Notes in Obsidian
+>![](https://raw.githubusercontent.com/caderob/hacker-cheatsheet/main/Images/Choosing-the-Right-Note-Taking-Tool-5.png)
+
+Live Preview of Markdown
+>![](https://raw.githubusercontent.com/caderob/hacker-cheatsheet/main/Images/Choosing-the-Right-Note-Taking-Tool-6.png)
