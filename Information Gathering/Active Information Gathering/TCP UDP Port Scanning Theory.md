@@ -12,6 +12,9 @@ Using netcat to perform a TCP port scan
 ># =====================================
 >```
 
+Wireshark capture of the Netcat port scan
+>![](https://raw.githubusercontent.com/caderob/hacker-cheatsheet/main/Images/TCP-UDP-Port-Scanning-Theory-17.png)
+
 Using Netcat to perform a UDP port scan
 >``` shell
 >kali@kali:~$ nc -nvv -u -z -w 1 192.168.50.149 120-123
@@ -20,6 +23,9 @@ Using Netcat to perform a UDP port scan
 >(UNKNOWN) [192.168.50.149] 123 (ntp) open
 ># =====================================
 >```
+
+Wireshark capture of a UDP Netcat port scan
+>![](https://raw.githubusercontent.com/caderob/hacker-cheatsheet/main/Images/TCP-UDP-Port-Scanning-Theory-18.png)
 
 Lab 1 - Once VM Group 1 is started, perform a Netcat scan against the machine ending with the octet '151' (ex: 192.168.51.151) Which is the lowest TCP open port?
 >``` shell
