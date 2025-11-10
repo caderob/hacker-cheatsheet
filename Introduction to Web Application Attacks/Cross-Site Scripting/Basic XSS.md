@@ -10,6 +10,9 @@ Simple JavaScript Function
 >console.log(a)
 >```
 
+Testing the JavaScript Function in the Browser Console
+>![](https://raw.githubusercontent.com/caderob/hacker-cheatsheet/main/Images/Basic-XSS-25.png)
+
 Special characters for HTML and JavaScript
 >``` shell
 >< > ' " { } ;
@@ -50,3 +53,12 @@ Inspecting Visitors Plugin Record Visualization Function
 >    $i--;
 >}
 >```
+
+Forwarding the request to the Repeater
+>![](https://raw.githubusercontent.com/caderob/hacker-cheatsheet/main/Images/Basic-XSS-26.png)
+
+Replacing the default User-Agent value
+>![](https://raw.githubusercontent.com/caderob/hacker-cheatsheet/main/Images/Basic-XSS-26.png)
+
+Demonstrating the XSS vulnerability
+>![](https://raw.githubusercontent.com/caderob/hacker-cheatsheet/main/Images/Basic-XSS-27.png)
