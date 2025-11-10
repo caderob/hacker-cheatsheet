@@ -1,5 +1,49 @@
 # Security Testing with Burp Suite
 
+Starting Burp Suite
+>![](https://raw.githubusercontent.com/caderob/hacker-cheatsheet/main/Images/Security-Testing-with-Burp-Suite-1.png)
+
+Starting Burp Suite from a terminal shell
+>``` shell
+>kali@kali:~$ burpsuite
+>```
+
+Burp Suite JRE warning
+>![](https://raw.githubusercontent.com/caderob/hacker-cheatsheet/main/Images/Security-Testing-with-Burp-Suite-2.png)
+
+Burp Startup
+>![](https://raw.githubusercontent.com/caderob/hacker-cheatsheet/main/Images/Security-Testing-with-Burp-Suite-3.png)
+
+Burp Configuration
+>![](https://raw.githubusercontent.com/caderob/hacker-cheatsheet/main/Images/Security-Testing-with-Burp-Suite-4.png)
+
+Burp Suite User Interface
+>![](https://raw.githubusercontent.com/caderob/hacker-cheatsheet/main/Images/Security-Testing-with-Burp-Suite-5.png)
+
+Turning Off Intercept
+>![](https://raw.githubusercontent.com/caderob/hacker-cheatsheet/main/Images/Security-Testing-with-Burp-Suite-6.png)
+
+Proxy Listeners
+>![](https://raw.githubusercontent.com/caderob/hacker-cheatsheet/main/Images/Security-Testing-with-Burp-Suite-7.png)
+
+Firefox Proxy Configuration.
+>![](https://raw.githubusercontent.com/caderob/hacker-cheatsheet/main/Images/Security-Testing-with-Burp-Suite-8.png)
+
+Burp Suite HTTP History
+>![](https://raw.githubusercontent.com/caderob/hacker-cheatsheet/main/Images/Security-Testing-with-Burp-Suite-9.png)
+
+Inspecting the first HTTP request.
+>![](https://raw.githubusercontent.com/caderob/hacker-cheatsheet/main/Images/Security-Testing-with-Burp-Suite-10.png)
+
+Sending a Request to Repeater
+>![](https://raw.githubusercontent.com/caderob/hacker-cheatsheet/main/Images/Security-Testing-with-Burp-Suite-11.png)
+
+Burp Suite Repeater
+>![](https://raw.githubusercontent.com/caderob/hacker-cheatsheet/main/Images/Security-Testing-with-Burp-Suite-12.png)
+
+Burp Suite Repeater with Request and Response
+>![](https://raw.githubusercontent.com/caderob/hacker-cheatsheet/main/Images/Security-Testing-with-Burp-Suite-13.png)
+
 Setting up our /etc/hosts file for offsecwp
 >``` shell
 >kali@kali:~$ cat /etc/hosts
@@ -10,6 +54,14 @@ Setting up our /etc/hosts file for offsecwp
 ># =====================================
 >```
 
+Simulating a failed WordPress login 
+>![](https://raw.githubusercontent.com/caderob/hacker-cheatsheet/main/Images/Security-Testing-with-Burp-Suite-14.png)
+
+Sending the POST request to Intruder
+>![](https://raw.githubusercontent.com/caderob/hacker-cheatsheet/main/Images/Security-Testing-with-Burp-Suite-15.png)
+
+Assigning the password value to the Intruder payload generator
+>![](https://raw.githubusercontent.com/caderob/hacker-cheatsheet/main/Images/Security-Testing-with-Burp-Suite-16.png)
 
 Setting up our /etc/hosts file for offsecwp
 >``` shell
@@ -28,6 +80,15 @@ Setting up our /etc/hosts file for offsecwp
 >abc123
 ># =====================================
 >```
+
+Pasting the first 10 rockyou entries
+>![](https://raw.githubusercontent.com/caderob/hacker-cheatsheet/main/Images/Security-Testing-with-Burp-Suite-17.png)
+
+Inspecting Intruder's attack results
+>![](https://raw.githubusercontent.com/caderob/hacker-cheatsheet/main/Images/Security-Testing-with-Burp-Suite-18.png)
+
+Logging to the WP admin console
+>![](https://raw.githubusercontent.com/caderob/hacker-cheatsheet/main/Images/Security-Testing-with-Burp-Suite-19.png)
 
 Lab 1 - We have been tasked to test the SMS Two-Factor authentication of a newly-developed web application. The SMS verification code is made by four digits. Which Burp tool is most suited to perform a brute force attack against the keyspace?
 >intruder
