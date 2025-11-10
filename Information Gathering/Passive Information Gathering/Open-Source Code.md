@@ -1,4 +1,4 @@
-# Open-Source Code (GitHub, GitHub Gist, GitLab, SourceForge)
+# Open-Source Code
 
 Search the 'megacorpone' GitHub account for any files with "users" in the filename
 >``` shell
