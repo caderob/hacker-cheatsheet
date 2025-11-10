@@ -1,5 +1,11 @@
 # The General Structure of Penetration Testing Notes
 
+XSS Testing
+>![](https://raw.githubusercontent.com/caderob/hacker-cheatsheet/main/Images/The-General-Structure-of-Penetration-Testing-Notes-1.png)
+
+XSS Testing Issue
+>![](https://raw.githubusercontent.com/caderob/hacker-cheatsheet/main/Images/The-General-Structure-of-Penetration-Testing-Notes-2.png)
+
 Example of a Testing Note.
 >``` shell
 >"Testing for Cross-Site Scripting 
