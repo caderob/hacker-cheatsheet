@@ -98,6 +98,7 @@ The purpose of this cheatsheet is to provide a structured and concise reference 
 >   - [File Inclusion Vulnerabilities]
 >     - [Local File Inclusion (LFI)]
 >     - [PHP Wrappers](https://github.com/caderob/hacker-cheatsheet/blob/main/Common%20Web%20Application%20Attacks/File%20Inclusion%20Vulnerabilities/PHP%20Wrappers.md)
+>     - [Remote File Inclusion (RFI)]
 >   - [File Upload Vulnerabilities]
 >   - [Command Injection]
 >- [**SQL Injection Attacks**]
