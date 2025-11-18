@@ -33,6 +33,7 @@ Execution of dir command in the uploaded webshell
 >               2 Dir(s)  15,410,925,568 bytes free
 >...
 ># =====================================
+>```
 
 Starting Netcat listener on port 4444
 >``` shell
