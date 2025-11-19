@@ -166,7 +166,7 @@ Running sqlmap with os-shell
 >
 >os-shell> pwd
 >
->># ========== Expected Result ==========
+># ========== Expected Result ==========
 >do you want to retrieve the command standard output? [Y/n/a] y
 >command standard output: '/var/www/html/tmp'
 ># =====================================
