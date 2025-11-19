@@ -106,11 +106,11 @@ The purpose of this cheatsheet is to provide a structured and concise reference 
 >     - [OS Command Injection](https://github.com/caderob/hacker-cheatsheet/blob/main/Common%20Web%20Application%20Attacks/Command%20Injection/OS%20Command%20Injection.md)
 >- [**SQL Injection Attacks**]
 >   - [SQL Theory and Databases]
->     - [SQL Theory Refresher]
+>     - [SQL Theory Refresher](https://github.com/caderob/hacker-cheatsheet/blob/main/SQL%20Injection%20Attacks/SQL%20Theory%20and%20Databases/SQL%20Theory%20Refresher.md)
 >     - [DB Types and Characteristics]
 >   - [Manual SQL Exploitation]
->     - [Identifying SQLi via Error-based Payloads]
->     - [UNION-based Payloads]
+>     - [Identifying SQLi via Error-based Payloads](https://github.com/caderob/hacker-cheatsheet/blob/main/SQL%20Injection%20Attacks/Manual%20SQL%20Exploitation/Identifying%20SQLi%20via%20Error-based%20Payloads.md)
+>     - [UNION-based Payloads](https://github.com/caderob/hacker-cheatsheet/blob/main/SQL%20Injection%20Attacks/Manual%20SQL%20Exploitation/UNION-based%20Payloads.md)
 >     - [Blind SQL Injections]
 >   - [Manual and Automated Code Execution]
 >     - [Manual Code Execution]
