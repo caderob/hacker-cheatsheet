@@ -6,7 +6,7 @@ The purpose of this cheatsheet is to provide a structured and concise reference 
 
 ## Contents
 
-> [**Penetration Testing with Kali Linux: General Course Information**](https://github.com/caderob/hacker-cheatsheet/tree/main/Penetration%20Testing%20with%20Kali%20Linux%3A%20General%20Course%20Information)
+>- [**Penetration Testing with Kali Linux: General Course Information**](https://github.com/caderob/hacker-cheatsheet/tree/main/Penetration%20Testing%20with%20Kali%20Linux%3A%20General%20Course%20Information)
 >   - [Getting Started with PWK](https://github.com/caderob/hacker-cheatsheet/tree/main/Penetration%20Testing%20with%20Kali%20Linux%3A%20General%20Course%20Information/Getting%20Started%20with%20PWK)
 >     - [PWK Course Materials](https://github.com/caderob/hacker-cheatsheet/blob/main/Penetration%20Testing%20with%20Kali%20Linux%3A%20General%20Course%20Information/Getting%20Started%20with%20PWK/PWK%20Course%20Materials.md)
 >     - [Connecting to the PWK Lab](https://github.com/caderob/hacker-cheatsheet/blob/main/Penetration%20Testing%20with%20Kali%20Linux%3A%20General%20Course%20Information/Getting%20Started%20with%20PWK/Connecting%20to%20the%20PWK%20Lab.md)
