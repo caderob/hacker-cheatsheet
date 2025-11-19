@@ -113,7 +113,7 @@ The purpose of this cheatsheet is to provide a structured and concise reference 
 >     - [UNION-based Payloads](https://github.com/caderob/hacker-cheatsheet/blob/main/SQL%20Injection%20Attacks/Manual%20SQL%20Exploitation/UNION-based%20Payloads.md)
 >     - [Blind SQL Injections]
 >   - [Manual and Automated Code Execution]
->     - [Manual Code Execution]
+>     - [Manual Code Execution](https://github.com/caderob/hacker-cheatsheet/blob/main/SQL%20Injection%20Attacks/Manual%20and%20Automated%20Code%20Execution/Manual%20Code%20Execution.md)
 >     - [Automating the Attack]
 >- [**Phishing Basics**]
 >- [**Client-side Attacks**]
