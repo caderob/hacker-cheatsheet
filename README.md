@@ -117,7 +117,7 @@ The purpose of this cheatsheet is to provide a structured and concise reference 
 >     - [Automating the Attack]
 >- [**Phishing Basics**]
 >   - [Phishing 101]
->     - [LLMs, Generative AI and Deepfakes]
+>     - [LLMs, Generative AI, and Deepfakes]
 >   - [Payloads, Misdirection, and Speedbumps]
 >     - [Identifying Risks of Malicious Office Macros]
 >     - [Differentiate Credential Phishing and Multi-Factor Authentication (MFA)]
