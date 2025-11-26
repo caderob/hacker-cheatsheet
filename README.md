@@ -116,11 +116,11 @@ The purpose of this cheatsheet is to provide a structured and concise reference 
 >     - [Manual Code Execution](https://github.com/caderob/hacker-cheatsheet/blob/main/SQL%20Injection%20Attacks/Manual%20and%20Automated%20Code%20Execution/Manual%20Code%20Execution.md)
 >     - [Automating the Attack]
 >- [**Phishing Basics**]
->   - [Phishing 101]
+>   - [Phishing 101](https://github.com/caderob/hacker-cheatsheet/tree/main/Phishing%20Basics/Phishing%20101)
 >     - [LLMs, Generative AI, and Deepfakes](https://github.com/caderob/hacker-cheatsheet/blob/main/Phishing%20Basics/Phishing%20101/LLMs%2C%20Generative%20AI%2C%20and%20Deepfakes.md)
->   - [Payloads, Misdirection, and Speedbumps]
->     - [Identifying Risks of Malicious Office Macros]
->     - [Differentiate Credential Phishing and Multi-Factor Authentication (MFA)]
+>   - [Payloads, Misdirection, and Speedbumps](https://github.com/caderob/hacker-cheatsheet/tree/main/Phishing%20Basics/Payloads%2C%20Misdirection%2C%20and%20Speedbumps)
+>     - [Identifying Risks of Malicious Office Macros](https://github.com/caderob/hacker-cheatsheet/blob/main/Phishing%20Basics/Payloads%2C%20Misdirection%2C%20and%20Speedbumps/Identifying%20Risks%20of%20Malicious%20Office%20Macros.md)
+>     - [Differentiate Credential Phishing and Multi-Factor Authentication (MFA)](https://github.com/caderob/hacker-cheatsheet/blob/main/Phishing%20Basics/Payloads,%20Misdirection,%20and%20Speedbumps/Differentiate%20Credential%20Phishing%20and%20Multi-Factor%20Authentication%20(MFA).md)
 >   - [Hands-On Credential Phishing]
 >     - [Creating a Zoom Credential Phishing Pretext]
 >     - [Cloning a Legitimate Website]
