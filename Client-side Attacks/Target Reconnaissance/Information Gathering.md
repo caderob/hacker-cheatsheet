@@ -50,10 +50,25 @@ Displaying the metadata for brochure.pdf
 
 Lab 1 - Download old.pdf from the Mountain Vegetables website on VM #1 by clicking on the OLD button. Use exiftool to review the file's metadata. Enter the value of the Author tag.
 >``` shell
->kali@kali:~$ 
+># Navigate to http://192.168.187.197/
+>
+># Select the "OLD" button or navigate to http://192.168.187.197/old.pdf
+>
+># Download old.pdf
+>
+>kali@kali:~$ cd Downloads 
+>
+># Display the metadata for old.pdf
+>kali@kali:~/Downloads$ exiftool -a -u old.pdf 
 >
 ># ========== Expected Result ==========
->
+>...
+>PDF Version                     : 1.4
+>XMP Toolkit                     : Image::ExifTool 11.88
+>Author                          : OS{b657f9d1e4b94460c7684ecaf1708353}
+>Create Date                     : 2018:01:17 05:52:23+00:00
+>Modify Date                     : 2018:01:17 05:52:23+00:00
+>...
 ># =====================================
 >```
 >OS{b657f9d1e4b94460c7684ecaf1708353}
