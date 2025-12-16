@@ -128,9 +128,9 @@ The purpose of this cheatsheet is to provide a structured and concise reference 
 >     - [Injecting Malicious Elements in the Clone]
 >     - [Crafting the Phishing email]
 >- [**Client-side Attacks**]
->   - [Target Reconnaissance]
+>   - [Target Reconnaissance](https://github.com/caderob/hacker-cheatsheet/tree/main/Client-side%20Attacks/Target%20Reconnaissance)
 >     - [Information Gathering](https://github.com/caderob/hacker-cheatsheet/blob/main/Client-side%20Attacks/Target%20Reconnaissance/Information%20Gathering.md)
->     - [Client Fingerprinting]
+>     - [Client Fingerprinting](https://github.com/caderob/hacker-cheatsheet/blob/main/Client-side%20Attacks/Target%20Reconnaissance/Client%20Fingerprinting.md)
 >   - [Exploiting Microsoft Office]
 >     - [Preparing the Attack]
 >     - [Installing Microsoft Office]
