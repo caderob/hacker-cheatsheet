@@ -56,6 +56,7 @@ Lab 1 - Download old.pdf from the Mountain Vegetables website on VM #1 by clicki
 >
 ># Download old.pdf
 >
+># Navigate to Downloads directory
 >kali@kali:~$ cd Downloads 
 >
 ># Display the metadata for old.pdf
