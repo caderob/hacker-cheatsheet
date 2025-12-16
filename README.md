@@ -132,7 +132,7 @@ The purpose of this cheatsheet is to provide a structured and concise reference 
 >     - [Information Gathering](https://github.com/caderob/hacker-cheatsheet/blob/main/Client-side%20Attacks/Target%20Reconnaissance/Information%20Gathering.md)
 >     - [Client Fingerprinting](https://github.com/caderob/hacker-cheatsheet/blob/main/Client-side%20Attacks/Target%20Reconnaissance/Client%20Fingerprinting.md)
 >   - [Exploiting Microsoft Office]
->     - [Preparing the Attack]
+>     - [Preparing the Attack](https://github.com/caderob/hacker-cheatsheet/blob/main/Client-side%20Attacks/Exploiting%20Microsoft%20Office/Preparing%20the%20Attack.md)
 >     - [Installing Microsoft Office]
 >     - [Leveraging Microsoft Word Macros]
 >   - [Abusing Windows Library Files]
