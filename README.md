@@ -129,7 +129,7 @@ The purpose of this cheatsheet is to provide a structured and concise reference 
 >     - [Crafting the Phishing email]
 >- [**Client-side Attacks**]
 >   - [Target Reconnaissance]
->     - [Information Gathering]
+>     - [Information Gathering](https://github.com/caderob/hacker-cheatsheet/blob/main/Client-side%20Attacks/Target%20Reconnaissance/Information%20Gathering.md)
 >     - [Client Fingerprinting]
 >   - [Exploiting Microsoft Office]
 >     - [Preparing the Attack]
