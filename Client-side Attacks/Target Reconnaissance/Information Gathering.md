@@ -76,10 +76,30 @@ Lab 1 - Download old.pdf from the Mountain Vegetables website on VM #1 by clicki
 
 Lab 2 - Start VM #2 and use gobuster to bruteforce the contents of the web server. Specify "pdf" as the filetype and find a document other than old.pdf and brochure.pdf. After you identify the file, download it and extract the flag in the metadata.
 >``` shell
->kali@kali:~$ 
+># Use gobuster to bruteforce the contents of the web server (Specifing "pdf" as the filetype)
+>kali@kali:~$ gobuster dir -u http://192.168.103.197 -w /usr/share/wordlists/dirb/common.txt -x pdf -t 5
 >
 ># ========== Expected Result ==========
+>...
+>/index.html           (Status: 200) [Size: 5443]
+>/info.pdf             (Status: 200) [Size: 309737]
+>/old.pdf              (Status: 200) [Size: 462554]
+>...
+># =====================================
 >
+># Navigate to http://192.168.103.197/info.pdf
+>
+># Download info.pdf
+>
+># Navigate to Downloads directory
+>kali@kali:~$ cd Downloads 
+>
+># Display the metadata for info.pdf
+>kali@kali:~/Downloads$ exiftool -a -u info.pdf 
+>
+># ========== Expected Result ==========
+>...
+>Description                     : OS{9d27aa56204924e6fc0a9bb13934282a}
 ># =====================================
 >```
 >OS{9d27aa56204924e6fc0a9bb13934282a}
