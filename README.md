@@ -142,7 +142,7 @@ The purpose of this cheatsheet is to provide a structured and concise reference 
 >     - [A Word of Caution](https://github.com/caderob/hacker-cheatsheet/blob/main/Locating%20Public%20Exploits/Getting%20Started/A%20Word%20of%20Caution.md)
 >   - [Online Exploit Resources]
 >     - [The Exploit Database](https://github.com/caderob/hacker-cheatsheet/blob/main/Locating%20Public%20Exploits/Online%20Exploit%20Resources/The%20Exploit%20Database.md)
->     - [Packet Storm]
+>     - [Packet Storm](https://github.com/caderob/hacker-cheatsheet/blob/main/Locating%20Public%20Exploits/Online%20Exploit%20Resources/Packet%20Storm.md)
 >     - [GitHub]
 >     - [Google Search Operators]
 >   - [Offline Exploit Resources]
