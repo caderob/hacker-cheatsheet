@@ -138,8 +138,8 @@ The purpose of this cheatsheet is to provide a structured and concise reference 
 >   - [Abusing Windows Library Files]
 >     - [Obtaining Code Execution via Windows Library Files]
 >- [**Locating Public Exploits**]
->   - [Getting Started]
->     - [A Word of Caution]
+>   - [Getting Started](https://github.com/caderob/hacker-cheatsheet/tree/main/Locating%20Public%20Exploits/Getting%20Started)
+>     - [A Word of Caution](https://github.com/caderob/hacker-cheatsheet/blob/main/Locating%20Public%20Exploits/Getting%20Started/A%20Word%20of%20Caution.md)
 >   - [Online Exploit Resources]
 >     - [The Exploit Database]
 >     - [Packet Storm]
