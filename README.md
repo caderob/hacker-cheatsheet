@@ -154,7 +154,7 @@ The purpose of this cheatsheet is to provide a structured and concise reference 
 >- [**Fixing Exploits**]
 >   - [Fixing Memory Corruption Exploits]
 >     - [Buffer Overflow in a Nutshell](https://github.com/caderob/hacker-cheatsheet/blob/main/Fixing%20Exploits/Fixing%20Memory%20Corruption%20Exploits/Buffer%20Overflow%20in%20a%20Nutshell.md)
->     - [Importing and Examining the Exploit]
+>     - [Importing and Examining the Exploit](https://github.com/caderob/hacker-cheatsheet/blob/main/Fixing%20Exploits/Fixing%20Memory%20Corruption%20Exploits/Importing%20and%20Examining%20the%20Exploit.md)
 >     - [Cross-Compiling Exploit Code]
 >     - [Fixing the Exploit]
 >     - [Changing the Overflow Buffer]
