@@ -145,10 +145,10 @@ The purpose of this cheatsheet is to provide a structured and concise reference 
 >     - [Packet Storm](https://github.com/caderob/hacker-cheatsheet/blob/main/Locating%20Public%20Exploits/Online%20Exploit%20Resources/Packet%20Storm.md)
 >     - [GitHub](https://github.com/caderob/hacker-cheatsheet/blob/main/Locating%20Public%20Exploits/Online%20Exploit%20Resources/GitHub.md)
 >     - [Google Search Operators](https://github.com/caderob/hacker-cheatsheet/blob/main/Locating%20Public%20Exploits/Online%20Exploit%20Resources/Google%20Search%20Operators.md)
->   - [Offline Exploit Resources]
+>   - [Offline Exploit Resources](https://github.com/caderob/hacker-cheatsheet/tree/main/Locating%20Public%20Exploits/Offline%20Exploit%20Resources)
 >     - [Exploit Frameworks](https://github.com/caderob/hacker-cheatsheet/blob/main/Locating%20Public%20Exploits/Offline%20Exploit%20Resources/Exploit%20Frameworks.md)
->     - [SearchSploit]
->     - [Nmap NSE Scripts]
+>     - [SearchSploit](https://github.com/caderob/hacker-cheatsheet/blob/main/Locating%20Public%20Exploits/Offline%20Exploit%20Resources/SearchSploit.md)
+>     - [Nmap NSE Scripts](https://github.com/caderob/hacker-cheatsheet/blob/main/Locating%20Public%20Exploits/Offline%20Exploit%20Resources/Nmap%20NSE%20Scripts.md)
 >   - [Exploiting a Target]
 >     - [Putting It Together]
 >- [**Fixing Exploits**]
