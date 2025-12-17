@@ -152,12 +152,12 @@ The purpose of this cheatsheet is to provide a structured and concise reference 
 >   - [Exploiting a Target]
 >     - [Putting It Together]
 >- [**Fixing Exploits**]
->   - [Fixing Memory Corruption Exploits]
+>   - [Fixing Memory Corruption Exploits](https://github.com/caderob/hacker-cheatsheet/tree/main/Fixing%20Exploits/Fixing%20Memory%20Corruption%20Exploits)
 >     - [Buffer Overflow in a Nutshell](https://github.com/caderob/hacker-cheatsheet/blob/main/Fixing%20Exploits/Fixing%20Memory%20Corruption%20Exploits/Buffer%20Overflow%20in%20a%20Nutshell.md)
 >     - [Importing and Examining the Exploit](https://github.com/caderob/hacker-cheatsheet/blob/main/Fixing%20Exploits/Fixing%20Memory%20Corruption%20Exploits/Importing%20and%20Examining%20the%20Exploit.md)
 >     - [Cross-Compiling Exploit Code](https://github.com/caderob/hacker-cheatsheet/blob/main/Fixing%20Exploits/Fixing%20Memory%20Corruption%20Exploits/Cross-Compiling%20Exploit%20Code.md)
 >     - [Fixing the Exploit](https://github.com/caderob/hacker-cheatsheet/blob/main/Fixing%20Exploits/Fixing%20Memory%20Corruption%20Exploits/Fixing%20the%20Exploit.md)
->     - [Changing the Overflow Buffer]
+>     - [Changing the Overflow Buffer](https://github.com/caderob/hacker-cheatsheet/blob/main/Fixing%20Exploits/Fixing%20Memory%20Corruption%20Exploits/Changing%20the%20Overflow%20Buffer.md)
 >   - [Fixing Web Exploits]
 >     - [Selecting the Vulnerability and Fixing the Code]
 >     - [Troubleshooting the "index out of range" Error]
