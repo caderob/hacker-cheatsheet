@@ -146,7 +146,7 @@ The purpose of this cheatsheet is to provide a structured and concise reference 
 >     - [GitHub](https://github.com/caderob/hacker-cheatsheet/blob/main/Locating%20Public%20Exploits/Online%20Exploit%20Resources/GitHub.md)
 >     - [Google Search Operators](https://github.com/caderob/hacker-cheatsheet/blob/main/Locating%20Public%20Exploits/Online%20Exploit%20Resources/Google%20Search%20Operators.md)
 >   - [Offline Exploit Resources]
->     - [Exploit Frameworks]
+>     - [Exploit Frameworks](https://github.com/caderob/hacker-cheatsheet/blob/main/Locating%20Public%20Exploits/Offline%20Exploit%20Resources/Exploit%20Frameworks.md)
 >     - [SearchSploit]
 >     - [Nmap NSE Scripts]
 >   - [Exploiting a Target]
