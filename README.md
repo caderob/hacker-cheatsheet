@@ -164,8 +164,8 @@ The purpose of this cheatsheet is to provide a structured and concise reference 
 >- [**Antivirus Evasion**]
 >   - [Antivirus Software Key Components and Operations](https://github.com/caderob/hacker-cheatsheet/tree/main/Antivirus%20Evasion/Antivirus%20Software%20Key%20Components%20and%20Operations)
 >     - [Detection Methods](https://github.com/caderob/hacker-cheatsheet/blob/main/Antivirus%20Evasion/Antivirus%20Software%20Key%20Components%20and%20Operations/Detection%20Methods.md)
->   - [Bypassing Antivirus Detections]
->     - [In-Memory Evasion]
+>   - [Bypassing Antivirus Detections](https://github.com/caderob/hacker-cheatsheet/tree/main/Antivirus%20Evasion/Bypassing%20Antivirus%20Detections)
+>     - [In-Memory Evasion](https://github.com/caderob/hacker-cheatsheet/blob/main/Antivirus%20Evasion/Bypassing%20Antivirus%20Detections/In-Memory%20Evasion.md)
 >   - [AV Evasion in Practice]
 >     - [Testing for AV Evasion]
 >     - [Evading AV with Thread Injection]
