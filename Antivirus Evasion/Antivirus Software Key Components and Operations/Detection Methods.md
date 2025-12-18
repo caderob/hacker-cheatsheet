@@ -63,13 +63,16 @@ Lab 2 - Which AV detection method makes use of an engine that runs the executabl
 
 Lab 3 - Start up VM #1 and connect via RDP to the Windows 11 machine with the provided credentials. On the user's desktop you will find a PE file named malware.exe. In order to get the flag, upload the malware sample to http://www.virustotal.com and once the analysis has completed check the metadata present in the BEHAVIOR tab.
 >``` shell
+># Create shared directory on Kali
+>mkdir -p /home/kali/vtshare
+>
 ># RDP to Windows client host with drive redirection
 >kali@kali:~$ xfreerdp3 /u:offsec /p:lab /v:192.168.208.61 /drive:share,/home/kali/vtshare
 >
 ># Copy malware.exe from Windows to Kali using PowerShell
 >PS C:\Users\offsec> copy "$env:USERPROFILE\Desktop\malware.exe" "\\tsclient\share\malware.exe"
 >
-># Navigate to https://www.virustotal.com on Kali and upload malware.exe at /home/kali/vtshare
+># Navigate to https://www.virustotal.com on Kali and upload /home/kali/vtshare/malware.exe
 >
 ># Navigate to "Behavior" > "Process and service actions"
 >
