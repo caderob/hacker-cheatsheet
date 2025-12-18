@@ -168,4 +168,4 @@ Receiving a reverse shell on our attacking machine
 >```
 
 Lab 1 -     Review the code from the PowerShell script and ensure that you have a basic understanding of how it works. Connect to the VM 1 and get a shell back to your Kali Linux machine using the memory injection PowerShell AV bypass technique we covered in this Learning Unit. As an additional exercise, attempt to get a reverse shell using a PowerShell one-liner rather than a script. Which API have we used in our script to allocate memory for the shellcode?
->
+>VirtualAlloc
