@@ -162,8 +162,8 @@ The purpose of this cheatsheet is to provide a structured and concise reference 
 >     - [Selecting the Vulnerability and Fixing the Code]
 >     - [Troubleshooting the "index out of range" Error]
 >- [**Antivirus Evasion**]
->   - [Antivirus Software Key Components and Operations]
->     - [Detection Methods]
+>   - [Antivirus Software Key Components and Operations](https://github.com/caderob/hacker-cheatsheet/tree/main/Antivirus%20Evasion/Antivirus%20Software%20Key%20Components%20and%20Operations)
+>     - [Detection Methods](https://github.com/caderob/hacker-cheatsheet/blob/main/Antivirus%20Evasion/Antivirus%20Software%20Key%20Components%20and%20Operations/Detection%20Methods.md)
 >   - [Bypassing Antivirus Detections]
 >     - [In-Memory Evasion]
 >   - [AV Evasion in Practice]
