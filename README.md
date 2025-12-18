@@ -161,12 +161,12 @@ The purpose of this cheatsheet is to provide a structured and concise reference 
 >   - [Fixing Web Exploits]
 >     - [Selecting the Vulnerability and Fixing the Code]
 >     - [Troubleshooting the "index out of range" Error]
->- [**Antivirus Evasion**]
+>- [**Antivirus Evasion**](https://github.com/caderob/hacker-cheatsheet/tree/main/Antivirus%20Evasion)
 >   - [Antivirus Software Key Components and Operations](https://github.com/caderob/hacker-cheatsheet/tree/main/Antivirus%20Evasion/Antivirus%20Software%20Key%20Components%20and%20Operations)
 >     - [Detection Methods](https://github.com/caderob/hacker-cheatsheet/blob/main/Antivirus%20Evasion/Antivirus%20Software%20Key%20Components%20and%20Operations/Detection%20Methods.md)
 >   - [Bypassing Antivirus Detections](https://github.com/caderob/hacker-cheatsheet/tree/main/Antivirus%20Evasion/Bypassing%20Antivirus%20Detections)
 >     - [In-Memory Evasion](https://github.com/caderob/hacker-cheatsheet/blob/main/Antivirus%20Evasion/Bypassing%20Antivirus%20Detections/In-Memory%20Evasion.md)
->   - [AV Evasion in Practice]
+>   - [AV Evasion in Practice](https://github.com/caderob/hacker-cheatsheet/tree/main/Antivirus%20Evasion/AV%20Evasion%20in%20Practice)
 >     - [Testing for AV Evasion](https://github.com/caderob/hacker-cheatsheet/blob/main/Antivirus%20Evasion/AV%20Evasion%20in%20Practice/Testing%20for%20AV%20Evasion.md)
 >     - [Evading AV with Thread Injection](https://github.com/caderob/hacker-cheatsheet/blob/main/Antivirus%20Evasion/AV%20Evasion%20in%20Practice/Evading%20AV%20with%20Thread%20Injection.md)
 >     - [Automating the Process](https://github.com/caderob/hacker-cheatsheet/blob/main/Antivirus%20Evasion/AV%20Evasion%20in%20Practice/Automating%20the%20Process.md)
