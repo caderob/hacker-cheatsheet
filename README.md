@@ -168,7 +168,7 @@ The purpose of this cheatsheet is to provide a structured and concise reference 
 >     - [In-Memory Evasion](https://github.com/caderob/hacker-cheatsheet/blob/main/Antivirus%20Evasion/Bypassing%20Antivirus%20Detections/In-Memory%20Evasion.md)
 >   - [AV Evasion in Practice]
 >     - [Testing for AV Evasion](https://github.com/caderob/hacker-cheatsheet/blob/main/Antivirus%20Evasion/AV%20Evasion%20in%20Practice/Testing%20for%20AV%20Evasion.md)
->     - [Evading AV with Thread Injection]
+>     - [Evading AV with Thread Injection](https://github.com/caderob/hacker-cheatsheet/blob/main/Antivirus%20Evasion/AV%20Evasion%20in%20Practice/Evading%20AV%20with%20Thread%20Injection.md)
 >     - [Automating the Process]
 >- [**Password Attacks**]
 >   - [Attacking Network Services Logins]
