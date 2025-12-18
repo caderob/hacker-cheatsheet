@@ -69,7 +69,7 @@ Lab 3 - Start up VM #1 and connect via RDP to the Windows 11 machine with the pr
 ># Copy malware.exe from Windows to Kali using PowerShell
 >PS C:\Users\offsec> copy "$env:USERPROFILE\Desktop\malware.exe" "\\tsclient\share\malware.exe"
 >
-># Navigate to https://www.virustotal.com and upload malware.exe at /home/kali/vtshare
+># Navigate to https://www.virustotal.com on Kali and upload malware.exe at /home/kali/vtshare
 >
 ># Navigate to "Behavior" > "Process and service actions"
 >
