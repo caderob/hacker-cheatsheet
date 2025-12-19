@@ -172,7 +172,7 @@ The purpose of this cheatsheet is to provide a structured and concise reference 
 >     - [Automating the Process](https://github.com/caderob/hacker-cheatsheet/blob/main/Antivirus%20Evasion/AV%20Evasion%20in%20Practice/Automating%20the%20Process.md)
 >- [**Password Attacks**]
 >   - [Attacking Network Services Logins]
->     - [SSH]
+>     - [SSH](https://github.com/caderob/hacker-cheatsheet/blob/main/Password%20Attacks/Attacking%20Network%20Services%20Logins/SSH.md)
 >     - [RDP]
 >     - [HTTP POST Login Form]
 >   - [Password Cracking Fundamentals]
