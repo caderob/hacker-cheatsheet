@@ -154,4 +154,31 @@ Lab 3 - Answer with true or false: A cryptographic hash function is a one-way fu
 >true
 
 Lab 4 - Use the MD5 GPU hash rate from the GPU benchmark of this section and calculate the cracking time in minutes with the following conditions. Use a charset of all lower and upper case letters of the English alphabet and use a password length of 8. Enter the answer as full minutes without seconds.
+>``` shell
+># MD5 GPU hash rate
+>Speed.#1: 68185.1 MH/s
 >
+># Convert MH/s → H/s:
+>68185.1 × 1,000,000 = 68,185,100,000 hashes/sec
+>
+># Charset size:
+>26 + 26 = 52
+>
+># Password length: 8
+>52^8 = 53,459,728,531,456
+>
+># Cracking-time calculation
+>kali@kali:~$ python3 -c "print(52**8 / 68185100000)"
+>
+># ========== Expected Result ==========
+>783.98 seconds
+># =====================================
+>
+># Convert seconds → minutes
+>kali@kali:~$ python3 -c "print((52**8 / 68185100000) / 60)"
+>
+># ========== Expected Result ==========
+>13.066 minutes
+># =====================================
+>```
+>13
