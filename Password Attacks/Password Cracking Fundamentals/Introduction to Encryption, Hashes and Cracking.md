@@ -156,7 +156,7 @@ Lab 3 - Answer with true or false: A cryptographic hash function is a one-way fu
 Lab 4 - Use the MD5 GPU hash rate from the GPU benchmark of this section and calculate the cracking time in minutes with the following conditions. Use a charset of all lower and upper case letters of the English alphabet and use a password length of 8. Enter the answer as full minutes without seconds.
 >``` shell
 ># MD5 GPU hash rate
->Speed.#1: 68185.1 MH/s
+>68185.1 MH/s
 >
 ># Convert MH/s → H/s:
 >68185.1 × 1,000,000 = 68,185,100,000 hashes/sec
