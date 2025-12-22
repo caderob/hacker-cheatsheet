@@ -76,7 +76,7 @@ Lab 2 - Enumerate Password Attacks - RDP - VM #1 and find another network servic
 >ftp>
 ># =====================================
 >
-># Locate and Download the Flag
+># Locate the Flag
 >ftp> ls
 >
 ># ========== Expected Result ==========
@@ -87,6 +87,7 @@ Lab 2 - Enumerate Password Attacks - RDP - VM #1 and find another network servic
 >226 Operation successful
 ># =====================================
 >
+># Download the Flag
 >ftp> get flag.txt
 >
 ># ========== Expected Result ==========
