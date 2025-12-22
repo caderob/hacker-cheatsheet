@@ -145,13 +145,13 @@ Calculating the cracking time for password length of 8 and 10 on a GPU for SHA-2
 >```
 
 Lab 1 - Answer with true or false: In symmetric encryption, one key is used for both the encryption and decryption process.
->
+>true
 
 Lab 2 - Answer with true or false: In asymmetric encryption, we can share the private key freely over the network to another person without risking that a third party can capture our key and then decrypt messages which get sent to us.
->
+>false
 
 Lab 3 - Answer with true or false: A cryptographic hash function is a one-way function. The resulting hash cannot be reversed by reversing the steps used to hash the plain text information.
->
+>true
 
 Lab 4 - Use the MD5 GPU hash rate from the GPU benchmark of this section and calculate the cracking time in minutes with the following conditions. Use a charset of all lower and upper case letters of the English alphabet and use a password length of 8. Enter the answer as full minutes without seconds.
 >
