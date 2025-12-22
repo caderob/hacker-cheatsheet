@@ -42,6 +42,7 @@ Lab 1 - Follow the steps from this section to gain access to TinyFileManager on 
 ># Navigate to http://192.168.243.201 (Target IP) and sign in with discovered credentials
 >
 ># Open install.txt
+>
 ># ========== Expected Result ==========
 >Hola! Here is the secret API key - Don't share it
 >OS{d3469592b23444bcb26a671ea9d3a65d}
