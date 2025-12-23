@@ -205,9 +205,28 @@ Listing of Hashcat's rule files
 
 Lab 1 - You extracted the MD5 hash "056df33e47082c77148dba529212d50a" from a target system. Create a rule to add "1@3$5" to each password of the rockyou.txt wordlist and crack the hash.
 >``` shell
+># Save the target MD5 hash to a file
+>kali@kali:~$ echo "056df33e47082c77148dba529212d50a" > hash.txt
 >
+># Create a Hashcat rule to append 1@3$5
+>kali@kali:~$ cat << 'EOF' > demo.rule
+>$1$@$3$$$5
+>EOF
+>
+># Verify the rule output
+>kali@kali:~$ hashcat --stdout -r demo.rule /usr/share/wordlists/rockyou.txt | head
+>
+># Run Hashcat with the custom rule
+>kali@kali:~$ hashcat -m 0 -a 0 hash.txt /usr/share/wordlists/rockyou.txt -r demo.rule
+>
+># Display the cracked password
+>kali@kali:~$ hashcat -m 0 hash.txt --show
+>
+># ========== Expected Result ==========
+>056df33e47082c77148dba529212d50a:courtney1@3$
+># =====================================
 >```
->
+>courtney1@3$
 
 Lab 2 - You extracted the MD5 hash "19adc0e8921336d08502c039dc297ff8" from a target system. Create a rule which makes all letters upper case and duplicates the passwords contained in rockyou.txt and crack the hash.
 >``` shell
