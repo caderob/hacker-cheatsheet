@@ -75,6 +75,8 @@ Password list after successful entering the Master Password
 
 Lab 1 - Follow the steps outlined in this section to obtain the master password of the KeePass database on VM #1 (SALESWK01). Enter the password found with the title "User Company Password".
 >``` shell
+>xfreerdp3 /u:jason /p:lab /v:192.168.243.203
+>
 >
 >```
 >
