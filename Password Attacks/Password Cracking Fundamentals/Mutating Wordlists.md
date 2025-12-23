@@ -230,6 +230,22 @@ Lab 1 - You extracted the MD5 hash "056df33e47082c77148dba529212d50a" from a tar
 
 Lab 2 - You extracted the MD5 hash "19adc0e8921336d08502c039dc297ff8" from a target system. Create a rule which makes all letters upper case and duplicates the passwords contained in rockyou.txt and crack the hash.
 >``` shell
+># Save the target MD5 hash to a file
+>kali@kali:~$ echo "19adc0e8921336d08502c039dc297ff8" > hash2.txt
 >
+># Create the Hashcat rule file
+>kali@kali:~$ cat << 'EOF' > demo5.rule
+>ud
+>EOF
+>
+># Run Hashcat with the rule
+>kali@kali:~$ hashcat -m 0 -a 0 hash2.txt /usr/share/wordlists/rockyou.txt -r demo5.rule
+>
+># Display the cracked password
+>kali@kali:~$ hashcat -m 0 hash2.txt --show
+>
+># ========== Expected Result ==========
+>19adc0e8921336d08502c039dc297ff8:BUTTERFLY5BUTTERFLY5
+># =====================================
 >```
->
+>BUTTERFLY5BUTTERFLY5
