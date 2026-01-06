@@ -214,9 +214,7 @@ Lab 1 - Follow the steps outlined in this section to get access to VM #1 (BRUTE)
 >kali@kali:~/passwordattacks$ cat ssh.hash
 >
 ># ========== Expected Result ==========
->...
 >id_rsa:$sshng$6$16$...
->...
 ># =====================================
 >
 ># Create a wordlist based on note.txt
