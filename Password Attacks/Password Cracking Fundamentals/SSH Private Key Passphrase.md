@@ -204,9 +204,7 @@ Lab 1 - Follow the steps outlined in this section to get access to VM #1 (BRUTE)
 >kali@kali:~/passwordattacks$ ssh -i id_rsa -p 2222 dave@192.168.213.201
 >
 ># ========== Expected Result ==========
->...
 >Enter passphrase for key 'id_rsa':
->...
 ># =====================================
 >
 ># Convert the private key into John format
