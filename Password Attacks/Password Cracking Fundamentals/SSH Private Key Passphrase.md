@@ -188,9 +188,12 @@ Entering Passphrase to connect to the target system with SSH
 Lab 1 - Follow the steps outlined in this section to get access to VM #1 (BRUTE) on port 2222 with SSH by cracking the passphrase of the private key. Find the flag in the home directory of the user dave.
 >``` shell
 >
->```*
+>```
+>
 
 Lab 2 - Enumerate VM #1 and find a way to get access to SSH on port 2223. Find the flag in the home directory of the user alfred. You can use the same rules we created in this section.
 >``` shell
 >
->```*
+>```
+>
+
