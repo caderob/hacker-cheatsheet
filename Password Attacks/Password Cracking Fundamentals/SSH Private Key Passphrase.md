@@ -220,7 +220,7 @@ Lab 1 - Follow the steps outlined in this section to get access to VM #1 (BRUTE)
 ># Read the note file
 >kali@kali:~/passwordattacks$ cat note.txt
 >
->># ========== Expected Result ==========
+># ========== Expected Result ==========
 >Dave's password list:
 >
 >Window
