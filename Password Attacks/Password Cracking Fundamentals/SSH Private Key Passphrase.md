@@ -217,6 +217,23 @@ Lab 1 - Follow the steps outlined in this section to get access to VM #1 (BRUTE)
 >id_rsa:$sshng$6$16$...
 ># =====================================
 >
+># Read the note file
+>kali@kali:~/passwordattacks$ cat note.txt
+>
+>># ========== Expected Result ==========
+>Dave's password list:
+>
+>Window
+>rickc137
+>dave
+>superdave
+>megadave
+>umbrella
+>
+>Note to myself:
+>New password policy starting in January 2022. Passwords need 3 numbers, a capital letter and a special character
+># =====================================
+>
 ># Create a wordlist based on note.txt
 >kali@kali:~/passwordattacks$ cat > ssh.passwords << EOF
 >Window
