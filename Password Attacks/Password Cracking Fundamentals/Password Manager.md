@@ -121,4 +121,4 @@ Lab 2 - Enumerate VM #2 and get access to the system as user nadine. Obtain the 
 >
 ># 14) In KeePass, locate the entry with Title "flag" and copy the PASSWORD field: This value is the answer to the exercise (note: not formatted as OS{}).
 >```
->
+>eSGJIzUp5nrr834QZBWK
