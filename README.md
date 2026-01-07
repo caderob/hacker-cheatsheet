@@ -182,7 +182,7 @@ The purpose of this cheatsheet is to provide a structured and concise reference 
 >     - [Password Manager](https://github.com/caderob/hacker-cheatsheet/blob/main/Password%20Attacks/Password%20Cracking%20Fundamentals/Password%20Manager.md)
 >     - [SSH Private Key Passphrase]
 >   - [Working with Password Hashes]
->     - [Cracking NTLM]
+>     - [Cracking NTLM](https://github.com/caderob/hacker-cheatsheet/blob/main/Password%20Attacks/Working%20with%20Password%20Hashes/Cracking%20NTLM.md)
 >     - [Passing NTLM]
 >     - [Cracking Net-NTLMv2]
 >     - [Relaying Net-NTLMv2]
