@@ -139,7 +139,7 @@ RDP Connection as nelly
 
 Lab 1 - Follow the steps outlined in this section and find the flag on the nelly user's desktop on VM #1 (MARKETINGWK01).
 >``` shell
->xfreerdp /u:offsec /p:lab /v:192.168.213.210 /cert:ignore
+>xfreerdp3 /u:offsec /p:lab /v:192.168.241.210 /cert:ignore
 >
 ># Run Powershell as administartor
 >
