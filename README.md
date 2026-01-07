@@ -179,7 +179,7 @@ The purpose of this cheatsheet is to provide a structured and concise reference 
 >     - [Introduction to Encryption, Hashes and Cracking](https://github.com/caderob/hacker-cheatsheet/blob/main/Password%20Attacks/Password%20Cracking%20Fundamentals/Introduction%20to%20Encryption,%20Hashes%20and%20Cracking.md)
 >     - [Mutating Wordlists](https://github.com/caderob/hacker-cheatsheet/blob/main/Password%20Attacks/Password%20Cracking%20Fundamentals/Mutating%20Wordlists.md)
 >     - [Cracking Methodology](https://github.com/caderob/hacker-cheatsheet/blob/main/Password%20Attacks/Password%20Cracking%20Fundamentals/Cracking%20Methodology.md)
->     - [Password Manager]
+>     - [Password Manager](https://github.com/caderob/hacker-cheatsheet/blob/main/Password%20Attacks/Password%20Cracking%20Fundamentals/Password%20Manager.md)
 >     - [SSH Private Key Passphrase]
 >   - [Working with Password Hashes]
 >     - [Cracking NTLM]
