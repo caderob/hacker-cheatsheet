@@ -183,7 +183,7 @@ The purpose of this cheatsheet is to provide a structured and concise reference 
 >     - [SSH Private Key Passphrase]
 >   - [Working with Password Hashes]
 >     - [Cracking NTLM](https://github.com/caderob/hacker-cheatsheet/blob/main/Password%20Attacks/Working%20with%20Password%20Hashes/Cracking%20NTLM.md)
->     - [Passing NTLM]
+>     - [Passing NTLM](https://github.com/caderob/hacker-cheatsheet/blob/main/Password%20Attacks/Working%20with%20Password%20Hashes/Passing%20NTLM.md)
 >     - [Cracking Net-NTLMv2]
 >     - [Relaying Net-NTLMv2]
 >     - [Windows Credential Guard]
