@@ -179,6 +179,11 @@ Lab 1 - Follow the steps outlined in this section and find the flag on the nelly
 >
 ># 13) Display the cracked password from hashcat's potfile (shows hash:plaintext)
 >hashcat -m 1000 nelly.hash --show
+>
+>xfreerdp3 /u:nelly /p:nicole1 /v:192.168.241.210 /cert:ignore
+>
+># Open flag.txt file located on the desktop
+>
 >```
 >OS{251d3e79de2a2f9ad4cb9551f18b6f81}
 
