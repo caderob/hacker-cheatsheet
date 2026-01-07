@@ -99,8 +99,7 @@ Lab 2 - Enumerate VM #2 and get access to the system as user nadine. Obtain the 
 ># 6) Search the entire C:\ drive for KeePass database files (*.kdbx)
 >Get-ChildItem -Path C:\ -Include *.kdbx -File -Recurse -ErrorAction SilentlyContinue
 >
-># 7) (Manual step) Copy the KeePass database from Windows to Kali:
->#    C:\Users\nadine\Documents\Database.kdbx
+># 7) (Manual step) Copy the KeePass database from Windows to Kali: C:\Users\nadine\Documents\Database.kdbx
 >
 ># 8) Convert the KeePass database into a crackable hash format (keepass2john output)
 >keepass2john Database.kdbx > keepass.hash
@@ -120,7 +119,6 @@ Lab 2 - Enumerate VM #2 and get access to the system as user nadine. Obtain the 
 >
 ># 13) (On Windows) Open KeePass and unlock Database.kdbx using the cracked master password (example: pinkpanther1234)
 >
-># 14) In KeePass, locate the entry with Title "flag" and copy the PASSWORD field
->#     This value is the answer to the exercise (note: not formatted as OS{}).
+># 14) In KeePass, locate the entry with Title "flag" and copy the PASSWORD field: This value is the answer to the exercise (note: not formatted as OS{}).
 >```
 >
