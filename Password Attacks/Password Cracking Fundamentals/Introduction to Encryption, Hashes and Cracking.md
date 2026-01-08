@@ -155,30 +155,27 @@ Lab 3 - Answer with true or false: A cryptographic hash function is a one-way fu
 
 Lab 4 - Use the MD5 GPU hash rate from the GPU benchmark of this section and calculate the cracking time in minutes with the following conditions. Use a charset of all lower and upper case letters of the English alphabet and use a password length of 8. Enter the answer as full minutes without seconds.
 >``` shell
-># MD5 GPU hash rate
->68185.1 MH/s
+># 1) Record the MD5 GPU hash rate from the benchmark (given in MH/s)
+>#    MD5 GPU hash rate: 68185.1 MH/s
 >
-># Convert MH/s → H/s:
->68185.1 × 1,000,000 = 68,185,100,000 hashes/sec
+># 2) Convert the GPU hash rate from megahashes per second (MH/s) to hashes per second (H/s)
+>#    68185.1 × 1,000,000 = 68,185,100,000 hashes/sec
 >
-># Charset size:
->26 + 26 = 52
+># 3) Define the character set size for the password
+>#    Lowercase letters (26) + Uppercase letters (26) = 52 characters
 >
-># Password length: 8
->52^8 = 53,459,728,531,456
+># 4) Define the password length
+>#    Password length = 8 characters
 >
-># Cracking-time calculation
+># 5) Calculate the total keyspace (number of possible passwords)
+>#    Keyspace = 52^8 = 53,459,728,531,456
+>
+># 6) Calculate the total cracking time in seconds (keyspace ÷ hashes per second)
 >kali@kali:~$ python3 -c "print(52**8 / 68185100000)"
 >
-># ========== Expected Result ==========
->783.98 seconds
-># =====================================
->
-># Convert seconds → minutes
+># 7) Convert the cracking time from seconds to minutes
 >kali@kali:~$ python3 -c "print((52**8 / 68185100000) / 60)"
 >
-># ========== Expected Result ==========
->13.066 minutes
-># =====================================
+># 8) Round down to full minutes (no seconds) and submit this value as the answer
 >```
 >13
