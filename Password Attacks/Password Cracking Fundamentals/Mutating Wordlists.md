@@ -205,47 +205,39 @@ Listing of Hashcat's rule files
 
 Lab 1 - You extracted the MD5 hash "056df33e47082c77148dba529212d50a" from a target system. Create a rule to add "1@3$5" to each password of the rockyou.txt wordlist and crack the hash.
 >``` shell
-># Save the target MD5 hash to a file
+># 1) Save the extracted MD5 hash to a file for offline cracking
 >kali@kali:~$ echo "056df33e47082c77148dba529212d50a" > hash.txt
 >
-># Create a Hashcat rule to append 1@3$5
+># 2) Create a custom Hashcat rule that appends the string "1@3$5" to each word ($1 appends '1', $@ appends '@', $3 appends '3', $$ appends '$', $5 appends '5')
 >kali@kali:~$ cat << 'EOF' > demo.rule
 >$1$@$3$$$5
 >EOF
 >
-># Verify the rule output
+># 3) Verify the rule behavior by generating candidate passwords without cracking (--stdout prints transformed words to the screen)
 >kali@kali:~$ hashcat --stdout -r demo.rule /usr/share/wordlists/rockyou.txt | head
 >
-># Run Hashcat with the custom rule
+># 4) Run Hashcat to crack the MD5 hash using rockyou.txt with the custom rule (-m 0 specifies MD5, -a 0 specifies straight attack mode)
 >kali@kali:~$ hashcat -m 0 -a 0 hash.txt /usr/share/wordlists/rockyou.txt -r demo.rule
 >
-># Display the cracked password
+># 5) Display the cracked plaintext password from Hashcat’s potfile
 >kali@kali:~$ hashcat -m 0 hash.txt --show
->
-># ========== Expected Result ==========
->056df33e47082c77148dba529212d50a:courtney1@3$
-># =====================================
 >```
 >courtney1@3$
 
 Lab 2 - You extracted the MD5 hash "19adc0e8921336d08502c039dc297ff8" from a target system. Create a rule which makes all letters upper case and duplicates the passwords contained in rockyou.txt and crack the hash.
 >``` shell
-># Save the target MD5 hash to a file
+># 1) Save the extracted MD5 hash to a file for offline cracking
 >kali@kali:~$ echo "19adc0e8921336d08502c039dc297ff8" > hash2.txt
 >
-># Create the Hashcat rule file
+># 2) Create a custom Hashcat rule that: (u = converts all letters to uppercase) (d = duplicates the resulting password (e.g., PASS → PASSPASS))
 >kali@kali:~$ cat << 'EOF' > demo5.rule
 >ud
 >EOF
 >
-># Run Hashcat with the rule
+># 3) Run Hashcat to crack the MD5 hash using rockyou.txt with the custom rule (-m 0 specifies MD5, -a 0 specifies straight attack mode)
 >kali@kali:~$ hashcat -m 0 -a 0 hash2.txt /usr/share/wordlists/rockyou.txt -r demo5.rule
 >
-># Display the cracked password
+># 4) Display the cracked plaintext password from Hashcat’s potfile
 >kali@kali:~$ hashcat -m 0 hash2.txt --show
->
-># ========== Expected Result ==========
->19adc0e8921336d08502c039dc297ff8:BUTTERFLY5BUTTERFLY5
-># =====================================
 >```
 >BUTTERFLY5BUTTERFLY5
