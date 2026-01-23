@@ -189,7 +189,7 @@ The purpose of this cheatsheet is to provide a structured and concise reference 
 >     - [Windows Credential Guard]
 >- [**Windows Privilege Escalation**]
 >   - [Enumerating Windows]
->     - [Understanding Windows Privileges and Access Control Mechanisms]
+>     - [Understanding Windows Privileges and Access Control Mechanisms](https://github.com/caderob/hacker-cheatsheet/blob/main/Windows%20Privilege%20Escalation/Enumerating%20Windows/Understanding%20Windows%20Privileges%20and%20Access%20Control%20Mechanisms.md)
 >     - [Situational Awareness]
 >     - [Hidden in Plain View]
 >     - [Information Goldmine PowerShell]
