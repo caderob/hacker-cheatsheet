@@ -415,3 +415,15 @@ Lab 2 - Enumerate the installed applications on CLIENTWK220 (VM #1) and find the
 >
 >```
 >
+
+Lab 3 - We'll now use an additional machine, CLIENTWK221 (VM #2), to practice what we learned in this section. Access the machine via RDP as user mac with the password IAmTheGOATSysAdmin!. Identify another member of the local Administrators group apart from offsec and Administrator.
+>``` shell
+>
+>```
+>
+
+Lab 4 - Enumerate the currently running processes on CLIENTWK221 (VM #2). Find a non-standard process and locate the flag in the directory of the corresponding binary file.
+>``` shell
+>
+>```
+>
