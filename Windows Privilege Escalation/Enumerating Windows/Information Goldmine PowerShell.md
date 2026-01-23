@@ -141,6 +141,7 @@ Using evil-winrm to connect to CLIENTWK220 as daveadmin
 ># =====================================
 >
 >*Evil-WinRM* PS C:\Users\daveadmin\Documents> cd C:\
+>
 >*Evil-WinRM* PS C:\> dir
 >
 ># ========== Expected Result ==========
