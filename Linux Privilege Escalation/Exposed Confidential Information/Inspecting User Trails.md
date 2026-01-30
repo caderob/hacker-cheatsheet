@@ -56,7 +56,7 @@ Becoming 'root' user with the leaked credential
 >Password:
 ># =====================================
 >
->root@debian-privesc:~# whoami
+>root@debian-privesc:~$ whoami
 >
 ># ========== Expected Result ==========
 >root
