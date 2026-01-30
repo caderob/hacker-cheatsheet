@@ -203,7 +203,7 @@ The purpose of this cheatsheet is to provide a structured and concise reference 
 >     - [Using Exploits]
 >- [**Linux Privilege Escalation**]
 >   - [Enumerating Linux]
->     - [Understanding Files and Users Privileges on Linux]
+>     - [Understanding Files and Users Privileges on Linux](https://github.com/caderob/hacker-cheatsheet/blob/main/Linux%20Privilege%20Escalation/Enumerating%20Linux/Understanding%20Files%20and%20Users%20Privileges%20on%20Linux.md)
 >     - [Manual Enumeration]
 >     - [Automated Enumeration]
 >   - [Exposed Confidential Information]
