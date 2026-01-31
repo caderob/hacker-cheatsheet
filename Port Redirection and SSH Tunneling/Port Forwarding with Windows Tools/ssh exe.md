@@ -1,4 +1,4 @@
-# SSH Remote Port Forwarding
+# ssh.exe
 
 The SSH remote dynamic port forward setup using the Windows OpenSSH client
 >![](https://raw.githubusercontent.com/caderob/hacker-cheatsheet/main/Images/ssh-exe-1.png)
