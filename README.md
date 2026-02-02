@@ -230,6 +230,12 @@ The purpose of this cheatsheet is to provide a structured and concise reference 
 >     - [ssh.exe]
 >     - [Plink]
 >- [**Tunneling Through Deep Packet Inspection**]
+>   - [HTTP Tunneling Theory and Practice]
+>     - [HTTP Tunneling Fundamentals](https://github.com/caderob/hacker-cheatsheet/blob/main/Tunneling%20Through%20Deep%20Packet%20Inspection/HTTP%20Tunneling%20Theory%20and%20Practice/HTTP%20Tunneling%20Fundamentals.md)
+>     - [HTTP Tunneling with Chisel]
+>   - [DNS Tunneling Theory and Practice]
+>     - [DNS Tunneling Fundamentals]
+>     - [DNS Tunneling with dnscat2]
 >- [**The Metasploit Framework**]
 >- [**Active Directory Introduction and Enumeration**]
 >- [**Attacking Active Directory Authentication**]
