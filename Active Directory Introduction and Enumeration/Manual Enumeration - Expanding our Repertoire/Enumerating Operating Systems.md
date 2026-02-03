@@ -73,3 +73,9 @@ Lab 2 - Continue enumerating the operating systems in VM Group 1. What is the ex
 >
 >```
 >
+
+Lab 3 - Start VM Group 2 and log in to CLIENT75 as stephanie. Use PowerView to enumerate the operating systems in the modified corp.com domain to obtain the flag.
+>``` shell
+>
+>```
+>
