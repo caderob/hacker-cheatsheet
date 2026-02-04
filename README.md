@@ -253,6 +253,16 @@ The purpose of this cheatsheet is to provide a structured and concise reference 
 >     - [Collecting Data with SharpHound]
 >     - [Analysing Data using BloodHound]
 >- [**Attacking Active Directory Authentication**]
+>   - [Understanding Active Directory Authentication]
+>     - [NTLM Authentication](https://github.com/caderob/hacker-cheatsheet/blob/main/Attacking%20Active%20Directory%20Authentication/Understanding%20Active%20Directory%20Authentication/NTLM%20Authentication.md)
+>     - [Kerberos Authentication](https://github.com/caderob/hacker-cheatsheet/blob/main/Attacking%20Active%20Directory%20Authentication/Understanding%20Active%20Directory%20Authentication/Kerberos%20Authentication.md)
+>     - [Cached AD Credentials]
+>   - [Performing Attacks on Active Directory Authentication]
+>     - [Password Attacks]
+>     - [AS-REP Roasting]
+>     - [Kerberoasting]
+>     - [Silver Tickets]
+>     - [Domain Controller Synchronization]
 >- [**Lateral Movement in Active Directory**]
 >- [**Enumerating AWS Cloud Infrastructure**]
 >- [**Attacking AWS Cloud Infrastructure**]
