@@ -24,7 +24,7 @@ List the offseclab-assets-private Bucket
 Custom URLs of All the Three Major CSPs
 >``` shell
 >AWS 	            | Azure 	              | GCP
->=================================================================
+>-----------------------------------------------------------------
 >s3.amazonaws.com | web.core.windows.net 	| appspot.com
 >awsapps.com 	    | file.core.windows.net |	storage.googleapis.com
 >	                | blob.core.windows.net |	
