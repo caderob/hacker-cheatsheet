@@ -104,5 +104,5 @@ Lab 1 - What command is used to query the authoritative DNS servers for the doma
 Lab 2 - Which AWS service is very likely being used to manage the offseclab.io domain?
 >C) Amazon Route 53
 
-Lab 3 - What command is used to query the authoritative DNS servers for the domain offseclab.io?
+Lab 3 - Find the proof while gathering more info about the domain inside other commonly used DNS records.
 >
