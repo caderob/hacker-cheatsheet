@@ -88,7 +88,7 @@ Editing the Policy Specifying a Non-existing User and Testing Again
 
 Creating a List of Roles to Search in the Account
 >``` shell
->echo -n "lab_admin
+>kali@kali:~$ echo -n "lab_admin
 >security_auditor
 >content_creator
 >student_access
