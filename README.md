@@ -276,21 +276,21 @@ The purpose of this cheatsheet is to provide a structured and concise reference 
 >     - [Shadow Copies]
 >- [**Enumerating AWS Cloud Infrastructure**]
 >   - [Reconnaissance of Cloud Resources on the Internet]
->     - [Accessing the Lab]
+>     - [Accessing the Lab](https://github.com/caderob/hacker-cheatsheet/blob/main/Enumerating%20AWS%20Cloud%20Infrastructure/Reconnaissance%20of%20Cloud%20Resources%20on%20the%20Internet/Accessing%20the%20Lab.md)
 >     - [Domain and Subdomain Reconnaissance]
 >     - [Service-specific Domains]
 >   - [Reconnaissance via Cloud Service Provider's API]
->     - [Preparing the Lab - Configure AWS CLI]
+>     - [Preparing the Lab - Configure AWS CLI](https://github.com/caderob/hacker-cheatsheet/blob/main/Enumerating%20AWS%20Cloud%20Infrastructure/Reconnaissance%20via%20Cloud%20Service%20Provider's%20API/Preparing%20the%20Lab%20-%20Configure%20AWS%20CLI.md)
 >     - [Publicly Shared Resources]
->     - [Obtaining Account IDs from S3 Buckets]
+>     - [Obtaining Account IDs from S3 Buckets](https://github.com/caderob/hacker-cheatsheet/blob/main/Enumerating%20AWS%20Cloud%20Infrastructure/Reconnaissance%20via%20Cloud%20Service%20Provider's%20API/Obtaining%20Account%20IDs%20from%20S3%20Buckets.md)
 >     - [Enumerating IAM Users in Other Accounts]
 >   - [Initial IAM Reconnaissance]
->     - [Accessing the Lab]
->     - [Examining Compromised Credentials]
+>     - [Accessing the Lab](https://github.com/caderob/hacker-cheatsheet/blob/main/Enumerating%20AWS%20Cloud%20Infrastructure/Initial%20IAM%20Reconnaissance/Accessing%20the%20Lab.md)
+>     - [Examining Compromised Credentials](https://github.com/caderob/hacker-cheatsheet/blob/main/Enumerating%20AWS%20Cloud%20Infrastructure/Initial%20IAM%20Reconnaissance/Examining%20Compromised%20Credentials.md)
 >     - [Scoping IAM permissions]
 >   - [IAM Resources Enumeration]
 >     - [Enumerating IAM Resources]
->     - [Processing API Response data with JMESPath]
+>     - [Processing API Response data with JMESPath](https://github.com/caderob/hacker-cheatsheet/blob/main/Enumerating%20AWS%20Cloud%20Infrastructure/IAM%20Resources%20Enumeration/Processing%20API%20Response%20data%20with%20JMESPath.md)
 >     - [Running Automated Enumeration with Pacu]
 >     - [Extracting Insights from Enumeration Data]
 >- [**Attacking AWS Cloud Infrastructure**]
