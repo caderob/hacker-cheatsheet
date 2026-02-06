@@ -27,9 +27,9 @@ Custom URLs of All the Three Major CSPs
 >-----------------------------------------------------------------
 >s3.amazonaws.com | web.core.windows.net 	| appspot.com
 >awsapps.com      | file.core.windows.net |	storage.googleapis.com
->                 | blob.core.windows.net |	
->                 |	azurewebsites.net 	  |
->                 |	cloudapp.net 	        |
+>                  | blob.core.windows.net |	
+>                  |	azurewebsites.net 	  |
+>                  |	cloudapp.net 	        |
 >```
 
 Updating the Packages and Installing cloud-enum in Kali Linux
