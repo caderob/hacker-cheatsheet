@@ -330,3 +330,21 @@ The purpose of this cheatsheet is to provide a structured and concise reference 
 >     - [Enumerating with Discovered Credentials](https://github.com/caderob/hacker-cheatsheet/blob/main/Attacking%20AWS%20Cloud%20Infrastructure/Compromising%20the%20Environment/Enumerating%20with%20Discovered%20Credentials.md)
 >     - [Discovering the State File and Escalating to Admin]
 >- [**Assembling the Pieces**]
+>   - [Enumerating the Public Network]
+>     - [MAILSRV1]
+>     - [WEBSRV1](https://github.com/caderob/hacker-cheatsheet/blob/main/Assembling%20the%20Pieces/Enumerating%20the%20Public%20Network/WEBSRV1.md)
+>   - [Attacking a Public Machine](https://github.com/caderob/hacker-cheatsheet/tree/main/Assembling%20the%20Pieces/Attacking%20a%20Public%20Machine)
+>     - [Initial Foothold](https://github.com/caderob/hacker-cheatsheet/blob/main/Assembling%20the%20Pieces/Attacking%20a%20Public%20Machine/Initial%20Foothold.md)
+>     - [A Link to the Past](https://github.com/caderob/hacker-cheatsheet/blob/main/Assembling%20the%20Pieces/Attacking%20a%20Public%20Machine/A%20Link%20to%20the%20Past.md)
+>   - [Gaining Access to the Internal Network](https://github.com/caderob/hacker-cheatsheet/tree/main/Assembling%20the%20Pieces/Gaining%20Access%20to%20the%20Internal%20Network)
+>     - [Domain Credentials](https://github.com/caderob/hacker-cheatsheet/blob/main/Assembling%20the%20Pieces/Gaining%20Access%20to%20the%20Internal%20Network/Domain%20Credentials.md)
+>     - [Phishing for Access](https://github.com/caderob/hacker-cheatsheet/blob/main/Assembling%20the%20Pieces/Gaining%20Access%20to%20the%20Internal%20Network/Phishing%20for%20Access.md)
+>   - [Enumerating the Internal Network]
+>     - [Situational Awareness](https://github.com/caderob/hacker-cheatsheet/blob/main/Assembling%20the%20Pieces/Enumerating%20the%20Internal%20Network/Situational%20Awareness.md)
+>     - [Services and Sessions](https://github.com/caderob/hacker-cheatsheet/blob/main/Assembling%20the%20Pieces/Enumerating%20the%20Internal%20Network/Services%20and%20Sessions.md)
+>   - [Attacking an Internal Web Application](https://github.com/caderob/hacker-cheatsheet/tree/main/Assembling%20the%20Pieces/Attacking%20an%20Internal%20Web%20Application)
+>     - [Speak Kerberoast and Enter](https://github.com/caderob/hacker-cheatsheet/blob/main/Assembling%20the%20Pieces/Attacking%20an%20Internal%20Web%20Application/Speak%20Kerberoast%20and%20Enter.md)
+>     - [Abuse a WordPress Plugin for a Relay Attack](https://github.com/caderob/hacker-cheatsheet/blob/main/Assembling%20the%20Pieces/Attacking%20an%20Internal%20Web%20Application/Abuse%20a%20WordPress%20Plugin%20for%20a%20Relay%20Attack.md)
+>   - [Gaining Access to the Domain Controller]
+>     - [Cached Credentials](https://github.com/caderob/hacker-cheatsheet/blob/main/Assembling%20the%20Pieces/Gaining%20Access%20to%20the%20Domain%20Controller/Cached%20Credentials.md)
+>     - [Lateral Movement](https://github.com/caderob/hacker-cheatsheet/blob/main/Assembling%20the%20Pieces/Gaining%20Access%20to%20the%20Domain%20Controller/Lateral%20Movement.md)
