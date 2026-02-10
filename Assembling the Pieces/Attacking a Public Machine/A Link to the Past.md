@@ -95,7 +95,7 @@ Git repository in the WordPress directory
 >```
 
 Sudo abuse vector for git
->![](https://raw.githubusercontent.com/caderob/hacker-cheatsheet/main/Images/Port-Forwarding-with-Socat-1.png)
+>![](https://raw.githubusercontent.com/caderob/hacker-cheatsheet/main/Images/A-Link-to-the-Past-1.png)
 
 Abusing git sudo command by setting an environment variable
 >``` shell
