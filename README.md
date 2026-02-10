@@ -339,12 +339,12 @@ The purpose of this cheatsheet is to provide a structured and concise reference 
 >   - [Gaining Access to the Internal Network](https://github.com/caderob/hacker-cheatsheet/tree/main/Assembling%20the%20Pieces/Gaining%20Access%20to%20the%20Internal%20Network)
 >     - [Domain Credentials](https://github.com/caderob/hacker-cheatsheet/blob/main/Assembling%20the%20Pieces/Gaining%20Access%20to%20the%20Internal%20Network/Domain%20Credentials.md)
 >     - [Phishing for Access](https://github.com/caderob/hacker-cheatsheet/blob/main/Assembling%20the%20Pieces/Gaining%20Access%20to%20the%20Internal%20Network/Phishing%20for%20Access.md)
->   - [Enumerating the Internal Network]
+>   - [Enumerating the Internal Network](https://github.com/caderob/hacker-cheatsheet/tree/main/Assembling%20the%20Pieces/Enumerating%20the%20Internal%20Network)
 >     - [Situational Awareness](https://github.com/caderob/hacker-cheatsheet/blob/main/Assembling%20the%20Pieces/Enumerating%20the%20Internal%20Network/Situational%20Awareness.md)
 >     - [Services and Sessions](https://github.com/caderob/hacker-cheatsheet/blob/main/Assembling%20the%20Pieces/Enumerating%20the%20Internal%20Network/Services%20and%20Sessions.md)
 >   - [Attacking an Internal Web Application](https://github.com/caderob/hacker-cheatsheet/tree/main/Assembling%20the%20Pieces/Attacking%20an%20Internal%20Web%20Application)
 >     - [Speak Kerberoast and Enter](https://github.com/caderob/hacker-cheatsheet/blob/main/Assembling%20the%20Pieces/Attacking%20an%20Internal%20Web%20Application/Speak%20Kerberoast%20and%20Enter.md)
 >     - [Abuse a WordPress Plugin for a Relay Attack](https://github.com/caderob/hacker-cheatsheet/blob/main/Assembling%20the%20Pieces/Attacking%20an%20Internal%20Web%20Application/Abuse%20a%20WordPress%20Plugin%20for%20a%20Relay%20Attack.md)
->   - [Gaining Access to the Domain Controller]
+>   - [Gaining Access to the Domain Controller](https://github.com/caderob/hacker-cheatsheet/tree/main/Assembling%20the%20Pieces/Gaining%20Access%20to%20the%20Domain%20Controller)
 >     - [Cached Credentials](https://github.com/caderob/hacker-cheatsheet/blob/main/Assembling%20the%20Pieces/Gaining%20Access%20to%20the%20Domain%20Controller/Cached%20Credentials.md)
 >     - [Lateral Movement](https://github.com/caderob/hacker-cheatsheet/blob/main/Assembling%20the%20Pieces/Gaining%20Access%20to%20the%20Domain%20Controller/Lateral%20Movement.md)
