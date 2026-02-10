@@ -294,4 +294,39 @@ The purpose of this cheatsheet is to provide a structured and concise reference 
 >     - [Running Automated Enumeration with Pacu]
 >     - [Extracting Insights from Enumeration Data]
 >- [**Attacking AWS Cloud Infrastructure**]
+>   - [Leaked Secrets to Poisoned Pipeline - Lab Design](https://github.com/caderob/hacker-cheatsheet/tree/main/Attacking%20AWS%20Cloud%20Infrastructure/Leaked%20Secrets%20to%20Poisoned%20Pipeline%20-%20Lab%20Design)
+>     - [Accessing the Labs](https://github.com/caderob/hacker-cheatsheet/blob/main/Attacking%20AWS%20Cloud%20Infrastructure/Leaked%20Secrets%20to%20Poisoned%20Pipeline%20-%20Lab%20Design/Accessing%20the%20Labs.md)
+>   - [Enumeration]
+>     - [Enumerating Jenkins]
+>     - [Enumerating the Git Server]
+>     - [Enumerating the Application]
+>   - [Discovering Secrets]
+>     - [Downloading the Bucket](https://github.com/caderob/hacker-cheatsheet/blob/main/Attacking%20AWS%20Cloud%20Infrastructure/Discovering%20Secrets/Downloading%20the%20Bucket.md)
+>     - [Searching for Secrets in Git]
+>   - [Poisoning the Pipeline]
+>     - [Enumerating the Repositories]
+>     - [Modifying the Pipeline](https://github.com/caderob/hacker-cheatsheet/blob/main/Attacking%20AWS%20Cloud%20Infrastructure/Poisoning%20the%20Pipeline/Modifying%20the%20Pipeline.md)
+>     - [Enumerating the Builder]
+>   - [Compromising the Environment via Backdoor Account]
+>     - [Discovering What We Have Access To](https://github.com/caderob/hacker-cheatsheet/blob/main/Attacking%20AWS%20Cloud%20Infrastructure/Compromising%20the%20Environment%20via%20Backdoor%20Account/Discovering%20What%20We%20Have%20Access%20To.md)
+>     - [Creating a Backdoor Account]
+>   - [Dependency Chain Abuse](https://github.com/caderob/hacker-cheatsheet/tree/main/Attacking%20AWS%20Cloud%20Infrastructure/Dependency%20Chain%20Abuse)
+>     - [Accessing the Labs](https://github.com/caderob/hacker-cheatsheet/blob/main/Attacking%20AWS%20Cloud%20Infrastructure/Dependency%20Chain%20Abuse/Accessing%20the%20Labs.md)
+>   - [Information Gathering]
+>     - [Enumerating the Services]
+>     - [Conducting Open Source Intelligence](https://github.com/caderob/hacker-cheatsheet/blob/main/Attacking%20AWS%20Cloud%20Infrastructure/Information%20Gathering/Conducting%20Open%20Source%20Intelligence.md)
+>   - [Dependency Chain Attack]
+>     - [Understanding the Attack](https://github.com/caderob/hacker-cheatsheet/blob/main/Attacking%20AWS%20Cloud%20Infrastructure/Dependency%20Chain%20Attack/Understanding%20the%20Attack.md)
+>     - [Creating Our Malicious Package](https://github.com/caderob/hacker-cheatsheet/blob/main/Attacking%20AWS%20Cloud%20Infrastructure/Dependency%20Chain%20Attack/Creating%20Our%20Malicious%20Package.md)
+>     - [Command Execution During Install](https://github.com/caderob/hacker-cheatsheet/blob/main/Attacking%20AWS%20Cloud%20Infrastructure/Dependency%20Chain%20Attack/Command%20Execution%20During%20Install.md)
+>     - [Command Execution During Runtime](https://github.com/caderob/hacker-cheatsheet/blob/main/Attacking%20AWS%20Cloud%20Infrastructure/Dependency%20Chain%20Attack/Command%20Execution%20During%20Runtime.md)
+>     - [Adding a Payload](https://github.com/caderob/hacker-cheatsheet/blob/main/Attacking%20AWS%20Cloud%20Infrastructure/Dependency%20Chain%20Attack/Adding%20a%20Payload.md)
+>     - [Publishing Our Malicious Package]
+>   - [Compromising the Environment]
+>     - [Enumerating the Production Container]
+>     - [Scanning the Network]
+>     - [Loading Jenkins](https://github.com/caderob/hacker-cheatsheet/blob/main/Attacking%20AWS%20Cloud%20Infrastructure/Compromising%20the%20Environment/Loading%20Jenkins.md)
+>     - [Exploiting Jenkins]
+>     - [Enumerating with Discovered Credentials](https://github.com/caderob/hacker-cheatsheet/blob/main/Attacking%20AWS%20Cloud%20Infrastructure/Compromising%20the%20Environment/Enumerating%20with%20Discovered%20Credentials.md)
+>     - [Discovering the State File and Escalating to Admin]
 >- [**Assembling the Pieces**]
